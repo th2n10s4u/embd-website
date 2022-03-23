@@ -1,8 +1,9 @@
 import * as React from 'react';
-import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import {AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, Fab } from '@mui/material';
+import NavigationIcon from '@mui/icons-material/Menu';
 import embdLogo from '../images/embd-logo-black.png';
 import { Rowing } from '@mui/icons-material';
+import { typography } from '@mui/system';
 
 
 const pages = ['Products', 'Pricing', 'Blog', 'about', 'services'];
@@ -28,7 +29,8 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <Box>
+    <AppBar position="static">
       {/* <Container maxWidth="lg"> */}
         <Toolbar disableGutters>
             
@@ -37,10 +39,11 @@ const ResponsiveAppBar = () => {
           
           
           <Box sx={{ display: { xs: 'flex' } }}>
-            <img src={embdLogo} alt="dance logo" className='Nav-Logo'  />
+            {/* How do I set the logo to a set width and height */}
+            <img src={embdLogo} alt="dance logo" className='Nav-Logo'  /> 
             
           </Box>
-  <Box sx={{ flexGrow: 1, flexDirection: "row", display: "flex", justifyContent: "center" }}> 
+  <Box sx={{ flexGrow: 1, flexDirection: "row", display: "flex", justifyContent: "space-evenly" }}> 
                 {pages.map((page) => (
                 
                 <Button
@@ -53,37 +56,19 @@ const ResponsiveAppBar = () => {
               ))}
               </Box>
           <Box sx={{ flexGrow: 0, width: "385px", justifyContent: "flex-end", display: "flex" }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+           
+            <Fab variant="extended" size='medium' color="secondary" aria-label="add">
+               {/* <NavigationIcon sx={{ mr: 1 }} /> */}
+                  book your first lesson
+            </Fab>
           </Box>
         </Toolbar>
       {/* </Container> */}
     </AppBar>
+    <AppBar sx={{height: "68.5px", justifyContent: "center"}} color="transparent" position="static">
+      <Typography sx={{fontFamily:"tangerine" }}align='center' variant='h4' >Welcome to the world of Ballroom Dance</Typography>
+    </AppBar>
+    </Box>
   );
 };
 export default ResponsiveAppBar;
