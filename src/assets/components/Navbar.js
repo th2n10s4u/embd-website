@@ -39,8 +39,8 @@ const ResponsiveAppBar = () => {
           
           
           <Box sx={{ display: { xs: 'flex' } }}>
-            {/* How do I set the logo to a set width and height */}
-            <img src={embdLogo} alt="dance logo" className='Nav-Logo'  /> 
+            {/* How do I change the logo to a set width and height as sx prop isn't working */}
+            <img src={embdLogo} alt="dance logo"  sx= {{height: "58px", width: "338"}}  /> 
             
           </Box>
   <Box sx={{ flexGrow: 1, flexDirection: "row", display: "flex", justifyContent: "space-evenly" }}> 
@@ -66,7 +66,7 @@ const ResponsiveAppBar = () => {
       {/* </Container> */}
     </AppBar>
     <AppBar sx={{height: "68.5px", justifyContent: "center"}} color="transparent" position="static">
-      <Typography sx={{fontFamily:"tangerine" }}align='center' variant='h4' >Welcome to the world of Ballroom Dance</Typography>
+      <Typography sx={{fontFamily:"tangerine", fontWeight:"600" }}align='center' variant='h3' >Welcome to the world of Ballroom Dance</Typography>
     </AppBar>
     </Box>
   );
