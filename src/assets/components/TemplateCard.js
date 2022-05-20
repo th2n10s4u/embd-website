@@ -1,0 +1,172 @@
+/* Reusable layout for photos, buttons, words on a card or paper throughout the application */
+import * as React from "react";
+import {
+  Card,
+  Divider,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+  Paper,
+} from "@mui/material";
+import { grey } from "@mui/material/colors";
+
+export default function TemplateCard(props) {
+  return (
+    <Paper
+      ClassName="TemplatePaper"
+      elevation={0}
+      sx={{
+        minWidth: "1200px",
+        minHeight: "600px",
+        border: "0",
+        display: "flex",
+        justifyContent: "space-evenly",
+        marginTop: "20px",
+        marginBottom: "300px",
+      }}
+    >
+      <Divider />
+      <Card
+        elevation={0}
+        sx={{
+          maxWidth: 400,
+          maxHeight: 600,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "spaceBetween",
+          marginTop: "40px",
+        }}
+      >
+        <CardMedia
+          elevation={0}
+          sx={{
+            component: "img",
+            border: "0",
+            height: "350px",
+            width: "350px",
+            margin: "12px",
+            marginTop: "0px",
+            marginBottom: "16px",
+            boxShadow: "9px 9px 6px grey",
+            borderRadius: 12,
+          }}
+          image={props.img}
+          alt="image-goes-here"
+        />
+        <CardActions
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Button
+            style={{
+              minWidth: "313px",
+              minHeight: "40px",
+              marginBottom: "40px",
+              boxShadow: "5px 5px 5px grey",
+            }}
+            variant="contained"
+            borderRadius="12"
+            size="extraLarge"
+            display="flex"
+          >
+            {props.buttonText}
+          </Button>
+        </CardActions>
+      </Card>
+      <Card
+        elevation={0}
+        sx={{
+          maxWidth: 591,
+          maxHeight: 475,
+        }}
+      >
+        <CardContent>
+          <Typography
+            ClassName="CardHeaderText"
+            sx={{
+              fontFamily: "Playfair Display",
+              fontWeight: "400",
+              fontSize: "32px",
+              lineHeight: "20px",
+            }}
+            align="left"
+          >
+            {props.CardContentHeaderFirstLine}
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Playfair Display",
+              fontWeight: "400",
+              fontSize: "40px",
+            }}
+            align="left"
+          >
+            {props.CardContentHeaderSecondLine}
+          </Typography>
+        </CardContent>
+        <CardContent>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              lineHeight: "95.7%",
+              paragraphSpacing: "28",
+              letterSpacing: "0",
+              fontSize: "24px",
+              marginTop: "10px",
+            }}
+            align="left"
+          >
+            {props.CardContentBody}
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              lineHeight: "95.7%",
+              paragraphSpacing: "28",
+              letterSpacing: "0",
+              fontSize: "24px",
+              marginBottom: "20px",
+            }}
+            align="left"
+          >
+            {props.CardContentBodySentenceOne}
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              lineHeight: "95.7%",
+              paragraphSpacing: "28",
+              letterSpacing: "0",
+              fontSize: "24px",
+              marginBottom: "20px",
+            }}
+            align="left"
+          >
+            {props.CardContentBodySentenceTwo}
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              lineHeight: "95.7%",
+              paragraphSpacing: "28",
+              letterSpacing: "0",
+              fontSize: "24px",
+              marginBottom: "20px",
+            }}
+            align="left"
+          >
+            {props.CardContentBodySentenceThree}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Paper>
+  );
+}
