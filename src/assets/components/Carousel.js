@@ -40,7 +40,7 @@ function Item({ item }) {
     <Paper
       sx={{ minWidth: "1200px", justifyContent: "center", display: "flex" }}
     >
-      <img src={item.imgurl} width="1920px"></img>
+      <img src={item.imgurl} width="100%"></img>
     </Paper>
   );
 }

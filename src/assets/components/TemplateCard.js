@@ -13,21 +13,23 @@ import {
 import { grey } from "@mui/material/colors";
 
 export default function TemplateCard(props) {
+  //   console.log(props);
   return (
     <Paper
       ClassName="TemplatePaper"
       elevation={0}
       sx={{
         minWidth: "1200px",
-        minHeight: "600px",
+        minHeight: "447px",
         border: "0",
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "space-between",
         marginTop: "20px",
-        marginBottom: "300px",
+        marginBottom: "20px",
+        flexDirection: props.reverse ? "row-reverse" : "row",
       }}
     >
-      <Divider />
+      {/* <Divider /> */}
       <Card
         elevation={0}
         sx={{
@@ -61,27 +63,32 @@ export default function TemplateCard(props) {
             justifyContent: "center",
           }}
         >
-          <Button
-            style={{
-              minWidth: "313px",
-              minHeight: "40px",
-              marginBottom: "40px",
-              boxShadow: "5px 5px 5px grey",
-            }}
-            variant="contained"
-            borderRadius="12"
-            size="extraLarge"
-            display="flex"
-          >
-            {props.buttonText}
-          </Button>
+          {props.buttonText && (
+            <Button
+              style={{
+                minWidth: "313px",
+                minHeight: "40px",
+                marginBottom: "40px",
+                boxShadow: "5px 5px 5px grey",
+              }}
+              variant="contained"
+              borderRadius="12"
+              size="extraLarge"
+              display="flex"
+            >
+              {props.buttonText}
+            </Button>
+          )}
         </CardActions>
       </Card>
+
       <Card
         elevation={0}
         sx={{
           maxWidth: 591,
           maxHeight: 475,
+          flexBasis: "50%",
+          alignSelf: "center",
         }}
       >
         <CardContent>
@@ -96,16 +103,6 @@ export default function TemplateCard(props) {
             align="left"
           >
             {props.CardContentHeaderFirstLine}
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Playfair Display",
-              fontWeight: "400",
-              fontSize: "40px",
-            }}
-            align="left"
-          >
-            {props.CardContentHeaderSecondLine}
           </Typography>
         </CardContent>
         <CardContent>
@@ -167,6 +164,7 @@ export default function TemplateCard(props) {
           </Typography>
         </CardContent>
       </Card>
+      {props.children}
     </Paper>
   );
 }

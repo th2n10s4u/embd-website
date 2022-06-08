@@ -6,6 +6,7 @@ import { MainCarousel } from "./assets/components/Carousel";
 import TemplateCard from "./assets/components/TemplateCard";
 import "./App.css";
 import FormCard from "./assets/components/FormCard";
+import Testimonials from "./assets/components/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MainCarousel />
       <Main />
       <FormCard />
+      <Testimonials />
       <Footer />
     </div>
   );
