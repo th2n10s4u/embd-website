@@ -1,18 +1,5 @@
 import * as React from "react";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  Container,
-  Avatar,
-  Button,
-  Tooltip,
-  MenuItem,
-  Fab,
-} from "@mui/material";
+import { AppBar, Box, Toolbar, Typography, Button, Fab } from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";

@@ -23,6 +23,10 @@ Exported images from figma to the ^ images folder
 
 TODO: 
 
+Set a fixed width to a box around the form and text and center it. 
+
+
+
 Look at material-ui documentation to see how navbar buttons are implemented 
     mui's navbar look like they're made for app development > web. 
     

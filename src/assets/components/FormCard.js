@@ -25,31 +25,37 @@ export default function FormCard() {
         }}
       >
         <TemplateCard
+          sx={{ maxWidth: "313px" }}
           img={WoodsDance}
           CardContentHeaderFirstLine={
             <React.Fragment>
-              Schedule Your First
-              <Typography
-                sx={{
-                  fontFamily: "Playfair Display",
-                  fontWeight: "400",
-                  fontSize: "32px",
-                  lineHeight: "20px",
-                  marginTop: "20px",
-                  marginBottom: "20px",
-                  textAlign: "left",
-                  //   minWidth: "591px",
-                }}
-                // textAlign="justfy"
-              >
-                Lesson Today! (center over form)
-              </Typography>
-              {<ContactForm />}
+              <Box sx={{ maxWidth: "313px", textAlign: "center" }}>
+                Schedule Your First
+                <Typography
+                  sx={{
+                    fontFamily: "Playfair Display",
+                    fontWeight: "400",
+                    fontSize: "32px",
+                    lineHeight: "20px",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                    textAlign: "center",
+                    alignItems: "center",
+                  }}
+                  // textAlign="center"
+                >
+                  Lesson Today!
+                </Typography>
+                {<ContactForm />}
+              </Box>
             </React.Fragment>
           }
           reverse={true}
         />
+        {/* </Card> */}
       </Box>
     </div>
   );
 }
+
+// TODO: Align the Header and the Form centered with the above column. Maybe adjust the sizing on the Template card?

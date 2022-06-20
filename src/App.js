@@ -13,6 +13,8 @@ function App() {
     <div className="container">
       <Navbar />
       <MainCarousel />
+      {/* <hr /> */}
+      {/* <Footer /> */}
       <Main />
       <FormCard />
       <Testimonials />

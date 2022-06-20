@@ -1,11 +1,10 @@
 import React from "react";
-import { Paper, Container, Fab, Button } from "@mui/material";
+import { Paper } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import BeachPhoto from "../images/Carousel-Beach-Image.png";
 import ForestPhoto from "../images/Carousel-Forest-Couple-Image.png";
 import GroupDance from "../images/Carousel-Group-Dance.png";
 import WeddingDance from "../images/Carousel-Weeding-Image.png";
-import { textAlign } from "@mui/system";
 
 export function MainCarousel(props) {
   var items = [
@@ -23,10 +22,9 @@ export function MainCarousel(props) {
     },
   ];
 
+  console.log(items);
   return (
-    <Carousel
-      sx={{ height: "100", width: "100%", justifyContent: "space-between" }}
-    >
+    <Carousel>
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
@@ -36,11 +34,23 @@ export function MainCarousel(props) {
 <hr />;
 function Item({ item }) {
   return (
-    // <Paper sx = {{ height: "100"}}>
     <Paper
-      sx={{ minWidth: "1200px", justifyContent: "center", display: "flex" }}
+      sx={{
+        minWidth: "1440px",
+        height: "100%",
+        // minWidth: "2000px",
+        // minHeight: "600px",
+        // justifyContent: "space-around",
+        // alignItems: "center",
+        // display: "flex",
+      }}
     >
-      <img src={item.imgurl} width="100%"></img>
+      <img
+        src={item.imgurl}
+        alt="CarouselImages"
+        // width="1440px"
+        // height="600px"
+      ></img>
     </Paper>
   );
 }
