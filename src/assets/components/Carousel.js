@@ -34,23 +34,10 @@ export function MainCarousel(props) {
 <hr />;
 function Item({ item }) {
   return (
-    <Paper
-      sx={{
-        minWidth: "1440px",
-        height: "100%",
-        // minWidth: "2000px",
-        // minHeight: "600px",
-        // justifyContent: "space-around",
-        // alignItems: "center",
-        // display: "flex",
-      }}
-    >
-      <img
-        src={item.imgurl}
-        alt="CarouselImages"
-        // width="1440px"
-        // height="600px"
-      ></img>
+    <Paper elevation={0} sx={{}}>
+      <img src={item.imgurl} alt="CarouselImages" width="100%"></img>
     </Paper>
   );
 }
+
+// TODO: Report but -On load carousel is collapsed.
