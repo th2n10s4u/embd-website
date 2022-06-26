@@ -1,39 +1,186 @@
 import React from "react";
-import { Paper, Card, Box, CardContent, Typography } from "@mui/material";
+import {
+  Paper,
+  Card,
+  Image,
+  Box,
+  Container,
+  CardContent,
+  Grid,
+  Typography,
+} from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import embdLogo from "../images/embd-logo-black.png";
+import ContactForm from "./ContactForm";
+import { FacebookOutlined } from "@mui/icons-material";
+
 export default function Footer() {
   return (
-    <Box
-      elevation={0}
-      sx={{
-        width: "100%",
-        height: "800px",
-        background: "#B5BECB",
-        display: "flex",
-        flexDirection: "row",
-      }}
-    >
-      <Paper
+    <Grid Container>
+      <Box
         elevation={0}
         sx={{
-          display: "flex",
-          justifyContent: "center",
           width: "100%",
-          height: "600px",
+          height: "100px",
+          background: "#B5BECB",
+          display: "flex",
+          flexDirection: "row",
+        }}
+      >
+        <React.Fragment>
+          <Paper
+            elevation={0}
+            sx={{
+              display: "flex",
+              flexDirection: "center",
+              justifyContent: "center",
+              width: "100%",
+              height: "100px",
+              background: "#B5BECB",
+            }}
+          >
+            <img src={embdLogo} alt="dance logo" height="100px" />
+          </Paper>
+          <Box></Box>
+          {/* <Paper
+            sx={{
+              flexGrow: 1,
+              background: "grey",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Typography>Book Today With Form and button underneath</Typography>
+            <Typography>About Services Contact us Phone number</Typography>
+            <Typography>Social Media Yelp Facebook Meetup</Typography>
+          </Paper> */}
+        </React.Fragment>
+      </Box>
+      <Paper
+        sx={{
+          background: "grey",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-around",
+          alignItems: "center",
+          height: "500px",
           background: "#B5BECB",
         }}
       >
-        <CardContent
+        <Typography
           sx={{
             display: "flex",
-            justfiyContent: "center",
-            height: "58px",
-            width: "338px",
+            flexDirection: "column",
+            fontFamily: "Poppins",
+            fontWeight: "400",
+            fontSize: "50px",
+            lineHeight: "20px",
+            marginTop: "20px",
+            marginBottom: "20px",
+            textAlign: "center",
+            alignItems: "center",
           }}
-        />
-        <img src={embdLogo} alt="dance logo" />
+          // textAlign="center"
+        >
+          Book Now!
+          {<ContactForm />}
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            About
+          </Typography>
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            Services
+          </Typography>
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            Contact Us
+          </Typography>
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            Call Us Today!
+          </Typography>
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+          >
+            123-456-7890
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Typography>Social Media </Typography>
+          {<FacebookIcon />}
+          <Typography>Social Media Yelp Facebook Meetup href column</Typography>
+        </Box>
       </Paper>
-    </Box>
+    </Grid>
   );
 }
 

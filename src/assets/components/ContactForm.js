@@ -10,9 +10,27 @@ export default function ContactForm() {
         maxWidth: "313px",
       }}
     >
-      <TextField label={"NAME"} id="FormName" margin="normal" />
-      <TextField label={"EMAIL"} id="FormEmail" margin="normal" />
-      <TextField label={"PHONE"} id="FormPhone" margin="normal" />
+      <TextField
+        label={"NAME"}
+        id="FormName"
+        margin="normal"
+        variant="filled"
+        autoComplete="none"
+      />
+      <TextField
+        label={"EMAIL"}
+        id="FormEmail"
+        margin="normal"
+        variant="filled"
+        autoComplete="none"
+      />
+      <TextField
+        label={"PHONE"}
+        id="FormPhone"
+        margin="normal"
+        variant="filled"
+        autoComplete="none"
+      />
       <Button
         style={{
           minWidth: "313px",
@@ -25,6 +43,7 @@ export default function ContactForm() {
         size="extraLarge"
         display="flex"
         boxShadow="9px 9px 6px grey"
+        background="#fffff"
       >
         Submit
       </Button>
