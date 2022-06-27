@@ -9,10 +9,11 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import embdLogo from "../images/embd-logo-black.png";
 import ContactForm from "./ContactForm";
-import { FacebookOutlined } from "@mui/icons-material";
+import FacebookLogo from "../images/SocialLogos/FacebookLogo.svg";
+import YelpLogo from "../images/SocialLogos/YelpLogo.svg";
+import MeetupLogo from "../images/SocialLogos/MeetupLogo.svg";
 
 export default function Footer() {
   return (
@@ -174,10 +175,59 @@ export default function Footer() {
             123-456-7890
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <Typography>Social Media </Typography>
-          {<FacebookIcon />}
-          <Typography>Social Media Yelp Facebook Meetup href column</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "50px",
+              lineHeight: "20px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              textAlign: "center",
+              alignItems: "center",
+            }}
+            textAlign="center"
+          >
+            Social Media
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+            margin="10px"
+          >
+            <img src={YelpLogo} alt="yelp icon" height="100px" />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+            margin="10px"
+          >
+            <img src={FacebookLogo} alt="facebook icon" height="50px" />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+            margin="10px"
+          >
+            <img src={MeetupLogo} alt="meetup icon" height="70px" />
+          </Box>
         </Box>
       </Paper>
     </Grid>
