@@ -53,7 +53,6 @@ export default function Testimonials(props) {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-
             marginTop: "47px",
             boxShadow: "9px 9px 6px grey",
             borderRadius: 27,
@@ -64,6 +63,8 @@ export default function Testimonials(props) {
             sx={{
               display: "flex",
               justifyContent: "center",
+              width: "390px",
+              height: "590px",
               alignItems: "center",
             }}
           >
@@ -109,7 +110,15 @@ export default function Testimonials(props) {
             background: "#DEE2E9",
           }}
         >
-          <CardContent sx={{ display: "flex" }}>
+          <CardContent
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              width: "390px",
+              height: "590px",
+              alignItems: "center",
+            }}
+          >
             <Typography
               ClassName="CardHeaderText"
               sx={{
@@ -146,7 +155,15 @@ export default function Testimonials(props) {
             background: "#DEE2E9",
           }}
         >
-          <CardContent sx={{ display: "flex" }}>
+          <CardContent
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              width: "390px",
+              height: "590px",
+              alignItems: "center",
+            }}
+          >
             <Typography
               ClassName="CardHeaderText"
               sx={{

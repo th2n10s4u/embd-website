@@ -9,6 +9,7 @@ import FormCard from "./assets/components/FormCard";
 import Testimonials from "./assets/components/Testimonials";
 import Specialties from "./assets/components/Specialties";
 import Spacer from "./assets/components/Spacer";
+import SocialDance from "./assets/components/SocialDance.js";
 
 function App() {
   useEffect(() => {
@@ -19,13 +20,8 @@ function App() {
     <div className="container">
       <Navbar />
       <MainCarousel />
-      {/* <hr /> */}
-      <Main />
-      <FormCard />
-      <Testimonials />
-      <Specialties />
+      <SocialDance />
       <Footer />
-      <Spacer />
     </div>
   );
 }

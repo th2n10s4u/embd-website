@@ -19,7 +19,7 @@ export default function TemplateCard(props) {
       ClassName="TemplatePaper"
       elevation={0}
       sx={{
-        minWidth: "1200px",
+        minWidth: "50%", //"1200px", // Play with sizing (100% is too wide)
         minHeight: "447px",
         border: "0",
         display: "flex",
