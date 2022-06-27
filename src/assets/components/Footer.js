@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Paper,
-  Card,
-  Image,
-  Box,
-  Container,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Paper, Box, Grid, Typography } from "@mui/material";
 import embdLogo from "../images/embd-logo-black.png";
 import ContactForm from "./ContactForm";
 import FacebookLogo from "../images/SocialLogos/FacebookLogo.svg";
@@ -229,6 +220,29 @@ export default function Footer() {
             <img src={MeetupLogo} alt="meetup icon" height="70px" />
           </Box>
         </Box>
+      </Paper>
+      <Paper
+        elevation={4}
+        sx={{
+          display: "flex",
+          flexDirection: "center",
+          justifyContent: "center",
+          width: "100%",
+          height: "50px",
+          background: "#000000",
+        }}
+      >
+        <Typography
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            fontFamily: "Poppins",
+            color: "white",
+          }}
+        >
+          Copyright 2020-2022 Evelyn Meinz Ballroom Dance | Design: Tim Hughes
+        </Typography>
       </Paper>
     </Grid>
   );
