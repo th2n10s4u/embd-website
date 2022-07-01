@@ -29,7 +29,38 @@ export default function SocialDance() {
         }}
       >
         <Paper
-          elevation={3}
+          elevation={1}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+
+            width: "800px",
+            height: "300px",
+          }}
+        >
+          {
+            <TemplateCard CardContentHeaderFirstLine="Our Current class schedule is as follows:" />
+          }
+          <Typography
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          ></Typography>
+        </Paper>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Paper
+          elevation={1}
           sx={{
             display: "flex",
             flexDirection: "column",
