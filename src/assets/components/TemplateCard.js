@@ -41,24 +41,23 @@ export default function TemplateCard(props) {
           marginTop: "40px",
         }}
       >
-        {props.image ? 
-          <CardMedia
-            elevation={0}
-            sx={{
-              component: "img",
-              border: "0",
-              height: "350px",
-              width: "350px",
-              margin: "12px",
-              marginTop: "0px",
-              marginBottom: "16px",
-              boxShadow: "9px 9px 6px grey",
-              borderRadius: 12,
-            }}
-            image={props.img}
-            alt="image-goes-here"
-          />: (
-        )}
+        <CardMedia
+          elevation={0}
+          sx={{
+            component: "img",
+            border: "0",
+            height: "350px",
+            width: "350px",
+            margin: "12px",
+            marginTop: "0px",
+            marginBottom: "16px",
+            boxShadow: "9px 9px 6px grey",
+            borderRadius: 12,
+          }}
+          image={props.img}
+          alt="image-goes-here"
+        />
+
         <CardActions
           sx={{
             display: "flex",
