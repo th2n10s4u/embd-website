@@ -24,8 +24,20 @@ export default function Specialties() {
           CardContentBodySentenceOne="At Evelyn Meinz Ballroom Dance we teach anything you can do with
                 a partner."
           CardContentBodySentenceTwo="We offer a wide variety of dances with personalized programs to ensure that your individual goals are met."
-          CardContentBodySentenceThree="Add bullets here by creating a {bull} fn somehow using Lora text"
         />
+        <Typography>
+          <ListItem sx={{ display: "list-item" }}>Tango</ListItem>
+          <ListItem sx={{ display: "list-item" }}>Salsa</ListItem>
+          <ListItem sx={{ display: "list-item" }}>Foxtrot</ListItem>
+          <ListItem sx={{ display: "list-item" }}>Waltz</ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+          <ListItem sx={{ display: "list-item" }}></ListItem>
+        </Typography>
         {/* <ListItem sx={{ display: "list-item" }}></ListItem>  */}
         {/* List items don't have a bulleted UL option available. Maybe import a bulliet PNG and attach it in front of each word? */}
       </Box>
