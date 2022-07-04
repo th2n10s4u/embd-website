@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import TemplateCard from "./TemplateCard";
+import TemplateTextCard from "./TemplateTextCard";
 import UnderArmTurn from "../images/Couple-dance-image.png";
 
 export default function SocialDance() {
@@ -40,7 +41,7 @@ export default function SocialDance() {
           }}
         >
           {
-            <TemplateCard CardContentHeaderFirstLine="Our Current class schedule is as follows:" />
+            <TemplateTextCard CardContentHeaderFirstLine="Words go here and more words as well" />
           }
           <Typography
             sx={{
