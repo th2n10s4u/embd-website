@@ -9,7 +9,7 @@ import {
   ListItem,
 } from "@mui/material";
 
-export default function TemplateTextCard() {
+export default function TemplateTextCard(props) {
   return (
     <Paper
       sx={{
