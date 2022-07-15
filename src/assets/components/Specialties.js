@@ -26,20 +26,33 @@ export default function Specialties() {
                 <Box
                   sx={{
                     display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "right",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <Typography>
-                    <ListItem sx={{ display: "list-item" }}>Waltz</ListItem>
+                  <Typography
+                    sx={{
+                      fontFamily: "Lora",
+                      fontSize: "20px",
+                      lineHeight: "1",
+                    }}
+                  >
+                    <ListItem sx={{ display: "list-item", marginBottom: "0" }}>
+                      Waltz
+                    </ListItem>
                     <ListItem sx={{ display: "list-item" }}>Tango</ListItem>
                     <ListItem sx={{ display: "list-item" }}>Foxtrot</ListItem>
                     <ListItem sx={{ display: "list-item" }}>
-                      Viennese Waltz
+                      Viennese-Waltz
                     </ListItem>
                     <ListItem sx={{ display: "list-item" }}>Hustle</ListItem>
                   </Typography>
-                  <Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: "Lora",
+                      fontSize: "20px",
+                      lineHeight: "1",
+                    }}
+                  >
                     <ListItem sx={{ display: "list-item" }}>Salsa</ListItem>
                     <ListItem sx={{ display: "list-item" }}>Rumba</ListItem>
                     <ListItem sx={{ display: "list-item" }}>Bachata</ListItem>
