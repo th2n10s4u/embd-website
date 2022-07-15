@@ -13,48 +13,40 @@ export default function Specialties() {
           justifyContent: "center",
         }}
       >
-        <React.Fragment>
-          <Box>
-            <TemplateCard
-              img={LatinFeet}
-              CardContentHeaderFirstLine={
-                <React.Fragment>
-                  Our Specialties:
-                  <Typography></Typography>
-                </React.Fragment>
-              }
-              CardContentBodySentenceOne="At Evelyn Meinz Ballroom Dance we teach anything you can do with
+        <Box>
+          <TemplateCard
+            img={LatinFeet}
+            CardContentHeaderFirstLine="Our Specialties:"
+            CardContentBodySentenceOne="At Evelyn Meinz Ballroom Dance we teach anything you can do with
             a partner."
-              CardContentBodySentenceTwo="We offer a wide variety of dances with personalized programs to ensure that your individual goals are met."
-            />
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "right",
-              }}
-            >
-              <Typography>
-                <ListItem sx={{ display: "list-item" }}>Waltz</ListItem>
-                <ListItem sx={{ display: "list-item" }}>Tango</ListItem>
-                <ListItem sx={{ display: "list-item" }}>Foxtrot</ListItem>
-                <ListItem sx={{ display: "list-item" }}>
-                  Viennese Waltz
-                </ListItem>
-                <ListItem sx={{ display: "list-item" }}>Hustle</ListItem>
-              </Typography>
-              <Typography>
-                <ListItem sx={{ display: "list-item" }}>Salsa</ListItem>
-                <ListItem sx={{ display: "list-item" }}>Rumba</ListItem>
-                <ListItem sx={{ display: "list-item" }}>Bachata</ListItem>
-                <ListItem sx={{ display: "list-item" }}>Merengue</ListItem>
-                <ListItem sx={{ display: "list-item" }}>
-                  You name it - we teach it
-                </ListItem>
-              </Typography>
-            </Box>
+            CardContentBodySentenceTwo="We offer a wide variety of dances with personalized programs to ensure that your individual goals are met."
+          />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "right",
+            }}
+          >
+            <Typography>
+              <ListItem sx={{ display: "list-item" }}>Waltz</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Tango</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Foxtrot</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Viennese Waltz</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Hustle</ListItem>
+            </Typography>
+            <Typography>
+              <ListItem sx={{ display: "list-item" }}>Salsa</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Rumba</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Bachata</ListItem>
+              <ListItem sx={{ display: "list-item" }}>Merengue</ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                You name it - we teach it
+              </ListItem>
+            </Typography>
           </Box>
-        </React.Fragment>
+        </Box>
+
         {/* <ListItem sx={{ display: "list-item" }}></ListItem>  */}
         {/* List items don't have a bulleted UL option available. Maybe import a bulliet PNG and attach it in front of each word? */}
       </Box>
