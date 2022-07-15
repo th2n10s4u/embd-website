@@ -20,6 +20,7 @@ function App() {
     <div className="container">
       <Navbar />
       <MainCarousel />
+      <Main />
       <Specialties />
       <SocialDance />
       <Footer />
