@@ -21,38 +21,20 @@ export default function SocialDance() {
           CardContentBodySentenceTwo="Group classes are limited in size, so please call or text us today to save your spot!"
         />
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Paper
-          elevation={1}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+      <React.Fragment>
+        <TemplateTextCard
+          TextCardHeader="Our current class schedule is as follows:"
+          ListText="Wednesday: 6:00pm Beginner County Western 2-Step"
+          ListText="Wednesday: 6:45 Intro to Swing"
+          ListText="Wednesday: 7:30pm Beginner Argentine Tango"
+          ListText="Thursday: 6:00pm Level 1 Ballroom"
+          ListText="Thursday: 7:30pm Level 1 Salsa"
+          ListText="Friday: 6:00pm Beginner Salsa"
+          ListText="Friday: 6:45pm Beginner Ballroom"
+        />
+      </React.Fragment>
 
-            width: "800px",
-            height: "300px",
-          }}
-        >
-          {
-            <TemplateTextCard CardContentHeaderFirstLine="Words go here and more words as well" />
-          }
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          ></Typography>
-        </Paper>
-      </Box>
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -81,7 +63,17 @@ export default function SocialDance() {
             The paper doesn't have a border on this for some reason
           </Typography>
         </Paper>
-      </Box>
+      </Box> */}
     </React.Fragment>
   );
+}
+
+{
+  /* <ListItem>Wednesday: 6:00pm Beginner County Western 2-Step</ListItem>
+        <ListItem></ListItem>
+        <ListItem> </ListItem>
+        <ListItem></ListItem>
+        <ListItem></ListItem>
+        <ListItem></ListItem>
+        <ListItem></ListItem> */
 }
