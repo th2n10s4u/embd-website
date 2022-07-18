@@ -19,7 +19,7 @@ export default function TemplateTextCard(props) {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        background: "#DEE2E9",
+        // background: "#DEE2E9",
       }}
     >
       <Card
@@ -47,32 +47,36 @@ export default function TemplateTextCard(props) {
           </Typography>
           {/* {props.TextCardHeader} */}
         </CardContent>
-      </Card>
-      <Typography
-        sx={{
-          fontFamily: "Playfair Display",
-          fontWeight: "400",
-          fontSize: "32px",
-          lineHeight: "20px",
-          marginBottom: "20px",
-        }}
-      >
-        {/* Our Current class schedule is as follows: */}
-      </Typography>
-
-      <CardContent>
         <Typography
-          ClassName="ListText"
           sx={{
             fontFamily: "Playfair Display",
             fontWeight: "400",
-            fontSize: "24px",
-            lineHeight: "18px",
+            fontSize: "32px",
+            lineHeight: "20px",
+            marginBottom: "20px",
           }}
         >
-          <ListItem>{props.ListText}</ListItem>
+          {/* Our Current class schedule is as follows: */}
         </Typography>
-      </CardContent>
+
+        <CardContent>
+          <Typography
+            ClassName="ListText"
+            sx={{
+              fontFamily: "Playfair Display",
+              fontWeight: "400",
+              fontSize: "24px",
+              lineHeight: "18px",
+            }}
+          >
+            <List>
+              {props.ListText.map((text) => (
+                <ListItem>{text}</ListItem>
+              ))}
+            </List>
+          </Typography>
+        </CardContent>
+      </Card>
     </Paper>
   );
 }

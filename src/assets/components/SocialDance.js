@@ -24,13 +24,15 @@ export default function SocialDance() {
       <React.Fragment>
         <TemplateTextCard
           TextCardHeader="Our current class schedule is as follows:"
-          ListText="Wednesday: 6:00pm Beginner County Western 2-Step"
-          ListText="Wednesday: 6:45 Intro to Swing"
-          ListText="Wednesday: 7:30pm Beginner Argentine Tango"
-          ListText="Thursday: 6:00pm Level 1 Ballroom"
-          ListText="Thursday: 7:30pm Level 1 Salsa"
-          ListText="Friday: 6:00pm Beginner Salsa"
-          ListText="Friday: 6:45pm Beginner Ballroom"
+          ListText={[
+            "Wednesday: 6:00pm Beginner County Western 2-Step",
+            "Wednesday: 6:45 Intro to Swing",
+            "Wednesday: 7:30pm Beginner Argentine Tango",
+            "Thursday: 6:00pm Level 1 Ballroom",
+            "Thursday: 7:30pm Level 1 Salsa",
+            "Friday: 6:00pm Beginner Salsa",
+            "Friday: 6:45pm Beginner Ballroom",
+          ]}
         />
       </React.Fragment>
 
