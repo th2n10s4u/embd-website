@@ -17,9 +17,9 @@ export default function TemplateTextCard(props) {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        // background: "#DEE2E9",
+        // justifyContent: "center",    Not changing the styling
+        // alignItems: "center",        Not changing the styling
+        // background: "#DEE2E9",       Not changing the styling
       }}
     >
       <Card
@@ -29,39 +29,29 @@ export default function TemplateTextCard(props) {
           maxHeight: 475,
           flexBasis: "50%",
           alignSelf: "center",
+          textAlign: "center",
           background: "#DEE2E9",
           marginBottom: "16px",
           boxShadow: "9px 9px 6px grey",
           borderRadius: "12px",
         }}
       >
-        <CardContent>
-          <Typography
-            ClassName="TextCardHeader"
-            sx={{
-              fontFamily: "Playfair Display",
-              fontWeight: "400",
-              fontSize: "32px",
-              lineHeight: "20px",
-            }}
-            align="left"
-          >
-            Our Current class schedule is as follows:
-          </Typography>
-          {/* {props.TextCardHeader} */}
-        </CardContent>
-        <Typography
-          sx={{
-            fontFamily: "Playfair Display",
-            fontWeight: "400",
-            fontSize: "32px",
-            lineHeight: "20px",
-            marginBottom: "20px",
-          }}
-        >
-          {/* Our Current class schedule is as follows: */}
-        </Typography>
-
+        {props.TextCardHeader && (
+          <CardContent>
+            <Typography
+              ClassName="TextCardHeader"
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "400",
+                fontSize: "32px",
+                lineHeight: "20px",
+              }}
+              // align="left"     Not changing the styling
+            >
+              {props.TextCardHeader}
+            </Typography>
+          </CardContent>
+        )}
         <CardContent>
           <Typography
             ClassName="ListText"
@@ -70,6 +60,9 @@ export default function TemplateTextCard(props) {
               fontWeight: "400",
               fontSize: "24px",
               lineHeight: "18px",
+              display: "flex",
+              flexDirection: "row",
+              alignText: "right",
             }}
           >
             <List>
@@ -82,17 +75,6 @@ export default function TemplateTextCard(props) {
       </Card>
     </Paper>
   );
-}
-
-//List Item for schedule
-{
-  /* <ListItem>Wednesday: 6:00pm Beginner County Western 2-Step</ListItem>
-        <ListItem>Wednesday: 6:45 Intro to Swing</ListItem>
-        <ListItem> Wednesday: 7:30pm Beginner Argentine Tango</ListItem>
-        <ListItem>Thursday: 6:00pm Level 1 Ballroom</ListItem>
-        <ListItem>Thursday: 7:30pm Level 1 Salsa</ListItem>
-        <ListItem>Friday: 6:00pm Beginner Salsa</ListItem>
-        <ListItem>Friday: 6:45pm Beginner Ballroom</ListItem> */
 }
 
 //TODO Change minW minH of paper
