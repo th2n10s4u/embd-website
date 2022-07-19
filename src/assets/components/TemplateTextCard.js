@@ -31,6 +31,9 @@ export default function TemplateTextCard(props) {
           flexBasis: "50%",
           alignSelf: "center",
           textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
           background: "#DEE2E9",
           marginBottom: "25px",
           boxShadow: "9px 9px 6px grey",
@@ -63,6 +66,7 @@ export default function TemplateTextCard(props) {
               lineHeight: "18px",
               display: "flex",
               flexDirection: "row",
+              justifyContent: "center",
               alignText: "center",
             }}
           >

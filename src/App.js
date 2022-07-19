@@ -10,6 +10,7 @@ import Testimonials from "./assets/components/Testimonials";
 import Specialties from "./assets/components/Specialties";
 import Spacer from "./assets/components/Spacer";
 import SocialDance from "./assets/components/SocialDance.js";
+import PrivateLessons from "./assets/components/PrivateLessons";
 
 function App() {
   useEffect(() => {
@@ -18,13 +19,14 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar />
-      <MainCarousel />
-      <Testimonials />
+      {/* <Navbar /> */}
+      {/* <MainCarousel /> */}
+      <PrivateLessons />
       <SocialDance />
+      {/* <Testimonials />
       <Main />
       <Specialties />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
