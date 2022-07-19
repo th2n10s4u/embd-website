@@ -21,71 +21,29 @@ export default function SocialDance() {
           CardContentBodySentenceTwo="Group classes are limited in size, so please call or text us today to save your spot!"
         />
       </Box>
-      <React.Fragment>
-        <TemplateTextCard
-          TextCardHeader="Our Current class schedule is as follows:"
-          ListText={[
-            "Wednesday: 6:00pm Beginner County Western 2-Step",
-            "Wednesday: 6:45 Intro to Swing",
-            "Wednesday: 7:30pm Beginner Argentine Tango",
-            "Thursday: 6:00pm Level 1 Ballroom",
-            "Thursday: 7:30pm Level 1 Salsa",
-            "Friday: 6:00pm Beginner Salsa",
-            "Friday: 6:45pm Beginner Ballroom",
-          ]}
-        />
 
-        <TemplateTextCard
-          ListText={[
-            "Attire: Dress shoes with leather soles, dance shoes, or if you don't have either of those, shoes that won't slide off of your feet",
-            "Pricing: $200.00 per person, per class, or purchase a package of 10 classes for $1000",
-            "Location: SR municipal area",
-            "RSVP: Meetup.com/embd or",
-            "Call: 123-456-7890",
-          ]}
-        />
-      </React.Fragment>
+      <TemplateTextCard
+        TextCardHeader="Our Current class schedule is as follows:"
+        ListText={[
+          "Wednesday: 6:00pm Beginner County Western 2-Step",
+          "Wednesday: 6:45 Intro to Swing",
+          "Wednesday: 7:30pm Beginner Argentine Tango",
+          "Thursday: 6:00pm Level 1 Ballroom",
+          "Thursday: 7:30pm Level 1 Salsa",
+          "Friday: 6:00pm Beginner Salsa",
+          "Friday: 6:45pm Beginner Ballroom",
+        ]}
+      />
 
-      {/* <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Paper
-          elevation={1}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-
-            width: "800px",
-            height: "300px",
-          }}
-        >
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-          >
-            The paper doesn't have a border on this for some reason
-          </Typography>
-        </Paper>
-      </Box> */}
+      <TemplateTextCard
+        ListText={[
+          "Attire: Dress shoes with leather soles, dance shoes, or if you don't have either of those, shoes that won't slide off of your feet",
+          "Pricing: $200.00 per person, per class, or purchase a package of 10 classes for $1000",
+          "Location: SR municipal area",
+          "RSVP: Meetup.com/embd or",
+          "Call: 123-456-7890",
+        ]}
+      />
     </React.Fragment>
   );
-}
-
-{
-  /* <ListItem>Wednesday: 6:00pm Beginner County Western 2-Step</ListItem>
-        <ListItem></ListItem>
-        <ListItem> </ListItem>
-        <ListItem></ListItem>
-        <ListItem></ListItem>
-        <ListItem></ListItem>
-        <ListItem></ListItem> */
 }

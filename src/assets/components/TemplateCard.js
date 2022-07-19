@@ -26,7 +26,7 @@ export default function TemplateCard(props) {
         justifyContent: "space-between",
         marginTop: "20px",
         marginBottom: "20px",
-        flexDirection: props.reverse ? "row-reverse" : "row",
+        flexDirection: props.reverse ? "row-reverse" : "row", //conditional operator
       }}
     >
       {/* <Divider /> */}
