@@ -13,6 +13,7 @@ export default function TemplateTextCard(props) {
   return (
     <Paper
       ClassName="TemplateText"
+      elevation={0}
       sx={{
         width: "100%",
         display: "flex",
@@ -31,7 +32,7 @@ export default function TemplateTextCard(props) {
           alignSelf: "center",
           textAlign: "center",
           background: "#DEE2E9",
-          marginBottom: "16px",
+          marginBottom: "25px",
           boxShadow: "9px 9px 6px grey",
           borderRadius: "12px",
         }}
