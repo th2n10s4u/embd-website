@@ -30,6 +30,9 @@ export default function TemplateTextCard(props) {
           flexBasis: "50%",
           alignSelf: "center",
           background: "#DEE2E9",
+          marginBottom: "16px",
+          boxShadow: "9px 9px 6px grey",
+          borderRadius: "12px",
         }}
       >
         <CardContent>
