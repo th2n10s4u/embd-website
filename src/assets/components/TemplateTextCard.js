@@ -62,7 +62,7 @@ export default function TemplateTextCard(props) {
               lineHeight: "18px",
               display: "flex",
               flexDirection: "row",
-              alignText: "right",
+              alignText: "center",
             }}
           >
             <List>

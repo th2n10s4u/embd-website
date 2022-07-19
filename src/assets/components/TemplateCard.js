@@ -86,8 +86,8 @@ export default function TemplateCard(props) {
       <Card
         elevation={0}
         sx={{
-          maxWidth: 591,
-          maxHeight: 475,
+          maxWidth: 650,
+          maxHeight: 550,
           flexBasis: "50%",
           alignSelf: "center",
         }}
