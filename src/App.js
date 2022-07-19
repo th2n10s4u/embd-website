@@ -11,6 +11,7 @@ import Specialties from "./assets/components/Specialties";
 import Spacer from "./assets/components/Spacer";
 import SocialDance from "./assets/components/SocialDance.js";
 import PrivateLessons from "./assets/components/PrivateLessons";
+import WeddingDance from "./assets/components/WeddingDance";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
     <div className="container">
       {/* <Navbar /> */}
       {/* <MainCarousel /> */}
+      <WeddingDance />
       <PrivateLessons />
       <SocialDance />
       {/* <Testimonials />
