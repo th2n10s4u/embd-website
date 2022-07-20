@@ -43,6 +43,7 @@ export default function SocialDance() {
           "RSVP: Meetup.com/embd or",
           "Call: 123-456-7890",
         ]}
+        centered={true}
       />
     </React.Fragment>
   );

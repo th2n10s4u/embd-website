@@ -85,6 +85,7 @@ export default function TemplateTextCard(props) {
                     display: "flex",
                     flexDirection: "column",
                     textAlign: props.centered ? "center" : "left", //conditional
+                    marginBottom: "-10px",
                   }}
                 >
                   {text}
