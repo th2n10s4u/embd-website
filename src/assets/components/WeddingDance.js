@@ -24,20 +24,34 @@ export default function SocialDance() {
       </Box>
 
       <TemplateTextCard
-        TextCardHeader="Pricing & Packaging"
+        TextCardHeader="One Sweet Day"
         ListText={[
-          "Amount is the same for an individual or a couple",
-          "Current prices are for the Santa Rosa location.",
-          "Additional charges may apply for drive time and floor rates at other studios. ",
+          "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style! ",
+          "$400K",
         ]}
       />
 
       <TemplateTextCard
+        TextCardHeader="Sweet and Simple."
         ListText={[
-          "Introduction Consultation: $35",
-          "45 Minute Private Lesson: $123",
-          "5 Pack of Lessons: $500",
-          "10 Pack of Lessons: $1000",
+          "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style!",
+          "$1125k",
+        ]}
+      />
+
+      <TemplateTextCard
+        TextCardHeader="Sweet and Splendid."
+        ListText={[
+          "It’s not about dancing. It’s about blowing the crowd away. Showstopping choreography. Moves that belong on television. After 15 lessons, this isn’t a first dance between man and wife - this is a declaration to the world: when the two of you are together, absolutely nothing is impossible.",
+          "Pricing Varies",
+        ]}
+      />
+
+      <TemplateTextCard
+        TextCardHeader="Sweet and Spectacular."
+        ListText={[
+          "Of course, sometimes everyone wants to get in on the good time. When the entire wedding party wants to get up and boogie, Sweet and Spectacular means the sky is the limit. If you have an idea, no matter how crazy, Evelyn Meinz will help you to make it a reality.",
+          "Pricing Varies",
         ]}
       />
     </React.Fragment>
