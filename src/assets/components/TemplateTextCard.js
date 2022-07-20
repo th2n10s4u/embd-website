@@ -26,7 +26,7 @@ export default function TemplateTextCard(props) {
       <Card
         elevation={0}
         sx={{
-          maxWidth: 700,
+          maxWidth: 1000, // Had it set to 700, Made it wider for Wedding Dance package pricing.
           maxHeight: 475,
           flexBasis: "50%",
           alignSelf: "center",
@@ -49,6 +49,7 @@ export default function TemplateTextCard(props) {
                 fontWeight: "400",
                 fontSize: "32px",
                 lineHeight: "20px",
+                marginBottom: "-40px",
               }}
               // align="left"     Not changing the styling
             >
@@ -63,16 +64,31 @@ export default function TemplateTextCard(props) {
               fontFamily: "Playfair Display",
               fontWeight: "400",
               fontSize: "24px",
-              lineHeight: "18px",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignText: "center",
+              lineHeight: "24px",
+              // display: "flex",
+              // flexDirection: "row",
+              // justifyContent: "center",
+              // alignText: "center",
             }}
           >
-            <List>
+            <List
+            // sx={{
+            //   display: "flex",
+            //   flexDirection: "column",
+            //   justifyContent: "center",
+            //   alignText: "center",
+            // }}
+            >
               {props.ListText.map((text) => (
-                <ListItem>{text}</ListItem>
+                <ListItem
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    textAlign: props.centered ? "center" : "left", //conditional
+                  }}
+                >
+                  {text}
+                </ListItem>
               ))}
             </List>
           </Typography>
