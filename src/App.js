@@ -9,7 +9,7 @@ import FormCard from "./assets/components/FormCard";
 import Testimonials from "./assets/components/Testimonials";
 import Specialties from "./assets/components/Specialties";
 import Spacer from "./assets/components/Spacer";
-import SocialDance from "./assets/components/SocialDance.js";
+import SocialDance from "./assets/components/SocialDance.js"; //error compiling from programpages folder
 import PrivateLessons from "./assets/components/PrivateLessons";
 import WeddingDance from "./assets/components/WeddingDance";
 
@@ -20,17 +20,21 @@ function App() {
 
   return (
     <div className="container">
-      {/* <Navbar /> */}
-      {/* <MainCarousel /> */}
-      <WeddingDance />
-      <PrivateLessons />
       <SocialDance />
-      {/* <Testimonials />
-      <Main />
-      <Specialties />
-      <Footer /> */}
     </div>
   );
 }
 
 export default App;
+
+{
+  /* <Navbar />
+      <MainCarousel />
+      <WeddingDance />
+      <PrivateLessons />
+      <SocialDance />
+      <Testimonials />
+      <Main />
+      <Specialties />
+      <Footer /> */
+}
