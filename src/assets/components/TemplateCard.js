@@ -97,7 +97,7 @@ export default function TemplateCard(props) {
             ClassName="CardHeaderText"
             sx={{
               fontFamily: "Playfair Display",
-              fontWeight: "400",
+              fontWeight: "600",
               fontSize: "32px",
               lineHeight: "20px",
             }}
