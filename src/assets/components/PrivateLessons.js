@@ -19,6 +19,7 @@ export default function SocialDance() {
           CardContentHeaderFirstLine="Private Lessons"
           CardContentBodySentenceOne="The most effective way to achieve your dancing goals is through taking private lessons. Although group classes are great for learning patterns and trying out new dances, private lesson focus on footwork, foot placement, timing, body movement, musicality, posture, styling, lead/follow technique and floor craft.  Whether you are preparing for a special event or you want stand out on the dance floor taking private lessons will give you the essential techniques and confidence to reach your dancing goals."
           CardContentBodySentenceTwo="Each private lesson is 45 minutes in duration  and is custom tailored to the each student unique needs and goals. Private lessons will get you out on the dance floor in the shortest amount of time possible while having a blast!"
+          boldHeader={true}
         />
       </Box>
 
@@ -30,7 +31,6 @@ export default function SocialDance() {
           "Additional charges may apply for drive time and floor rates at other studios. ",
         ]}
       />
-
       <TemplateTextCard
         ListText={[
           "Introduction Consultation: $35",
