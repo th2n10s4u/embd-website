@@ -20,6 +20,7 @@ export default function SocialDance() {
           CardContentBodySentenceOne="Beginning with a consultation, from song selection to choreography, whether you want the full Dirty Dancing or an elegant Gangnam Style, Evelyn Meinz herself will help you create this single, perfect moment: because the last thing you should have to worry about on your special day is looking good on the dance floor. Learning to dance together for the wedding creates a needed fun break in the wedding planning. A time for you to reconnect with your partner and most importantly-enjoy each other and have fun! Learning to dance together is a skill that will last- way after the cake is gone!"
           CardContentBodySentenceTwo="Beyond the all-important first dance, the studio can also lay the groundwork for fathers & daughters, mothers & sons, or even entire groups (Hello, wedding flash mob!)."
           CardContentBodySentenceThree="Here’s the point: it’s your perfect day. Whatever you want? We’ll ensure it happens."
+          boldHeader
         />
       </Box>
 

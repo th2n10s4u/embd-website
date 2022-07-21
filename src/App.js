@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="container">
       <Main />
-      <PrivateLessons />
+      <WeddingDance />
       <TeacherProfiles />
     </div>
   );
