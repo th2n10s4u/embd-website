@@ -130,8 +130,9 @@ export default function TemplateCard(props) {
               letterSpacing: "0",
               fontSize: "24px",
               marginBottom: "20px",
+              textAlign: props.centered ? "center" : "left", //conditional
             }}
-            align="left"
+            // align="left"
           >
             {props.CardContentBodySentenceOne}
           </Typography>
@@ -145,7 +146,6 @@ export default function TemplateCard(props) {
               fontSize: "24px",
               marginBottom: "20px",
             }}
-            align="left"
           >
             {props.CardContentBodySentenceTwo}
           </Typography>
