@@ -12,6 +12,7 @@ import Spacer from "./assets/components/Spacer";
 import SocialDance from "./assets/components/SocialDance.js"; //error compiling from programpages folder
 import PrivateLessons from "./assets/components/PrivateLessons";
 import WeddingDance from "./assets/components/WeddingDance";
+import TeacherProfiles from "./assets/components/TeacherProfiles";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <div className="container">
-      <SocialDance />
+      <Main />
+      <TeacherProfiles />
     </div>
   );
 }
