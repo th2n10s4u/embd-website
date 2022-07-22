@@ -143,6 +143,7 @@ export default function TemplateCard(props) {
           >
             {props.CardContentBody}
           </Typography>
+          {/*  */}
           <Typography
             sx={{
               fontFamily: "Poppins",
@@ -152,7 +153,7 @@ export default function TemplateCard(props) {
               letterSpacing: "0",
               fontSize: "24px",
               marginBottom: "20px",
-              textAlign: props.centered ? "center" : "left", //conditional
+              textAlign: props.centerBodyOne ? "center" : "left", //conditional
             }}
             // align="left"
           >
@@ -167,6 +168,7 @@ export default function TemplateCard(props) {
               letterSpacing: "0",
               fontSize: "24px",
               marginBottom: "20px",
+              textAlign: props.centerBodyTwo ? "center" : "left", //conditional
             }}
           >
             {props.CardContentBodySentenceTwo}
@@ -180,6 +182,7 @@ export default function TemplateCard(props) {
               letterSpacing: "0",
               fontSize: "24px",
               marginBottom: "20px",
+              textAlign: props.centerBodyThree ? "center" : "left", //conditional
             }}
             align="left"
           >
