@@ -83,6 +83,23 @@ export default function TemplateCard(props) {
         </CardActions>
       </Card>
 
+      {/* <Card
+        elevation={0}
+        sx={{
+          maxWidth: 1000, // Had it set to 700, Made it wider for Wedding Dance package pricing.
+          maxHeight: 475,
+          flexBasis: "50%",
+          alignSelf: "center",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          // background: props.background ? "#DEE2E9" : null, (MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
+          // marginBottom: "25px",
+          // boxShadow: "9px 9px 6px grey",
+          // borderRadius: "12px",
+        }}
+      > */}
       <Card
         elevation={0}
         sx={{
@@ -90,6 +107,11 @@ export default function TemplateCard(props) {
           maxHeight: 550,
           flexBasis: "50%",
           alignSelf: "center",
+          marginBottom: "25px",
+          //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
+          background: props.background ? "#DEE2E9" : null,
+          boxShadow: props.shadow ? "9px 9px 6px grey" : null,
+          borderRadius: props.radius ? "12px" : null,
         }}
       >
         <CardContent>
@@ -100,8 +122,8 @@ export default function TemplateCard(props) {
               fontWeight: props.boldHeader ? "600" : "400",
               fontSize: "32px",
               lineHeight: "20px",
+              textAlign: props.centerHeader ? "center" : "left",
             }}
-            align="left"
           >
             {props.CardContentHeaderFirstLine}
           </Typography>
