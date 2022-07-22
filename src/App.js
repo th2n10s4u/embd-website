@@ -13,6 +13,7 @@ import SocialDance from "./assets/components/SocialDance.js"; //error compiling 
 import PrivateLessons from "./assets/components/PrivateLessons";
 import WeddingDance from "./assets/components/WeddingDance";
 import TeacherProfiles from "./assets/components/TeacherProfiles";
+import BenefitsOfDance from "./assets/components/BenefitsOfDance";
 
 function App() {
   useEffect(() => {
@@ -21,23 +22,19 @@ function App() {
 
   return (
     <div className="container">
+      <Navbar />
+      <MainCarousel />
       <Main />
+      <BenefitsOfDance />
+      <Testimonials />
+      <Specialties />
       <WeddingDance />
+      <PrivateLessons />
+      <SocialDance />
       <TeacherProfiles />
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
-{
-  /* <Navbar />
-      <MainCarousel />
-      <WeddingDance />
-      <PrivateLessons />
-      <SocialDance />
-      <Testimonials />
-      <Main />
-      <Specialties />
-      <Footer /> */
-}
