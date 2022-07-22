@@ -69,7 +69,11 @@ export default function TeacherProfiles() {
             and style can be taught in a fun environment to beginning and advanced
             dancers."
             boldHeader={true}
+            centerHeader
             centered
+            background
+            shadow
+            radius
           />
         </React.Fragment>
       </Box>
@@ -85,8 +89,12 @@ export default function TeacherProfiles() {
           CardContentHeaderFirstLine="Tim Hughes, Instructor"
           CardContentBodySentenceOne="Tim first fell in love with dancing when he was 18 years old. He loves the structure, elegance, and movement that ballroom dance brings to the floor and is inspired to teach quality technique and styling to his students.  He enjoys working with both beginner and advanced students to help them take their dancing to the next level. "
           boldHeader={true}
+          centerHeader={true}
           centered
           reverse
+          background
+          shadow
+          radius
         />
       </Box>
     </React.Fragment>
