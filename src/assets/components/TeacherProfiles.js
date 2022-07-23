@@ -70,7 +70,8 @@ export default function TeacherProfiles() {
             dancers."
             boldHeader={true}
             centerHeader
-            centered
+            centerBodyOne
+            centerBodyTwo
             background
             shadow
             radius
@@ -90,7 +91,7 @@ export default function TeacherProfiles() {
           CardContentBodySentenceOne="Tim first fell in love with dancing when he was 18 years old. He loves the structure, elegance, and movement that ballroom dance brings to the floor and is inspired to teach quality technique and styling to his students.  He enjoys working with both beginner and advanced students to help them take their dancing to the next level. "
           boldHeader={true}
           centerHeader={true}
-          centered
+          centerBodyOne
           reverse
           background
           shadow
