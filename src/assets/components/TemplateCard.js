@@ -9,6 +9,8 @@ import {
   Button,
   Typography,
   Paper,
+  List,
+  ListItem,
 } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
@@ -190,6 +192,45 @@ export default function TemplateCard(props) {
           </Typography>
         </CardContent>
       </Card>
+
+      {/* Added List Item from TemplateTextCard 
+          Need to figure out how to add {props.}
+      <Typography
+        ClassName="ListText"
+        sx={{
+          fontFamily: "Playfair Display",
+          fontWeight: "400",
+          fontSize: "24px",
+          lineHeight: "24px",
+          // display: "flex",
+          // flexDirection: "row",
+          // justifyContent: "center",
+          // alignText: "center",
+        }}
+      >
+        <List
+        // sx={{
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   justifyContent: "center",
+        //   alignText: "center",
+        // }}
+        >
+          {props.ListText.map((text) => (
+            <ListItem
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                textAlign: props.centered ? "center" : "left", //conditional
+                marginBottom: "-10px",
+              }}
+            >
+              {text}
+            </ListItem>
+          ))}
+        </List>
+      </Typography>
+*/}
       {props.children}
     </Paper>
   );
