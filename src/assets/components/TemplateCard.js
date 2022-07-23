@@ -103,7 +103,8 @@ export default function TemplateCard(props) {
         }}
       > */}
 
-      {/*Brainstorm how to make this card conditional */}
+      {/*Brainstorm how to make this card conditional, 
+        Also figure out spacing between both props for consistent alignment */}
       <Card
         elevation={0}
         sx={{
