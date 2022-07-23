@@ -102,6 +102,8 @@ export default function TemplateCard(props) {
           // borderRadius: "12px",
         }}
       > */}
+
+      {/*Brainstorm how to make this card conditional */}
       <Card
         elevation={0}
         sx={{
