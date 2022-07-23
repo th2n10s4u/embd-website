@@ -14,6 +14,7 @@ import PrivateLessons from "./assets/components/PrivateLessons";
 import WeddingDance from "./assets/components/WeddingDance";
 import TeacherProfiles from "./assets/components/TeacherProfiles";
 import BenefitsOfDance from "./assets/components/BenefitsOfDance";
+import StylesOfDance from "./assets/components/StylesOfDance";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Navbar />
       <MainCarousel />
       <Main />
+      <StylesOfDance />
       <BenefitsOfDance />
       <Testimonials />
       <Specialties />
