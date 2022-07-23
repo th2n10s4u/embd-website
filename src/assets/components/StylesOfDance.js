@@ -50,7 +50,15 @@ export default function StylesOfDance() {
           ListText={["Rumba", "Cha Cha", "Jive", "Paso Doble", "Samba"]}
         />
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+        }}
+      >
         <TemplateTextCard
           TextCardHeader="Smooth"
           ListText={["Foxtrot", "Waltz", "Viennese Waltz", "Peabody", "Tango"]}
@@ -61,8 +69,16 @@ export default function StylesOfDance() {
           ListText={["Rumba", "Cha Cha", "Swing", "Bolero", "Mambo"]}
         />
       </Box>
+
+      <TemplateTextCard
+        ListText={[
+          "Not sure what dance style is right for you?",
+          "Don't worry! Just Tell us your goals and we can help you pick the right dances to learn",
+        ]}
+      />
     </React.Fragment>
   );
 }
 
 //TODO: Display: flex causes the card to shrink for some reason.
+// add a fixed width to each box?
