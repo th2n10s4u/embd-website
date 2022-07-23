@@ -5,7 +5,7 @@ import TemplateCard from "./TemplateCard";
 // import Fruit from "../images/Fruit-dance-image.png";
 import FunDip from "../images/Fun-dip-image.png";
 import TemplateTextCard from "./TemplateTextCard";
-// import Crossbody from "src/assets/images/Couple-crossbody-image.png";
+import Crossbody from "../images/Couple-crossbody-image.png";
 
 export default function BenefitsOfDance() {
   return (
@@ -14,7 +14,7 @@ export default function BenefitsOfDance() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-around",
+          justifyContent: "center",
         }}
       >
         <TemplateCard
@@ -33,12 +33,13 @@ export default function BenefitsOfDance() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "",
+            flexDirection: "row",
             justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <TemplateCard img={FunDip} />
-          {/* <TemplateTextCard
+          <TemplateTextCard
             TextCardHeader="Benefits?"
             ListText={[
               "Healthy Posture",
@@ -54,12 +55,27 @@ export default function BenefitsOfDance() {
               "Cardiovascular Health",
               "Creative Outlet",
             ]}
-            
-            /> */}
+          />
+        </Box>
+
+        <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <TemplateCard
+            img={Crossbody}
+            CardContentHeaderFirstLine="Science"
+            CardContentBodySentenceOne="Dancing & the Brain href"
+            CardContentBodySentenceTwo="The Science of Dance href"
+            CardContentBodySentenceThree="The Health benefits of Dancing Go Beyond Exercise and Stress Reducer href"
+            background
+            shadow
+            radius
+            centerHeader
+            centerBodyOne
+            centerBodyTwo
+            centerBodyThree
+          />
         </Box>
       </Box>
     </React.Fragment>
   );
 }
-{
-}
+// TODO: Come up with a different solution for TemplateCard Img paired with TextCard header/list. The alignment is off and any styling adjustments causes other components alignments to be off.
