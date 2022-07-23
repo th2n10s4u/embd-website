@@ -14,7 +14,7 @@ export default function BenefitsOfDance() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <TemplateCard
@@ -38,6 +38,7 @@ export default function BenefitsOfDance() {
             alignItems: "center",
           }}
         >
+          {/* fix template card by adding conditional to the card's for text, similarly to the && props.button */}
           <TemplateCard img={FunDip} />
           <TemplateTextCard
             TextCardHeader="Benefits?"
