@@ -34,9 +34,9 @@ export default function TemplateTextCard(props) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: "#DEE2E9",
+          background: props.background ? "#DEE2E9" : null,
           marginBottom: "25px",
-          boxShadow: "9px 9px 6px grey",
+          boxShadow: props.shadow ? "9px 9px 6px grey" : null,
           borderRadius: "12px",
         }}
       >
@@ -62,7 +62,7 @@ export default function TemplateTextCard(props) {
             ClassName="ListText"
             sx={{
               fontFamily: "Playfair Display",
-              fontWeight: "400",
+              fontWeight: props.bodyBold ? "600" : "400",
               fontSize: "24px",
               lineHeight: "24px",
               // display: "flex",
