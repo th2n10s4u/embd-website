@@ -34,9 +34,9 @@ export default function TemplateTextCard(props) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: props.background ? "#DEE2E9" : null,
+          background: props.background ? null : "#DEE2E9",
           marginBottom: "25px",
-          boxShadow: props.shadow ? "9px 9px 6px grey" : null,
+          boxShadow: props.shadow ? null : "9px 9px 6px grey",
           borderRadius: "12px",
         }}
       >
