@@ -9,7 +9,6 @@ export default function Contact() {
         elevation={0}
         sx={{
           minHeight: 700,
-          minWidth: "600px",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-evenly",
@@ -19,20 +18,49 @@ export default function Contact() {
         <Card
           elevation={0}
           sx={{
-            maxWidth: 650,
+            maxWidth: "350px",
             maxHeight: 550,
             alignSelf: "center",
             marginBottom: "25px",
-            //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
             background: "#DEE2E9",
             boxShadow: "9px 9px 6px grey",
             borderRadius: "12px",
           }}
         >
           <CardContent>
-            <Typography>We look forward to hearing from you soon!</Typography>
-            <Typography>Phone: 123456689</Typography>
-            <Typography>Email embd@embd.com</Typography>
+            <Typography
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "600",
+                fontSize: "28px",
+                lineHeight: "30px",
+                textAlign: "center",
+              }}
+            >
+              We look forward to hearing from you soon!
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "400",
+                fontSize: "24px",
+                lineHeight: "40px",
+                textAlign: "center",
+              }}
+            >
+              Phone: 123456689
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "400",
+                fontSize: "24px",
+                lineHeight: "40px",
+                textAlign: "center",
+              }}
+            >
+              Email embd@embd.com
+            </Typography>
             <ContactForm />
           </CardContent>
         </Card>
@@ -43,14 +71,34 @@ export default function Contact() {
             maxHeight: 550,
             alignSelf: "center",
             marginBottom: "25px",
-            //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
             background: "#DEE2E9",
             boxShadow: "9px 9px 6px grey",
             borderRadius: "12px",
           }}
         >
           <CardContent>
-            <Typography>Address: 123 street, city, 95404</Typography>
+            <Typography
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "400",
+                fontSize: "28px",
+                lineHeight: "30px",
+                textAlign: "center",
+              }}
+            >
+              Address:
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: "400",
+                fontSize: "28px",
+                lineHeight: "20px",
+                textAlign: "center",
+              }}
+            >
+              123 street, city, 95404
+            </Typography>
             <Box
               ClassName="MapBox"
               sx={{
