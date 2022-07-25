@@ -15,6 +15,8 @@ import WeddingDance from "./assets/components/WeddingDance";
 import TeacherProfiles from "./assets/components/TeacherProfiles";
 import BenefitsOfDance from "./assets/components/BenefitsOfDance";
 import StylesOfDance from "./assets/components/StylesOfDance";
+import StudioPolicy from "./assets/components/StudioPolicy";
+import Contact from "./assets/components/Contact";
 
 function App() {
   useEffect(() => {
@@ -25,6 +27,7 @@ function App() {
     <div className="container">
       <Navbar />
       <MainCarousel />
+      <Contact />
       <Main />
       <StylesOfDance />
       <BenefitsOfDance />
@@ -34,6 +37,7 @@ function App() {
       <PrivateLessons />
       <SocialDance />
       <TeacherProfiles />
+      <StudioPolicy />
       <Footer />
     </div>
   );
