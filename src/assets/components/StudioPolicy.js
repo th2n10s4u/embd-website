@@ -9,11 +9,21 @@ export default function StudioPolicy() {
       <Paper
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           justifyContent: "center",
         }}
       >
-        <Card elevation={0} sx={{ maxWidth: "800px", maxHeight: "500px" }}>
+        <Card
+          elevation={0}
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            maxWidth: "800px",
+            maxHeight: "500px",
+          }}
+        >
           <CardMedia
             component="img"
             image={RobotDance}
