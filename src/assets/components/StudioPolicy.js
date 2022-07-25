@@ -13,7 +13,7 @@ export default function StudioPolicy() {
           justifyContent: "center",
         }}
       >
-        <Card elevation={0} sx={{ maxWidth: "800px", maxHeight: "400px" }}>
+        <Card elevation={0} sx={{ maxWidth: "800px", maxHeight: "500px" }}>
           <CardMedia
             component="img"
             image={RobotDance}
