@@ -26,7 +26,7 @@ export default function TemplateCard(props) {
         border: "0",
         display: "flex",
         justifyContent: "space-between",
-        marginTop: "20px",
+        // marginTop: "20px",
         marginBottom: "20px",
         flexDirection: props.reverse ? "row-reverse" : "row", //conditional operator
       }}
