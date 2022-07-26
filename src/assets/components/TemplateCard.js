@@ -115,8 +115,8 @@ export default function TemplateCard(props) {
           marginBottom: "25px",
           //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
           background: props.background ? "#DEE2E9" : null,
-          boxShadow: props.shadow ? "9px 9px 6px grey" : null,
-          borderRadius: props.radius ? "12px" : null,
+          boxShadow: props.background ? "9px 9px 6px grey" : null,
+          borderRadius: props.background ? "12px" : null,
         }}
       >
         <CardContent>
