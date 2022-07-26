@@ -67,8 +67,6 @@ export default function BenefitsOfDance() {
             CardContentBodySentenceTwo="The Science of Dance href"
             CardContentBodySentenceThree="The Health benefits of Dancing Go Beyond Exercise and Stress Reducer href"
             background
-            shadow
-            radius
             centerHeader
             centerBodyOne
             centerBodyTwo
