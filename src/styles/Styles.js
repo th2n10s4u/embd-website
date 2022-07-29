@@ -28,13 +28,6 @@ const theme = createTheme({
       main: Colors.secondary,
     },
   },
-  components: {
-    MuiButton: {
-      defaultProps: {
-        disableRipple: true,
-      },
-    },
-  },
 });
 
 export default theme;
