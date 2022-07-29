@@ -34,6 +34,11 @@ const theme = createTheme({
         disableRipple: true,
       },
     },
+    MuiFab: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
   },
 });
 
