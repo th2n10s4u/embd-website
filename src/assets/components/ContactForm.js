@@ -38,6 +38,7 @@ export default function ContactForm() {
           marginTop: "20px",
           boxShadow: "5px 5px 5px grey",
         }}
+        color="secondary"
         variant="contained"
         borderRadius="12"
         size="extraLarge"
