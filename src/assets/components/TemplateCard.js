@@ -74,6 +74,7 @@ export default function TemplateCard(props) {
                 marginBottom: "40px",
                 boxShadow: "5px 5px 5px grey",
               }}
+              color="secondary"
               variant="contained"
               borderRadius="12"
               size="extraLarge"
