@@ -32,6 +32,7 @@ const theme = createTheme({
     MuiButton: {
       defaultProps: {
         disableRipple: true,
+        disableFocusRipple: false,
       },
     },
     MuiFab: {
