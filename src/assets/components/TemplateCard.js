@@ -105,97 +105,100 @@ export default function TemplateCard(props) {
 
       {/*Brainstorm how to make this card conditional, 
         Also figure out spacing between both props for consistent alignment */}
-      <Card
-        elevation={0}
-        sx={{
-          maxWidth: 650,
-          maxHeight: 550,
-          flexBasis: "50%",
-          alignSelf: "center",
-          marginBottom: "25px",
-          //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND)
-          background: props.background ? "#DEE2E9" : null,
-          boxShadow: props.background ? "9px 9px 6px grey" : null,
-          borderRadius: props.background ? "12px" : null,
-        }}
-      >
-        <CardContent>
-          <Typography
-            ClassName="CardHeaderText"
-            sx={{
-              fontFamily: "Playfair Display",
-              fontWeight: props.boldHeader ? "600" : "400",
-              fontSize: "32px",
-              lineHeight: "20px",
-              textAlign: props.centerHeader ? "center" : "left",
-            }}
-          >
-            {props.CardContentHeaderFirstLine}
-          </Typography>
-        </CardContent>
-        <CardContent>
-          <Typography
-            sx={{
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              lineHeight: "95.7%",
-              paragraphSpacing: "28",
-              letterSpacing: "0",
-              fontSize: "24px",
-              marginTop: "10px",
-            }}
-            align="left"
-          >
-            {props.CardContentBody}
-          </Typography>
-          {/*  */}
-          <Typography
-            sx={{
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              lineHeight: "95.7%",
-              paragraphSpacing: "28",
-              letterSpacing: "0",
-              fontSize: "24px",
-              marginBottom: "20px",
-              textAlign: props.centerBodyOne ? "center" : "left", //conditional
-            }}
-            // align="left"
-          >
-            {props.CardContentBodySentenceOne}
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              lineHeight: "95.7%",
-              paragraphSpacing: "28",
-              letterSpacing: "0",
-              fontSize: "24px",
-              marginBottom: "20px",
-              textAlign: props.centerBodyTwo ? "center" : "left", //conditional
-            }}
-          >
-            {props.CardContentBodySentenceTwo}
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              lineHeight: "95.7%",
-              paragraphSpacing: "28",
-              letterSpacing: "0",
-              fontSize: "24px",
-              marginBottom: "20px",
-              textAlign: props.centerBodyThree ? "center" : "left", //conditional
-            }}
-            align="left"
-          >
-            {props.CardContentBodySentenceThree}
-          </Typography>
-        </CardContent>
-      </Card>
-
+      {(props.CardContentHeaderFirstLine ||
+        props.CardContentBody ||
+        props.CardContentBodySentenceOne) && (
+        <Card
+          elevation={0}
+          sx={{
+            maxWidth: 650,
+            maxHeight: 550,
+            flexBasis: "50%",
+            alignSelf: "center",
+            marginBottom: "25px",
+            //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND) you can use the same property for multiple styles.
+            background: props.background ? "#eceff1" : null, // Searching for similar colors in mui:"#DEE2E9"
+            boxShadow: props.background ? "9px 9px 6px grey" : null,
+            borderRadius: props.background ? "12px" : null,
+          }}
+        >
+          <CardContent>
+            <Typography
+              ClassName="CardHeaderText"
+              sx={{
+                fontFamily: "Playfair Display",
+                fontWeight: props.boldHeader ? "600" : "400",
+                fontSize: "32px",
+                lineHeight: "20px",
+                textAlign: props.centerHeader ? "center" : "left",
+              }}
+            >
+              {props.CardContentHeaderFirstLine}
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                lineHeight: "95.7%",
+                paragraphSpacing: "28",
+                letterSpacing: "0",
+                fontSize: "24px",
+                marginTop: "10px",
+              }}
+              align="left"
+            >
+              {props.CardContentBody}
+            </Typography>
+            {/*  */}
+            <Typography
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                lineHeight: "95.7%",
+                paragraphSpacing: "28",
+                letterSpacing: "0",
+                fontSize: "24px",
+                marginBottom: "20px",
+                textAlign: props.centerBodyOne ? "center" : "left", //conditional
+              }}
+              // align="left"
+            >
+              {props.CardContentBodySentenceOne}
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                lineHeight: "95.7%",
+                paragraphSpacing: "28",
+                letterSpacing: "0",
+                fontSize: "24px",
+                marginBottom: "20px",
+                textAlign: props.centerBodyTwo ? "center" : "left", //conditional
+              }}
+            >
+              {props.CardContentBodySentenceTwo}
+            </Typography>
+            <Typography
+              sx={{
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                lineHeight: "95.7%",
+                paragraphSpacing: "28",
+                letterSpacing: "0",
+                fontSize: "24px",
+                marginBottom: "20px",
+                textAlign: props.centerBodyThree ? "center" : "left", //conditional
+              }}
+              align="left"
+            >
+              {props.CardContentBodySentenceThree}
+            </Typography>
+          </CardContent>
+        </Card>
+      )}
       {/* Added List Item from TemplateTextCard 
           Need to figure out how to add {props.}
       <Typography
