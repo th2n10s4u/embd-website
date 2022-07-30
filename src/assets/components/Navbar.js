@@ -1,11 +1,21 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, Typography, Button, Fab } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  Button,
+  ButtonGroup,
+  Menu,
+  MenuItem,
+  Fab,
+} from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";
 import { typography } from "@mui/system";
 
-const pages = ["Products", "Pricing", "Blog", "about", "services"];
+const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
