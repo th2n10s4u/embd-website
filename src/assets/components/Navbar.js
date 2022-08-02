@@ -5,7 +5,6 @@ import {
   Toolbar,
   Typography,
   Button,
-  ButtonGroup,
   Menu,
   MenuItem,
   Fab,
@@ -13,28 +12,53 @@ import {
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";
-import { typography } from "@mui/system";
 
-const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
+// variable navMap that holds an array of objects
+// onClick on each button. Sets the ref that the button is tied to
+const navMap = [
+  {
+    name: "Home",
+  },
+  {
+    name: "About",
+    menuItems: [
+      { name: "Social Dance" },
+      { name: "Private Dance" },
+      { name: "Wedding Dance" },
+    ],
+  },
+  {
+    name: "Services",
+    menuItems: [
+      { name: "Teacher Profiles" },
+      { name: "Benefits of Dance" },
+      { name: "Styles of Dance" },
+      { name: "Studio Policy" },
+    ],
+  },
+  {
+    name: "The Buzz",
+  },
+  {
+    name: "Contact Us",
+    menuItems: [{ name: "Testimonials" }],
+  },
+];
+
+// navMap.map(obj => { obj.menuItems.map
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const [subMenu, setSubMenu] = React.useState([]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -58,15 +82,27 @@ const ResponsiveAppBar = () => {
               justifyContent: "space-evenly",
             }}
           >
-            {pages.map((page) => (
+            {navMap.map((obj) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={obj.name}
+                onClick={(event) => {
+                  setAnchorElNav(event.currentTarget);
+                  setSubMenu(obj.menuItems);
+                }}
                 sx={{ my: 2, color: "black", display: "block" }}
               >
-                {page}
+                {obj.name}
               </Button>
             ))}
+            <Menu
+              anchorEl={anchorElNav}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+            >
+              {subMenu.map((subObj) => {
+                return <MenuItem>{subObj.name}</MenuItem>;
+              })}
+            </Menu>
           </Box>
           <Box
             sx={{
@@ -98,6 +134,7 @@ const ResponsiveAppBar = () => {
           sx={{ fontFamily: "tangerine", fontWeight: "600" }}
           align="center"
           variant="h2"
+          top="20px"
         >
           Welcome to the world of Ballroom Dance
         </Typography>
@@ -106,5 +143,4 @@ const ResponsiveAppBar = () => {
   );
 };
 export default ResponsiveAppBar;
-
 // TODO: Text black, background transparent, button grey/blue, link the nav buttons
