@@ -8,6 +8,7 @@ import {
   Menu,
   MenuItem,
   Fab,
+  Fade,
 } from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../images/embd-logo-black.png";
@@ -79,11 +80,12 @@ const ResponsiveAppBar = () => {
               flexGrow: 1,
               flexDirection: "row",
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "space-around",
             }}
           >
             {navMap.map((obj) => (
               <Button
+                size="large"
                 key={obj.name}
                 onClick={(event) => {
                   setAnchorElNav(event.currentTarget);
@@ -95,19 +97,34 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
             <Menu
+              minWidth="140px"
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "center",
+              }}
+              transformOrigin={{ vertical: "top", horizontal: "center" }}
+              size="large"
               anchorEl={anchorElNav}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              TransitionComponent={Fade}
             >
               {subMenu.map((subObj) => {
-                return <MenuItem>{subObj.name}</MenuItem>;
+                return (
+                  <MenuItem
+                    sx={{ fontFamily: "Poppins", fontWeight: "500" }}
+                    size="large"
+                  >
+                    {subObj.name}
+                  </MenuItem>
+                );
               })}
             </Menu>
           </Box>
           <Box
             sx={{
               flexGrow: 0,
-              width: "385px",
+              width: "231px",
               justifyContent: "flex-end",
               display: "flex",
             }}
@@ -134,7 +151,7 @@ const ResponsiveAppBar = () => {
           sx={{ fontFamily: "tangerine", fontWeight: "600" }}
           align="center"
           variant="h2"
-          top="20px"
+          marginTop="8px"
         >
           Welcome to the world of Ballroom Dance
         </Typography>
@@ -144,3 +161,5 @@ const ResponsiveAppBar = () => {
 };
 export default ResponsiveAppBar;
 // TODO: Text black, background transparent, button grey/blue, link the nav buttons
+
+// Dropdown TODO: enable scroll if onClick is enabled
