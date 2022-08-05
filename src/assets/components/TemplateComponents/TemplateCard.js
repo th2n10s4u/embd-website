@@ -150,6 +150,7 @@ export default function TemplateCard(props) {
                 letterSpacing: "0",
                 fontSize: "24px",
                 marginTop: "10px",
+                minWidth: "510px",
               }}
               align="left"
             >
