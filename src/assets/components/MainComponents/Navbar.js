@@ -24,18 +24,18 @@ const navMap = [
   {
     name: "About",
     menuItems: [
-      { name: "Social Dance" },
-      { name: "Private Dance" },
-      { name: "Wedding Dance" },
+      { name: "Teacher Profiles" },
+      { name: "Benefits of Dance" },
+      { name: "Styles of Dance" },
+      { name: "Studio Policy" },
     ],
   },
   {
     name: "Services",
     menuItems: [
-      { name: "Teacher Profiles" },
-      { name: "Benefits of Dance" },
-      { name: "Styles of Dance" },
-      { name: "Studio Policy" },
+      { name: "Social Dance" },
+      { name: "Private Dance" },
+      { name: "Wedding Dance" },
     ],
   },
   {
