@@ -94,7 +94,7 @@ export default function Testimonials(props) {
               }}
             >
               <Truncate
-                lines={!expanded && 3}
+                lines={!expanded && 5}
                 ellipsis={
                   <span>
                     ...{" "}
@@ -118,6 +118,14 @@ export default function Testimonials(props) {
                 class cost $15 but she also has special pricing for people that
                 take multiple classes.” — Frank H.
               </Truncate>
+              {!trunk && expanded && (
+                <span>
+                  {" "}
+                  <a href="#" onClick={toggleLines}>
+                    Show less
+                  </a>
+                </span>
+              )}
             </Typography>
           </CardContent>
         </Card>
@@ -151,10 +159,11 @@ export default function Testimonials(props) {
                 fontWeight: "400",
                 FontSize: "16px",
                 lineHeight: "24.43px",
+                letterSpacing: "0.05em",
+                letterSpacing: "5%",
+                textAlign: "center",
+                // marginTop: "20px", lowers the bottom margin of the card but allows the text to fit properly.
               }}
-              display="flex"
-              textAlign="center"
-              marginTop="center"
             >
               <Truncate
                 lines={!expanded && 3}
@@ -175,6 +184,14 @@ export default function Testimonials(props) {
                 classes. I never thought I’d see the day. If you’re looking for
                 similar results, search no further.” — Molly L. H.
               </Truncate>
+              {!trunk && expanded && (
+                <span>
+                  {" "}
+                  <a href="#" onClick={toggleLines}>
+                    Show less
+                  </a>
+                </span>
+              )}
             </Typography>
           </CardContent>
         </Card>
@@ -206,15 +223,14 @@ export default function Testimonials(props) {
               ClassName="CardHeaderText"
               sx={{
                 fontFamily: "Poppins",
-                maxWidth: "350px",
-                maxHeight: "550px",
                 fontWeight: "400",
                 FontSize: "16px",
                 lineHeight: "24.43px",
+                letterSpacing: "0.05em",
+                letterSpacing: "5%",
+                textAlign: "center",
+                // marginTop: "20px", lowers the bottom margin of the card but allows the text to fit properly.
               }}
-              display="flex"
-              textAlign="center"
-              marginTop="center"
             >
               <Truncate
                 lines={!expanded && 3}
@@ -233,6 +249,14 @@ export default function Testimonials(props) {
                 Evelyn is not only a very good instructor, she’s really fun,
                 warm, and generous with her time and knowledge.” — Ginger K.
               </Truncate>
+              {!trunk && expanded && (
+                <span>
+                  {" "}
+                  <a href="#" onClick={toggleLines}>
+                    Show less
+                  </a>
+                </span>
+              )}
             </Typography>
           </CardContent>
         </Card>
