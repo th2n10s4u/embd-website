@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Container, Paper, Typography } from "@mui/material";
-import LatinDip from "../images/latin-dip-image.png";
-import TemplateCard from "./TemplateCard";
-import TemplateTextCard from "./TemplateTextCard";
+import LatinDip from "../../images/latin-dip-image.png";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 
 export default function StylesOfDance() {
   return (

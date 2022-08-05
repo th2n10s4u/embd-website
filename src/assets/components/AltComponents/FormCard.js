@@ -10,10 +10,10 @@ import {
   Typography,
   Paper,
 } from "@mui/material";
-import Main from "./Main";
-import TemplateCard from "./TemplateCard";
-import WoodsDance from "../images/Couple-woods-image.png";
-import ContactForm from "./ContactForm";
+// import Main from "./Main";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import WoodsDance from "../../images/Couple-woods-image.png";
+import ContactForm from "../TemplateComponents/ContactForm";
 
 export default function FormCard() {
   return (

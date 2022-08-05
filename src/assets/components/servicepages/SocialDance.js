@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
-import TemplateCard from "../TemplateCard";
-import TemplateTextCard from "../TemplateTextCard";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 import UnderArmTurn from "../../images/Couple-dance-image.png";
 
 export default function SocialDance() {

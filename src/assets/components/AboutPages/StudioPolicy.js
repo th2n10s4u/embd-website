@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, Card, Paper, CardMedia } from "@mui/material";
-import RobotDance from "../images/Robot-dance-image.png";
-import TemplateTextCard from "./TemplateTextCard";
+import RobotDance from "../../images/Robot-dance-image.png";
+import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 
 export default function StudioPolicy() {
   return (

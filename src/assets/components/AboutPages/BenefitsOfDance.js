@@ -1,11 +1,11 @@
 import React from "react";
 import { Paper, Box, Typography, ListItem } from "@mui/material";
-import TemplateCard from "./TemplateCard";
-// import TemplateTextCard from "./TemplateTextCard";
-import Fruit from "../images/Fruit-dance-image.png";
-import FunDip from "../images/Fun-dip-image.png";
-import TemplateTextCard from "./TemplateTextCard";
-import Crossbody from "../images/Couple-crossbody-image.png";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
+import Fruit from "../../images/Fruit-dance-image.png";
+import FunDip from "../../images/Fun-dip-image.png";
+
+import Crossbody from "../../images/Couple-crossbody-image.png";
 
 export default function BenefitsOfDance() {
   return (

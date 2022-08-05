@@ -1,10 +1,10 @@
 import React from "react";
 import { Paper } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import BeachPhoto from "../images/Carousel-Beach-Image.png";
-import ForestPhoto from "../images/Carousel-Forest-Couple-Image.png";
-import GroupDance from "../images/Carousel-Group-Dance.png";
-import WeddingDance from "../images/Carousel-Weeding-Image.png";
+import BeachPhoto from "../../images/Carousel-Beach-Image.png";
+import ForestPhoto from "../../images/Carousel-Forest-Couple-Image.png";
+import GroupDance from "../../images/Carousel-Group-Dance.png";
+import WeddingDance from "../../images/Carousel-Weeding-Image.png";
 //Remove initial render animation sizing issue
 //Possibly add a prop to animateOnRender: boolean ?
 export function MainCarousel(props) {

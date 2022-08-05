@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
-import TemplateCard from "./TemplateCard";
-import TemplateTextCard from "./TemplateTextCard";
-import LatinFeet from "../images/Latin-feet-image.png";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
+import LatinFeet from "../../images/Latin-feet-image.png";
 
 export default function SocialDance() {
   return (

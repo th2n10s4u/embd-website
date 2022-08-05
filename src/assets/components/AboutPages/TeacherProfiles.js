@@ -1,8 +1,8 @@
 import React from "react";
 import { Typography, Paper, Box } from "@mui/material";
-import TemplateCard from "./TemplateCard";
-import EvHeadshot from "../images/Evelyn-headshot.png";
-import TimHeadshot from "../images/Tim-headshot.png";
+import TemplateCard from "../TemplateComponents/TemplateCard";
+import EvHeadshot from "../../images/Evelyn-headshot.png";
+import TimHeadshot from "../../images/Tim-headshot.png";
 
 export default function TeacherProfiles() {
   return (

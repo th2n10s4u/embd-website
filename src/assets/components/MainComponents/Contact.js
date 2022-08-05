@@ -7,7 +7,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../TemplateComponents/ContactForm";
 
 export default function Contact() {
   return (

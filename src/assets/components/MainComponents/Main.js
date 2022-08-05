@@ -8,8 +8,8 @@ import {
   Box,
   Paper,
 } from "@mui/material";
-import LatinFeet from "../images/Latin-feet-image.png";
-import TemplateCard from "./TemplateCard";
+import LatinFeet from "../../images/Latin-feet-image.png";
+import TemplateCard from "../TemplateComponents/TemplateCard";
 
 export default function Main() {
   return (

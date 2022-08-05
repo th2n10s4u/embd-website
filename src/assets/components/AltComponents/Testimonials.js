@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { Paper, Card, CardContent, Typography, Box } from "@mui/material";
-import ReadMore from "./ReadMore";
+import ReadMore from "../TemplateComponents/ReadMore";
 import Truncate from "react-truncate";
 
 export default function Testimonials(props) {

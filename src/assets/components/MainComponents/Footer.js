@@ -1,10 +1,10 @@
 import React from "react";
 import { Paper, Box, Grid, Typography } from "@mui/material";
-import embdLogo from "../images/embd-logo-black.png";
-import ContactForm from "./ContactForm";
-import FacebookLogo from "../images/SocialLogos/FacebookLogo.svg";
-import YelpLogo from "../images/SocialLogos/YelpLogo.svg";
-import MeetupLogo from "../images/SocialLogos/MeetupLogo.svg";
+import embdLogo from "../../images/embd-logo-black.png";
+import ContactForm from "../TemplateComponents/ContactForm";
+import FacebookLogo from "../../images/SocialLogos/FacebookLogo.svg";
+import YelpLogo from "../../images/SocialLogos/YelpLogo.svg";
+import MeetupLogo from "../../images/SocialLogos/MeetupLogo.svg";
 
 export default function Footer() {
   return (
