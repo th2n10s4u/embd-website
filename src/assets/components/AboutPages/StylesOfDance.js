@@ -109,6 +109,7 @@ export default function StylesOfDance() {
             "Not sure what dance style is right for you?",
             "Don't worry! Just Tell us your goals and we can help you pick the right dances to learn",
           ]}
+          centered
         />
       </Paper>
     </React.Fragment>
