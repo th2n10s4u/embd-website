@@ -2,6 +2,7 @@ import React from "react";
 import { Paper, Box, Typography, ListItem } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import LatinFeet from "../../images/Latin-feet-image.png";
+import { WrapText } from "@mui/icons-material";
 
 export default function Specialties() {
   return (
@@ -34,23 +35,34 @@ export default function Specialties() {
                       fontFamily: "Lora",
                       fontSize: "20px",
                       lineHeight: "1",
+                      whiteSpace: "nowrap",
                     }}
                   >
-                    <ListItem sx={{ display: "list-item", marginBottom: "0" }}>
-                      Waltz
+                    <ListItem
+                      sx={{
+                        display: "list-item",
+                        marginBottom: "0",
+                      }}
+                    >
+                      {"Waltz"}
                     </ListItem>
-                    <ListItem sx={{ display: "list-item" }}>Tango</ListItem>
-                    <ListItem sx={{ display: "list-item" }}>Foxtrot</ListItem>
+                    <ListItem sx={{ display: "list-item" }}>{"Tango"}</ListItem>
                     <ListItem sx={{ display: "list-item" }}>
-                      Viennese-Waltz
+                      {"Foxtrot"}
                     </ListItem>
-                    <ListItem sx={{ display: "list-item" }}>Hustle</ListItem>
+                    <ListItem sx={{ display: "list-item" }}>
+                      {"Viennese-Waltz"}
+                    </ListItem>
+                    <ListItem sx={{ display: "list-item" }}>
+                      {"Hustle"}
+                    </ListItem>
                   </Typography>
                   <Typography
                     sx={{
                       fontFamily: "Lora",
                       fontSize: "20px",
                       lineHeight: "1",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     <ListItem sx={{ display: "list-item" }}>Salsa</ListItem>
