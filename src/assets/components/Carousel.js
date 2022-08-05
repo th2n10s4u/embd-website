@@ -5,7 +5,8 @@ import BeachPhoto from "../images/Carousel-Beach-Image.png";
 import ForestPhoto from "../images/Carousel-Forest-Couple-Image.png";
 import GroupDance from "../images/Carousel-Group-Dance.png";
 import WeddingDance from "../images/Carousel-Weeding-Image.png";
-
+//Remove initial render animation sizing issue
+//Possibly add a prop to animateOnRender: boolean ?
 export function MainCarousel(props) {
   var items = [
     {
@@ -31,7 +32,9 @@ export function MainCarousel(props) {
     </Carousel>
   );
 }
-<hr />;
+{
+  /* <hr />; */
+}
 function Item({ item }) {
   return (
     <Paper elevation={0} sx={{}}>
