@@ -56,18 +56,7 @@ export default function TeacherProfiles() {
           <TemplateCard
             img={EvHeadshot}
             CardContentHeaderFirstLine="Evelyn Meinz, Owner & Instructor"
-            CardContentBodySentenceOne="Evelyn has been teaching dance in the Southern California are since
-          2003. Originally starting in the world of Ballet she realized years
-          later that partnership dancing is (escape quote)where it's at(escape
-            quote) and quickly joined the world of Salsa dancing. Soon after
-            followed Swing then Waltz. Pretty soon a full blown addiction had
-            developed and she now teaches over 30 different partnership dance
-            styles. Whether you want something classic, sultry, dramatic or fun
-            Evelyn can teach you. Having had experienced working in large studios
-            for years she eventually left in order to bring her own dance
-            philosophy to life. She believes that proper high quality technique
-            and style can be taught in a fun environment to beginning and advanced
-            dancers."
+            CardContentBodySentenceOne='Evelyn has been teaching dance in the Southern California are since2003. Originally starting in the world of Ballet she realized years later that partnership dancing is "where it&apos;s at" and quickly joined the world of Salsa dancing. Soon after followed Swing then Waltz. Pretty soon a full blown addiction had developed and she now teaches over 30 different partnership dance styles. Whether you want something classic, sultry, dramatic or fun Evelyn can teach you. Having had experienced working in large studios for years she eventually left in order to bring her own dance philosophy to life. She believes that proper high quality technique and style can be taught in a fun environment to beginning and advanced dancers.'
             boldHeader={true}
             centerHeader
             centerBodyOne
