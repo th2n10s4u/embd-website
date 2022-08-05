@@ -35,6 +35,7 @@ export default function TemplateCard(props) {
       <Card
         elevation={0}
         sx={{
+          alignItems: "center",
           minWidth: "522px",
           maxWidth: 400,
           maxHeight: 600,
