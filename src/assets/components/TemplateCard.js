@@ -1,5 +1,5 @@
 /* Reusable layout for photos, buttons, words on a card or paper throughout the application */
-import * as React from "react";
+import React from "react";
 import {
   Card,
   Divider,
