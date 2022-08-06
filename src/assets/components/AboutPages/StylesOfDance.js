@@ -59,6 +59,7 @@ export default function StylesOfDance() {
                 "Country Western",
                 "Merengue",
               ]}
+              stylescard
             />
 
             <TemplateTextCard
@@ -70,11 +71,13 @@ export default function StylesOfDance() {
                 "Slow Waltz",
                 "Tango",
               ]}
+              stylescard
             />
 
             <TemplateTextCard
               TextCardHeader="Latin"
               ListText={["Rumba", "Cha Cha", "Jive", "Paso Doble", "Samba"]}
+              stylescard
             />
           </Box>
 
@@ -96,11 +99,13 @@ export default function StylesOfDance() {
                 "Peabody",
                 "Tango",
               ]}
+              stylescard
             />
 
             <TemplateTextCard
               TextCardHeader="Rythm"
               ListText={["Rumba", "Cha Cha", "Swing", "Bolero", "Mambo"]}
+              stylescard
             />
           </Box>
         </Container>
