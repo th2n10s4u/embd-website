@@ -20,6 +20,7 @@ import StylesOfDance from "./assets/components/AboutPages/StylesOfDance";
 import StudioPolicy from "./assets/components/AboutPages/StudioPolicy";
 import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   // const theme = createTheme({
