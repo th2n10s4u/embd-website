@@ -40,7 +40,7 @@ export default function BenefitsOfDance() {
         >
           {/* fix template card by adding conditional to the card's for text, similarly to the && props.button */}
           <TemplateCard img={Fruit} />
-          {/* <Box sx={{ marginRight: ""}} tinker with this */}
+          <Box sx={{ marginLeft: "600px" }}></Box>
           <TemplateTextCard
             TextCardHeader="Benefits?"
             ListText={[
