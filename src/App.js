@@ -42,17 +42,19 @@ function App() {
       <div className="container">
         <Navbar color="primary" />
         <MainCarousel />
-        <Contact />
         <Main />
-        <StylesOfDance />
-        <BenefitsOfDance />
+        <FormCard />
         <Testimonials />
         <Specialties />
-        <WeddingDance />
-        <PrivateLessons />
+        <Spacer />
         <SocialDance />
+        <PrivateLessons />
+        <WeddingDance />
         <TeacherProfiles />
+        <BenefitsOfDance />
+        <StylesOfDance />
         <StudioPolicy />
+        <Contact />
         <Footer />
       </div>
     </ThemeProvider>
