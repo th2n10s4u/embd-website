@@ -34,13 +34,16 @@ export default function BenefitsOfDance() {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-between",
+            width: "1170px", // not sure if this is the best solution but the spacing is better.
+            // justifyContent: "flex-end",
             alignItems: "center",
           }}
         >
           {/* fix template card by adding conditional to the card's for text, similarly to the && props.button */}
           <TemplateCard img={Fruit} />
-          <Box sx={{ marginLeft: "600px" }}></Box>
+          {/* <Box
+            sx={{ display: "flex", marginLeft: "200px", width: "0px" }}
+          ></Box> */}
           <TemplateTextCard
             TextCardHeader="Benefits?"
             ListText={[
@@ -57,9 +60,17 @@ export default function BenefitsOfDance() {
               "Cardiovascular Health",
               "Creative Outlet",
             ]}
+            centered
           />
         </Box>
-
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            width: "10px",
+            marginLeft: "200px",
+          }}
+        ></Box>
         <Box sx={{ display: "flex", flexDirection: "row" }}>
           <TemplateCard
             img={Crossbody}
