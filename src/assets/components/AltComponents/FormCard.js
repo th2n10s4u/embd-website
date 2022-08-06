@@ -25,11 +25,16 @@ export default function FormCard() {
         }}
       >
         <TemplateCard
-          sx={{ maxWidth: "313px" }}
           img={WoodsDance}
           CardContentHeaderFirstLine={
             <React.Fragment>
-              <Box sx={{ maxWidth: "313px", textAlign: "center" }}>
+              <Box
+                sx={{
+                  maxWidth: "313px",
+                  marginLeft: "40px",
+                  textAlign: "center",
+                }}
+              >
                 Schedule Your First
                 <Typography
                   sx={{
