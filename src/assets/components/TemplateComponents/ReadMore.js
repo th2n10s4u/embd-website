@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import Truncate from "react-truncate";
 import { Typography } from "@mui/material";
 
@@ -29,7 +29,7 @@ export default function ReadMore(props) {
       }}
     >
       <Truncate
-        lines={!expanded && 5}
+        lines={!expanded && 2}
         ellipsis={
           <span>
             ...{" "}
