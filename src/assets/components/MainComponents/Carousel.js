@@ -7,7 +7,8 @@ import GroupDance from "../../images/Carousel-Group-Dance.png";
 import WeddingDance from "../../images/Carousel-Weeding-Image.png";
 //Remove initial render animation sizing issue
 //Possibly add a prop to animateOnRender: boolean ?
-export function MainCarousel(props) {
+
+export default function MainCarousel(props) {
   var items = [
     {
       imgurl: BeachPhoto,
