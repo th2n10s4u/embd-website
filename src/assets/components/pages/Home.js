@@ -14,7 +14,6 @@ export default function Home() {
         <FormCard />
         <Testimonials />
         <Specialties />
-        <Footer />
       </div>
     </React.Fragment>
   );
