@@ -13,10 +13,13 @@ import {
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";
+import TeacherProfiles from "../AboutPages/TeacherProfiles";
+import { Link } from "react-router-dom";
 
 // const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
 // variable navMap that holds an array of objects
 // onClick on each button. Sets the ref that the button is tied to
+
 const navMap = [
   {
     name: "Home",
@@ -24,18 +27,18 @@ const navMap = [
   {
     name: "About",
     menuItems: [
-      { name: "Teacher Profiles" },
-      { name: "Benefits of Dance" },
-      { name: "Styles of Dance" },
-      { name: "Studio Policy" },
+      { name: "Teacher Profiles", to: "/Teacher-Profiles" },
+      { name: "Benefits of Dance", to: "/Benefits-Of-Dance" },
+      { name: "Styles of Dance", to: "/Styles-Of-Dance" },
+      { name: "Studio Policy", to: "/Studio-Policy" },
     ],
   },
   {
     name: "Services",
     menuItems: [
-      { name: "Social Dance" },
-      { name: "Private Dance" },
-      { name: "Wedding Dance" },
+      { name: "Social Dance", to: "/Social-Dance" },
+      { name: "Private Dance", to: "/Private-Dance" },
+      { name: "Wedding Dance", to: "/Wedding-Dance" },
     ],
   },
   {
@@ -43,7 +46,7 @@ const navMap = [
   },
   {
     name: "Contact Us",
-    menuItems: [{ name: "Testimonials" }],
+    menuItems: [{ name: "Testimonials", to: "/Testimonials" }],
   },
 ];
 
@@ -112,6 +115,8 @@ const ResponsiveAppBar = () => {
               {subMenu.map((subObj) => {
                 return (
                   <MenuItem
+                    component={Link}
+                    to={subObj.to}
                     sx={{ fontFamily: "Poppins", fontWeight: "500" }}
                     size="large"
                   >
