@@ -83,6 +83,7 @@ export default function BenefitsOfDance() {
             centerBodyOne
             centerBodyTwo
             centerBodyThree
+            reverse
           />
         </Box>
       </Box>
