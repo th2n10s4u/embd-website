@@ -4,11 +4,11 @@ import { blueGrey } from "@mui/material/colors";
 import Navbar from "./assets/components/MainComponents/Navbar";
 import Main from "./assets/components/MainComponents/Main.js";
 import Footer from "./assets/components/MainComponents/Footer.js";
-import { MainCarousel } from "./assets/components/MainComponents/Carousel";
+import MainCarousel from "./assets/components/MainComponents/Carousel";
 import TemplateCard from "./assets/components/TemplateComponents/TemplateCard";
 import "./App.css";
-import FormCard from "./assets/components/AltComponents/FormCard";
-import Testimonials from "./assets/components/AltComponents/Testimonials";
+import FormCard from "./assets/components/MainComponents/FormCard";
+import Testimonials from "./assets/components/MainComponents/Testimonials";
 import Specialties from "./assets/components/MainComponents/Specialties";
 import Spacer from "./assets/components/Spacer";
 import SocialDance from "./assets/components/servicepages/SocialDance.js"; //error compiling from programpages folder
@@ -20,7 +20,10 @@ import StylesOfDance from "./assets/components/AboutPages/StylesOfDance";
 import StudioPolicy from "./assets/components/AboutPages/StudioPolicy";
 import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./assets/components/pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Carousel from "react-material-ui-carousel";
+import ContactForm from "./assets/components/TemplateComponents/ContactForm";
 
 function App() {
   // const theme = createTheme({
@@ -40,24 +43,40 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="container">
-        <Navbar color="primary" />
-        <MainCarousel />
-        <Main />
-        <FormCard />
-        <Testimonials />
-        <Specialties />
-        <Spacer />
-        <SocialDance />
-        <PrivateLessons />
-        <WeddingDance />
-        <TeacherProfiles />
+      <Router>
+        <div className="container">
+          <Navbar color="primary" />
+          <MainCarousel />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+
+            <Route
+              path="/Teacher-Profiles"
+              exact
+              element={<TeacherProfiles />}
+            />
+            <Route
+              path="/Benefits-of-Dance"
+              exact
+              element={<BenefitsOfDance />}
+            />
+            <Route path="/Styles-of-Dance" exact element={<StylesOfDance />} />
+            <Route path="/Studio-Policy" exact element={<StudioPolicy />} />
+            <Route path="/Social-Dance" exact element={<SocialDance />} />
+            <Route path="/Private-Dance" exact element={<PrivateLessons />} />
+            <Route path="/Wedding-Dance" exact element={<WeddingDance />} />
+          </Routes>
+          <Footer />
+          {/* <TeacherProfiles />
         <BenefitsOfDance />
         <StylesOfDance />
         <StudioPolicy />
-        <Contact />
-        <Footer />
-      </div>
+        <SocialDance />
+        <PrivateLessons />
+        <WeddingDance />
+      <Contact />  */}
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }
