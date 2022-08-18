@@ -49,6 +49,7 @@ function App() {
           <MainCarousel />
           <Routes>
             <Route path="/" exact element={<Home />} />
+            <Route path="/Home" exact element={<Home />} />
 
             <Route
               path="/Teacher-Profiles"
@@ -65,6 +66,7 @@ function App() {
             <Route path="/Social-Dance" exact element={<SocialDance />} />
             <Route path="/Private-Dance" exact element={<PrivateLessons />} />
             <Route path="/Wedding-Dance" exact element={<WeddingDance />} />
+            <Route path="/Testimonials" exact element={<Testimonials />} />
           </Routes>
           <Footer />
           {/* <TeacherProfiles />
