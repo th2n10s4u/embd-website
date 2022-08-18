@@ -43,14 +43,13 @@ const navMap = [
   },
   {
     name: "The Buzz",
+    menuItems: [{ name: "Testimonials", to: "/Testimonials" }],
   },
   {
     name: "Contact Us",
-    menuItems: [{ name: "Testimonials", to: "/Testimonials" }],
+    menuItems: [{ name: "Contact Us", to: "/Contact" }],
   },
 ];
-
-// navMap.map(obj => { obj.menuItems.map
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -68,15 +67,13 @@ const ResponsiveAppBar = () => {
   return (
     <Box>
       <AppBar position="static">
-        {/* <Container maxWidth="lg"> */}
-        <Toolbar disableGutters>
-          <Box sx={{ display: { xs: "flex" } }}>
+        <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
+          <Box
+            // sx={{ display: { xs: "flex" } }}>
+            sx={{ display: "flex", alignItems: "stretch" }}
+          >
             {/* How do I change the logo to a set width and height as sx prop isn't working */}
-            <img
-              src={embdLogo}
-              alt="dance logo"
-              sx={{ height: "58px", width: "338" }}
-            />
+            <img src={embdLogo} alt="dance logo" />
           </Box>
           <Box
             sx={{
@@ -96,6 +93,7 @@ const ResponsiveAppBar = () => {
                 }}
                 sx={{ my: 2, color: "black", display: "block" }}
               >
+                {/* <Link to={`/Home/${Button}`}>{obj.name}</Link> */}
                 {obj.name}
               </Button>
             ))}
