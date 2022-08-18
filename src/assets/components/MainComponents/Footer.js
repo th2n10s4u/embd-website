@@ -17,6 +17,7 @@ export default function Footer() {
           background: "#B5BECB",
           display: "flex",
           flexDirection: "row",
+          marginTop: "200px",
         }}
       >
         <React.Fragment>
