@@ -80,7 +80,7 @@ const ResponsiveAppBar = () => {
               flexGrow: 1,
               flexDirection: "row",
               display: "flex",
-              justifyContent: "space-around",
+              justifyContent: "space-evenly",
             }}
           >
             {navMap.map((obj) => (
@@ -128,11 +128,13 @@ const ResponsiveAppBar = () => {
             sx={{
               flexGrow: 0,
               width: "231px",
-              justifyContent: "flex-end",
               display: "flex",
+              alignItems: "center",
+              justifyContent: "flex-end",
             }}
           >
             <Fab
+              sx={{ display: "flex", alignContent: "center" }}
               variant="extended"
               size="medium"
               color="secondary"
