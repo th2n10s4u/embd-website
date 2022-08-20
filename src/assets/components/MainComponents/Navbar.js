@@ -14,16 +14,16 @@ import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";
 import TeacherProfiles from "../AboutPages/TeacherProfiles";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 // const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
 // variable navMap that holds an array of objects
 // onClick on each button. Sets the ref that the button is tied to
 
 const navMap = [
-  {
-    name: "Home",
-  },
+  // {
+  //   name: "Home",
+  // },
   {
     name: "About",
     menuItems: [
@@ -45,10 +45,10 @@ const navMap = [
     name: "The Buzz",
     menuItems: [{ name: "Testimonials", to: "/Testimonials" }],
   },
-  {
-    name: "Contact Us",
-    menuItems: [{ name: "Contact Us", to: "/Contact" }],
-  },
+  // {
+  //   name: "Contact Us",
+  //   menuItems: [{ name: "Contact Us", to: "/Contact" }],
+  // },
 ];
 
 const ResponsiveAppBar = () => {
@@ -83,6 +83,9 @@ const ResponsiveAppBar = () => {
               justifyContent: "space-evenly",
             }}
           >
+            <Button component={RouterLink} to="/">
+              <Typography sx={{ color: "black" }}>Home</Typography>
+            </Button>
             {navMap.map((obj) => (
               <Button
                 size="large"
@@ -91,13 +94,23 @@ const ResponsiveAppBar = () => {
                   setAnchorElNav(event.currentTarget);
                   setSubMenu(obj.menuItems);
                 }}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={{
+                  my: 2,
+                  whiteSpace: "noWrap",
+                  color: "black",
+                  display: "block",
+                }}
               >
-                {/* <Link to={`/Home/${Button}`}>{obj.name}</Link> */}
                 {obj.name}
               </Button>
             ))}
+            <Button component={RouterLink} to="/Contact">
+              <Typography sx={{ color: "black", whiteSpace: "nowrap" }}>
+                Contact Us
+              </Typography>
+            </Button>
             <Menu
+              sx={{ width: "300px" }}
               minWidth="140px"
               anchorOrigin={{
                 vertical: "bottom",
@@ -113,7 +126,7 @@ const ResponsiveAppBar = () => {
               {subMenu.map((subObj) => {
                 return (
                   <MenuItem
-                    component={Link}
+                    component={RouterLink}
                     to={subObj.to}
                     sx={{ fontFamily: "Poppins", fontWeight: "500" }}
                     size="large"
