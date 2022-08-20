@@ -67,6 +67,7 @@ function App() {
             <Route path="/Private-Dance" exact element={<PrivateLessons />} />
             <Route path="/Wedding-Dance" exact element={<WeddingDance />} />
             <Route path="/Testimonials" exact element={<Testimonials />} />
+            <Route path="/Contact" exact element={<Contact />} />
           </Routes>
           <Footer />
           {/* <TeacherProfiles />
