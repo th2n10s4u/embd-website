@@ -31,6 +31,7 @@ export default function TeacherProfiles() {
               letterSpacing: "2px",
               fontSize: "34px",
               marginTop: "10px",
+              marginBottom: "50px",
             }}
             align="center"
           >
