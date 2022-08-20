@@ -26,17 +26,6 @@ import Carousel from "react-material-ui-carousel";
 import ContactForm from "./assets/components/TemplateComponents/ContactForm";
 
 function App() {
-  // const theme = createTheme({
-  //   palette: {
-  //     primary: {
-  //       main: blueGrey[50],
-  //     },
-  //     secondary: {
-  //       main: "#bfa617",
-  //     },
-  //   },
-  // });
-
   useEffect(() => {
     document.title = "Evelyn Meinz Ballroom Dance - Home";
   }, []); //the empty square brackets make it run the first time when the page loads.
@@ -70,14 +59,6 @@ function App() {
             <Route path="/Contact" exact element={<Contact />} />
           </Routes>
           <Footer />
-          {/* <TeacherProfiles />
-        <BenefitsOfDance />
-        <StylesOfDance />
-        <StudioPolicy />
-        <SocialDance />
-        <PrivateLessons />
-        <WeddingDance />
-      <Contact />  */}
         </div>
       </Router>
     </ThemeProvider>
