@@ -70,7 +70,7 @@ const ResponsiveAppBar = () => {
         <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
           <Box
             // sx={{ display: { xs: "flex" } }}>
-            sx={{ display: "flex", alignItems: "stretch" }}
+            sx={{ display: "flex", minWidth: "420px" }}
           >
             {/* How do I change the logo to a set width and height as sx prop isn't working */}
             <img src={embdLogo} alt="dance logo" />
@@ -84,7 +84,9 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Button component={RouterLink} to="/">
-              <Typography sx={{ color: "black" }}>Home</Typography>
+              <Typography sx={{ color: "black", fontSize: "22px" }}>
+                Home
+              </Typography>
             </Button>
             {navMap.map((obj) => (
               <Button
@@ -99,19 +101,20 @@ const ResponsiveAppBar = () => {
                   whiteSpace: "noWrap",
                   color: "black",
                   display: "block",
+                  fontSize: "22px",
                 }}
               >
                 {obj.name}
               </Button>
             ))}
             <Button component={RouterLink} to="/Contact">
-              <Typography sx={{ color: "black", whiteSpace: "nowrap" }}>
+              <Typography
+                sx={{ color: "black", fontSize: "22px", whiteSpace: "nowrap" }}
+              >
                 Contact Us
               </Typography>
             </Button>
             <Menu
-              sx={{ width: "300px" }}
-              minWidth="140px"
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "center",
@@ -140,25 +143,27 @@ const ResponsiveAppBar = () => {
           <Box
             sx={{
               flexGrow: 0,
-              width: "231px",
+              width: "340px",
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-end",
             }}
           >
             <Fab
-              sx={{ display: "flex", alignContent: "center" }}
+              sx={{
+                display: "flex",
+                alignContent: "center",
+                whiteSpace: "nowrap",
+              }}
               variant="extended"
               size="medium"
               color="secondary"
               aria-label="add"
             >
-              {/* <NavigationIcon sx={{ mr: 1 }} /> */}
               book your first lesson
             </Fab>
           </Box>
         </Toolbar>
-        {/* </Container> */}
       </AppBar>
       <AppBar
         sx={{ height: "68.5px", justifyContent: "center" }}
@@ -166,7 +171,10 @@ const ResponsiveAppBar = () => {
         position="static"
       >
         <Typography
-          sx={{ fontFamily: "tangerine", fontWeight: "600" }}
+          sx={{
+            fontFamily: "tangerine",
+            fontWeight: "500",
+          }}
           align="center"
           variant="h2"
           marginTop="8px"
