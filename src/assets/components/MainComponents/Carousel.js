@@ -34,11 +34,10 @@ export default function MainCarousel(props) {
   );
 }
 {
-  /* <hr />; */
 }
 function Item({ item }) {
   return (
-    <Paper elevation={0} sx={{}}>
+    <Paper elevation={0} sx={{ height: "800px" }}>
       <img src={item.imgurl} alt="CarouselImages" width="100%"></img>
     </Paper>
   );
