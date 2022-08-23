@@ -11,9 +11,9 @@ import FormCard from "./assets/components/MainComponents/FormCard";
 import Testimonials from "./assets/components/MainComponents/Testimonials";
 import Specialties from "./assets/components/MainComponents/Specialties";
 import Spacer from "./assets/components/Spacer";
-import SocialDance from "./assets/components/servicepages/SocialDance.js"; //error compiling from programpages folder
-import PrivateLessons from "./assets/components/servicepages/PrivateLessons";
-import WeddingDance from "./assets/components/servicepages/WeddingDance";
+import SocialDance from "./assets/components/ServicePages/SocialDance.js";
+import PrivateLessons from "./assets/components/ServicePages/PrivateLessons";
+import WeddingDance from "./assets/components/ServicePages/WeddingDance";
 import TeacherProfiles from "./assets/components/AboutPages/TeacherProfiles";
 import BenefitsOfDance from "./assets/components/AboutPages/BenefitsOfDance";
 import StylesOfDance from "./assets/components/AboutPages/StylesOfDance";
