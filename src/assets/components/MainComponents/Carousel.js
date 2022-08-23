@@ -11,16 +11,16 @@ import WeddingDance from "../../images/Carousel-Weeding-Image.png";
 export default function MainCarousel(props) {
   var items = [
     {
-      imgurl: BeachPhoto,
+      imgUrl: BeachPhoto,
     },
     {
-      imgurl: ForestPhoto,
+      imgUrl: ForestPhoto,
     },
     {
-      imgurl: GroupDance,
+      imgUrl: GroupDance,
     },
     {
-      imgurl: WeddingDance,
+      imgUrl: WeddingDance,
     },
   ];
 
@@ -38,7 +38,7 @@ export default function MainCarousel(props) {
 function Item({ item }) {
   return (
     <Paper elevation={0} sx={{ height: "800px" }}>
-      <img src={item.imgurl} alt="CarouselImages" width="100%"></img>
+      <img src={item.imgUrl} alt="CarouselImages" width="100%"></img>
     </Paper>
   );
 }
