@@ -68,13 +68,11 @@ const ResponsiveAppBar = () => {
     <Box>
       <AppBar position="static">
         <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
-          <Box
-            // sx={{ display: { xs: "flex" } }}>
-            sx={{ display: "flex", minWidth: "420px" }}
-          >
-            {/* How do I change the logo to a set width and height as sx prop isn't working */}
-            <img src={embdLogo} alt="dance logo" />
-          </Box>
+          <RouterLink to="/">
+            <Box sx={{ display: "flex", minWidth: "420px" }}>
+              <img src={embdLogo} alt="dance logo" />
+            </Box>
+          </RouterLink>
           <Box
             sx={{
               flexGrow: 1,
