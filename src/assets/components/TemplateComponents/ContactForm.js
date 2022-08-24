@@ -61,6 +61,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
       >
         <TextField
+          sx={{ minWidth: "100%" }}
           value={inputs.name}
           label={"NAME"}
           onChange={handleInputChange}
@@ -71,6 +72,7 @@ export default function ContactForm() {
           autoComplete="none"
         />
         <TextField
+          sx={{ minWidth: "100%" }}
           value={inputs.email}
           label={"EMAIL"}
           onChange={handleInputChange}
@@ -81,6 +83,7 @@ export default function ContactForm() {
           autoComplete="none"
         />
         <TextField
+          sx={{ minWidth: "100%" }}
           value={inputs.phone}
           label={"PHONE"}
           onChange={handleInputChange}
