@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Box, Grid, Typography } from "@mui/material";
+import { Paper, Box, Grid, Typography, Link } from "@mui/material";
 import embdLogo from "../../images/embd-logo-black.png";
 import ContactForm from "../TemplateComponents/ContactForm";
 import FacebookLogo from "../../images/SocialLogos/FacebookLogo.svg";
@@ -198,7 +198,13 @@ export default function Footer() {
             }}
             margin="10px"
           >
-            <img src={YelpLogo} alt="yelp icon" height="100px" />
+            <Link
+              href="https://www.yelp.com/biz/evelyn-meinz-ballroom-dance-pasadena?osq=evelyn+meinz+ballroom+dance"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src={YelpLogo} alt="yelp icon" height="100px" />
+            </Link>
           </Box>
           <Box
             sx={{
@@ -208,7 +214,13 @@ export default function Footer() {
             }}
             margin="10px"
           >
-            <img src={FacebookLogo} alt="facebook icon" height="50px" />
+            <Link
+              href="https://www.facebook.com/EvelynMeinzBallroomDance"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src={FacebookLogo} alt="facebook icon" height="50px" />
+            </Link>
           </Box>
           <Box
             sx={{
@@ -218,7 +230,9 @@ export default function Footer() {
             }}
             margin="10px"
           >
-            <img src={MeetupLogo} alt="meetup icon" height="70px" />
+            <Link href="https://www.meetup.com" target="_blank" rel="noopener">
+              <img src={MeetupLogo} alt="meetup icon" height="70px" />
+            </Link>
           </Box>
         </Box>
       </Paper>
