@@ -57,6 +57,7 @@ export default function ContactForm() {
       }}
     >
       <form
+        autoComplete="off"
         action="https://www.actionforms.io/e/r/evelyn-meinz-ballroom-dance"
         onSubmit={handleSubmit}
       >
@@ -69,7 +70,7 @@ export default function ContactForm() {
           name="name"
           margin="normal"
           variant="filled"
-          autoComplete="none"
+          autoComplete="off"
         />
         <TextField
           sx={{ minWidth: "100%" }}
@@ -80,7 +81,7 @@ export default function ContactForm() {
           name="email"
           margin="normal"
           variant="filled"
-          autoComplete="none"
+          autoComplete="off"
         />
         <TextField
           sx={{ minWidth: "100%" }}
@@ -91,7 +92,7 @@ export default function ContactForm() {
           name="phone"
           margin="normal"
           variant="filled"
-          autoComplete="none"
+          autoComplete="off"
         />
         <Button
           style={{
