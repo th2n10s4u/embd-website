@@ -4,11 +4,13 @@ import {
   Box,
   Toolbar,
   Typography,
+  ButtonBase,
   Button,
   Menu,
   MenuItem,
   Fab,
   Fade,
+  Collapse,
 } from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../../images/embd-logo-black.png";
@@ -68,11 +70,15 @@ const ResponsiveAppBar = () => {
     <Box>
       <AppBar position="static">
         <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
-          <RouterLink to="/">
-            <Box sx={{ display: "flex", minWidth: "420px" }}>
-              <img src={embdLogo} alt="dance logo" />
-            </Box>
-          </RouterLink>
+          {/* <RouterLink to="/"> */}
+          <ButtonBase
+            component={RouterLink}
+            to="/"
+            sx={{ display: "flex", minWidth: "420px" }}
+          >
+            <img src={embdLogo} alt="dance logo" />
+          </ButtonBase>
+          {/* </RouterLink> */}
           <Box
             sx={{
               flexGrow: 1,
@@ -122,7 +128,7 @@ const ResponsiveAppBar = () => {
               anchorEl={anchorElNav}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              TransitionComponent={Fade}
+              // TransitionComponent={Collapse}
             >
               {subMenu.map((subObj) => {
                 return (
