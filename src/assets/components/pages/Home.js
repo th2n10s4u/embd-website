@@ -5,6 +5,7 @@ import FormCard from "../MainComponents/FormCard";
 import Testimonials from "../MainComponents/Testimonials";
 import Specialties from "../MainComponents/Specialties";
 import Footer from "../MainComponents/Footer";
+import Link from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,7 +13,6 @@ export default function Home() {
       <div className="container">
         <Main />
         <FormCard />
-        <Testimonials />
         <Specialties />
       </div>
     </React.Fragment>
