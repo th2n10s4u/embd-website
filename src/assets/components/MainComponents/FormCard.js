@@ -30,9 +30,14 @@ export default function FormCard() {
             <React.Fragment>
               <Box
                 sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  // minWidth: "522px",
                   maxWidth: "313px",
-                  marginLeft: "40px",
+                  marginLeft: "30px",
                   textAlign: "center",
+                  justifyContent: "spaceBetween",
+                  paddingTop: "40px",
                 }}
               >
                 Schedule Your First
@@ -47,7 +52,7 @@ export default function FormCard() {
                     textAlign: "center",
                     alignItems: "center",
                   }}
-                  // textAlign="center"
+                  textAlign="center"
                 >
                   Lesson Today!
                 </Typography>
