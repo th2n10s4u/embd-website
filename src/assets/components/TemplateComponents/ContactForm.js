@@ -53,6 +53,7 @@ export default function ContactForm() {
       sx={{
         display: "flex",
         flexDirection: "column",
+        alignContent: "center",
         maxWidth: "313px",
       }}
     >
