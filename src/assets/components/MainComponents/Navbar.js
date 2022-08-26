@@ -9,7 +9,7 @@ import {
   Menu,
   MenuItem,
   Fab,
-  Fade,
+  Popper,
   Collapse,
 } from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
@@ -29,7 +29,11 @@ const navMap = [
   {
     name: "About",
     menuItems: [
-      { name: "Teacher Profiles", to: "/Teacher-Profiles" },
+      {
+        name: "Teacher Profiles",
+        to: "/Teacher-Profiles",
+        id: "/Teacher-Profiles",
+      },
       { name: "Benefits of Dance", to: "/Benefits-Of-Dance" },
       { name: "Styles of Dance", to: "/Styles-Of-Dance" },
       { name: "Studio Policy", to: "/Studio-Policy" },
@@ -74,7 +78,7 @@ const ResponsiveAppBar = () => {
           <ButtonBase
             component={RouterLink}
             to="/"
-            sx={{ display: "flex", minWidth: "420px" }}
+            sx={{ display: "flex", alignItems: "stretch", minWidth: "420px" }}
           >
             <img src={embdLogo} alt="dance logo" />
           </ButtonBase>
@@ -88,7 +92,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Button component={RouterLink} to="/">
-              <Typography sx={{ color: "black", fontSize: "22px" }}>
+              <Typography sx={{ color: "black", fontSize: "16px" }}>
                 Home
               </Typography>
             </Button>
@@ -105,7 +109,7 @@ const ResponsiveAppBar = () => {
                   whiteSpace: "noWrap",
                   color: "black",
                   display: "block",
-                  fontSize: "22px",
+                  fontSize: "16px",
                 }}
               >
                 {obj.name}
@@ -113,12 +117,14 @@ const ResponsiveAppBar = () => {
             ))}
             <Button component={RouterLink} to="/Contact">
               <Typography
-                sx={{ color: "black", fontSize: "22px", whiteSpace: "nowrap" }}
+                sx={{ color: "black", fontSize: "16px", whiteSpace: "nowrap" }}
               >
                 Contact Us
               </Typography>
             </Button>
             <Menu
+              sx={{ boxShadow: "9px 9px 6px grey", borderRadius: 12 }}
+              disableScrollLock={true}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "center",
@@ -133,9 +139,16 @@ const ResponsiveAppBar = () => {
               {subMenu.map((subObj) => {
                 return (
                   <MenuItem
+                    position="static"
                     component={RouterLink}
                     to={subObj.to}
-                    sx={{ fontFamily: "Poppins", fontWeight: "500" }}
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      fontFamily: "Poppins",
+                      fontWeight: "400",
+                      fontSize: "22px",
+                    }}
                     size="large"
                   >
                     {subObj.name}
@@ -146,7 +159,6 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box
             sx={{
-              flexGrow: 0,
               width: "340px",
               display: "flex",
               alignItems: "center",
@@ -154,9 +166,11 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Fab
+              component={RouterLink}
+              to="/Contact"
               sx={{
                 display: "flex",
-                alignContent: "center",
+                // alignContent: "center",
                 whiteSpace: "nowrap",
               }}
               variant="extended"
@@ -178,6 +192,8 @@ const ResponsiveAppBar = () => {
           sx={{
             fontFamily: "tangerine",
             fontWeight: "500",
+            letterSpacing: "5px",
+            wordSpacing: "10px",
           }}
           align="center"
           variant="h2"
