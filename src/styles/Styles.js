@@ -41,6 +41,11 @@ const theme = createTheme({
       },
     },
   },
+  MuiList: {
+    root: {
+      width: "fit-content",
+    },
+  },
 });
 
 export default theme;
