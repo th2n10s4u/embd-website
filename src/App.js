@@ -44,6 +44,7 @@ function App() {
               path="/Teacher-Profiles"
               exact
               element={<TeacherProfiles />}
+              id="TeacherProfiles"
             />
             <Route
               path="/Benefits-of-Dance"
