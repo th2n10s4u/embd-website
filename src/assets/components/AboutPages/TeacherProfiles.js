@@ -73,6 +73,7 @@ export default function TeacherProfiles() {
         sx={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <TemplateCard
