@@ -21,7 +21,7 @@ import StudioPolicy from "./assets/components/AboutPages/StudioPolicy";
 import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
 import Home from "./assets/components/pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Carousel from "react-material-ui-carousel";
 import ContactForm from "./assets/components/TemplateComponents/ContactForm";
 
@@ -40,7 +40,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/Home" exact element={<Home />} />
 
-            <Route
+            <Link
               path="/Teacher-Profiles"
               exact
               element={<TeacherProfiles />}
