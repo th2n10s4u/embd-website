@@ -58,7 +58,7 @@ export default function ContactForm() {
       }}
     >
       <form
-        autoComplete="off"
+        autoComplete="new-password"
         action="https://www.actionforms.io/e/r/evelyn-meinz-ballroom-dance"
         onSubmit={handleSubmit}
       >
