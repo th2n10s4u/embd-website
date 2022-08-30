@@ -12,13 +12,11 @@ export default function Testimonials(props) {
     e.preventDefault();
     setExpanded((prev) => !prev);
   };
-  const handleTruncate = (truncated) => {
-    setTrunk(truncated);
-  };
 
   return (
     <React.Fragment>
       <Paper
+        id="testimonials"
         elevation={0}
         sx={{
           display: "flex",

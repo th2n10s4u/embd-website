@@ -17,6 +17,7 @@ import embdLogo from "../../images/embd-logo-black.png";
 import { Rowing } from "@mui/icons-material";
 import TeacherProfiles from "../AboutPages/TeacherProfiles";
 import { Link as RouterLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
 // variable navMap that holds an array of objects
@@ -31,25 +32,24 @@ const navMap = [
     menuItems: [
       {
         name: "Teacher Profiles",
-        to: "/Teacher-Profiles",
-        id: "/Teacher-Profiles",
+        to: "/Teacher-Profiles#teacherprofiles",
       },
-      { name: "Benefits of Dance", to: "/Benefits-Of-Dance" },
-      { name: "Styles of Dance", to: "/Styles-Of-Dance" },
-      { name: "Studio Policy", to: "/Studio-Policy" },
+      { name: "Benefits of Dance", to: "/Benefits-Of-Dance#benefitsofdance" },
+      { name: "Styles of Dance", to: "/Styles-Of-Dance#stylesofdance" },
+      { name: "Studio Policy", to: "/Studio-Policy#studiopolicy" },
     ],
   },
   {
     name: "Services",
     menuItems: [
-      { name: "Social Dance", to: "/Social-Dance" },
-      { name: "Private Dance", to: "/Private-Dance" },
-      { name: "Wedding Dance", to: "/Wedding-Dance" },
+      { name: "Social Dance", to: "/Social-Dance#socialdance" },
+      { name: "Private Dance", to: "/Private-Dance#privatedance" },
+      { name: "Wedding Dance", to: "/Wedding-Dance#weddingdance" },
     ],
   },
   {
     name: "The Buzz",
-    menuItems: [{ name: "Testimonials", to: "/Testimonials" }],
+    menuItems: [{ name: "Testimonials", to: "/Testimonials#testimonials" }],
   },
   // {
   //   name: "Contact Us",
@@ -76,7 +76,7 @@ const ResponsiveAppBar = () => {
         <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
           {/* <RouterLink to="/"> */}
           <ButtonBase
-            component={RouterLink}
+            component={HashLink}
             to="/"
             sx={{ display: "flex", alignItems: "stretch", minWidth: "420px" }}
           >
@@ -115,7 +115,7 @@ const ResponsiveAppBar = () => {
                 {obj.name}
               </Button>
             ))}
-            <Button component={RouterLink} to="/Contact">
+            <Button component={HashLink} to="/Contact#contact">
               <Typography
                 sx={{ color: "black", fontSize: "16px", whiteSpace: "nowrap" }}
               >
@@ -140,7 +140,7 @@ const ResponsiveAppBar = () => {
                 return (
                   <MenuItem
                     position="static"
-                    component={RouterLink}
+                    component={HashLink}
                     to={subObj.to}
                     sx={{
                       display: "flex",
@@ -166,8 +166,8 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Fab
-              component={RouterLink}
-              to="/Contact"
+              component={HashLink}
+              to="/Contact#contact"
               sx={{
                 display: "flex",
                 // alignContent: "center",

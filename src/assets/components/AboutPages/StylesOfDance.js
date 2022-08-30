@@ -8,6 +8,7 @@ export default function StylesOfDance() {
   return (
     <React.Fragment>
       <Paper
+        id="stylesofdance"
         elevation={0}
         sx={{
           display: "flex",

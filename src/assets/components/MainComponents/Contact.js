@@ -13,6 +13,7 @@ export default function Contact() {
   return (
     <React.Fragment>
       <Paper
+        id="contact"
         elevation={0}
         sx={{
           minHeight: 700,

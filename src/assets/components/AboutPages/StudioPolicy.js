@@ -14,6 +14,7 @@ export default function StudioPolicy() {
         }}
       >
         <Card
+          id="studiopolicy"
           elevation={0}
           sx={{
             display: "flex",

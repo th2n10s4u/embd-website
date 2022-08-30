@@ -8,6 +8,7 @@ export default function SocialDance() {
   return (
     <React.Fragment>
       <Box
+        id="privatedance"
         sx={{
           display: "flex",
           justifyContent: "center",
