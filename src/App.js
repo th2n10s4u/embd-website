@@ -22,6 +22,7 @@ import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
 import Home from "./assets/components/pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Carousel from "react-material-ui-carousel";
 import ContactForm from "./assets/components/TemplateComponents/ContactForm";
 
@@ -40,11 +41,10 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/Home" exact element={<Home />} />
 
-            <Link
+            <Route
               path="/Teacher-Profiles"
               exact
               element={<TeacherProfiles />}
-              id="TeacherProfiles"
             />
             <Route
               path="/Benefits-of-Dance"
