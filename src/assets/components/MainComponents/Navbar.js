@@ -71,7 +71,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <Box>
+    <Box id="home">
       <AppBar position="static">
         <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
           {/* <RouterLink to="/"> */}
