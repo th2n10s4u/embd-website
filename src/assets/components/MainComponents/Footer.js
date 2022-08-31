@@ -1,10 +1,11 @@
 import React from "react";
-import { Paper, Box, Grid, Typography, Link } from "@mui/material";
+import { Paper, Box, Grid, Typography, Link, ButtonBase } from "@mui/material";
 import embdLogo from "../../images/embd-logo-black.png";
 import ContactForm from "../TemplateComponents/ContactForm";
 import FacebookLogo from "../../images/SocialLogos/FacebookLogo.svg";
 import YelpLogo from "../../images/SocialLogos/YelpLogo.svg";
 import MeetupLogo from "../../images/SocialLogos/MeetupLogo.svg";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -32,7 +33,13 @@ export default function Footer() {
               background: "#B5BECB",
             }}
           >
-            <img src={embdLogo} alt="dance logo" height="100px" />
+            <ButtonBase
+              component={HashLink}
+              to="/home#home"
+              sx={{ display: "flex", alignItems: "stretch", minWidth: "420px" }}
+            >
+              <img src={embdLogo} alt="dance logo" height="100px" />
+            </ButtonBase>
           </Paper>
           <Box></Box>
           {/* <Paper
