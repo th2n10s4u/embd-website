@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Box, TextField, Button } from "@mui/material";
+import { Box, TextField, Button, Snackbar } from "@mui/material";
+import SnackBarAlert from "../TemplateComponents/SnackBarAlert";
 
 export default function ContactForm() {
   const [inputs, setInputs] = useState({
@@ -18,9 +19,9 @@ export default function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    alert(
-      "You're information has been sent and you will be contacted within 1-2 business days."
-    );
+    // alert(
+    //   "You're information has been sent and you will be contacted within 1-2 business days."
+    // );
     console.log(inputs);
     ///
     var formdata = new FormData();
@@ -95,7 +96,8 @@ export default function ContactForm() {
           variant="filled"
           autoComplete="off"
         />
-        <Button
+        {/* <Button
+          onClick={handleClick}
           style={{
             minWidth: "313px",
             minHeight: "40px",
@@ -112,7 +114,8 @@ export default function ContactForm() {
           type="submit"
         >
           Submit
-        </Button>
+        </Button> */}
+        <SnackBarAlert />
       </form>
     </Box>
   );
