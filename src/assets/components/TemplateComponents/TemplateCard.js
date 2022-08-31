@@ -13,6 +13,7 @@ import {
   List,
   ListItem,
 } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 import { grey } from "@mui/material/colors";
 
 export default function TemplateCard(props) {
@@ -75,6 +76,8 @@ export default function TemplateCard(props) {
           >
             {props.buttonText && (
               <Button
+                component={HashLink}
+                to="/Contact"
                 style={{
                   minWidth: "313px",
                   minHeight: "40px",
