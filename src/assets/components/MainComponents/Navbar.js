@@ -8,9 +8,12 @@ import {
   Button,
   Menu,
   MenuItem,
+  Paper,
+  MenuList,
   Fab,
   Popper,
   Collapse,
+  ClickAwayListener,
 } from "@mui/material";
 import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../../images/embd-logo-black.png";
@@ -61,10 +64,6 @@ const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const [subMenu, setSubMenu] = React.useState([]);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -122,8 +121,12 @@ const ResponsiveAppBar = () => {
                 Contact Us
               </Typography>
             </Button>
-            <Menu
-              sx={{ boxShadow: "9px 9px 6px grey", borderRadius: 12 }}
+            <Popper
+              sx={{
+                boxShadow: "9px 9px 6px grey",
+                borderRadius: 12,
+                zIndex: 100000,
+              }}
               disableScrollLock={true}
               anchorOrigin={{
                 vertical: "bottom",
@@ -136,26 +139,33 @@ const ResponsiveAppBar = () => {
               onClose={handleCloseNavMenu}
               // TransitionComponent={Collapse}
             >
-              {subMenu.map((subObj) => {
-                return (
-                  <MenuItem
-                    position="static"
-                    component={HashLink}
-                    to={subObj.to}
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      fontFamily: "Poppins",
-                      fontWeight: "400",
-                      fontSize: "22px",
-                    }}
-                    size="large"
-                  >
-                    {subObj.name}
-                  </MenuItem>
-                );
-              })}
-            </Menu>
+              <Paper>
+                <ClickAwayListener onClickAway={handleCloseNavMenu}>
+                  <MenuList>
+                    {subMenu.map((subObj) => {
+                      return (
+                        <MenuItem
+                          onClick={handleCloseNavMenu}
+                          position="static"
+                          component={HashLink}
+                          to={subObj.to}
+                          sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            fontFamily: "Poppins",
+                            fontWeight: "400",
+                            fontSize: "22px",
+                          }}
+                          size="large"
+                        >
+                          {subObj.name}
+                        </MenuItem>
+                      );
+                    })}
+                  </MenuList>
+                </ClickAwayListener>
+              </Paper>
+            </Popper>
           </Box>
           <Box
             sx={{
