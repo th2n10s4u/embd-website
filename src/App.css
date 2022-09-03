@@ -24,18 +24,24 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.swiper {
+  width: "100%";
+  height: 800px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* 
 .MainCarousel {
      width: 1
