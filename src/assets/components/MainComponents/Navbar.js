@@ -125,7 +125,6 @@ const ResponsiveAppBar = () => {
               sx={{
                 boxShadow: "9px 9px 6px grey",
                 borderRadius: 12,
-                zIndex: 100000,
               }}
               disableScrollLock={true}
               anchorOrigin={{
