@@ -4,40 +4,43 @@ import Carousel from "react-material-ui-carousel";
 ///////
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade } from "swiper";
-import "swiper/swiper.min.css";
+import { Navigation, EffectFade, Autoplay } from "swiper";
+import "swiper/swiper-bundle.css";
 // import "swiper/css";
 // import "swiper/css/effect-fade";
 import BeachPhoto from "../../images/Carousel-Beach-Image.png";
 import ForestPhoto from "../../images/Carousel-Forest-Couple-Image.png";
 import GroupDance from "../../images/Carousel-Group-Dance.png";
 import WeddingDance from "../../images/Carousel-Weeding-Image.png";
+import { useRef } from "react";
 //Remove initial render animation sizing issue
 //Possibly add a prop to animateOnRender: boolean ?
 
 export default function MainCarousel() {
   return (
     <Swiper
-      modules={[Navigation, EffectFade]}
-      effect
-      speed={800}
+      style={{ zIndex: "0" }}
+      modules={[Navigation, EffectFade, Autoplay]}
+      navigation
+      autoplay
+      effect={"fade"}
+      speed={1000}
+      // Pagination
       slidesPerView={1}
       loop
     >
-      <Paper sx={{ height: "1800px", width: "100%" }}>
-        <SwiperSlide>
-          <img src={BeachPhoto} alt="Beach-Photo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ForestPhoto} alt="Beach-Photo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={GroupDance} alt="Beach-Photo" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={WeddingDance} alt="Beach-Photo" />
-        </SwiperSlide>
-      </Paper>
+      <SwiperSlide>
+        <img src={BeachPhoto} alt="Beach-Photo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={ForestPhoto} alt="Beach-Photo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={GroupDance} alt="Beach-Photo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={WeddingDance} alt="Beach-Photo" />
+      </SwiperSlide>
     </Swiper>
   );
 }
