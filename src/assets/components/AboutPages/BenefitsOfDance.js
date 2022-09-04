@@ -11,6 +11,7 @@ export default function BenefitsOfDance() {
   return (
     <React.Fragment>
       <Box
+        id="benefitsofdance"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -18,7 +19,6 @@ export default function BenefitsOfDance() {
         }}
       >
         <TemplateCard
-          id="benefitsofdance"
           img={FunDip}
           CardContentHeaderFirstLine="Why Dance?"
           CardContentBodySentenceOne="The number of people taking part in dance classes is increasing worldwide, helping people to become more social within their local communities, improve their physical fitness and develop creative skills."
