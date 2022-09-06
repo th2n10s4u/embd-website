@@ -20,6 +20,22 @@ const Colors = {
 };
 
 const theme = createTheme({
+  overrides: {
+    MuiCssBaseline: {
+      MuiCssBaseline: {
+        "@global": {
+          body: {
+            backgroundImage: "url(src/assets/images/Background-Circles.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+            height: "100%",
+          },
+        },
+      },
+    },
+  },
   palette: {
     primary: {
       main: Colors.primary,
