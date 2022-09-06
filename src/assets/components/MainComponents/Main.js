@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardMedia,
-  CardActionArea,
-  CardContent,
-  Typography,
-  Box,
-  Paper,
-} from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import LatinFeet from "../../images/Latin-feet-image.png";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 
@@ -15,7 +7,6 @@ export default function Main() {
   return (
     <main>
       <div>
-        {/* I need to add either cards or some sort of flex in order to place a photo on one side and text on the other.  */}
         <Box
           sx={{
             display: "flex",

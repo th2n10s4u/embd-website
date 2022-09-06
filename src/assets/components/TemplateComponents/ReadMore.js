@@ -23,9 +23,7 @@ export default function ReadMore(props) {
         FontSize: "16px",
         lineHeight: "24.43px",
         letterSpacing: "0.05em",
-        letterSpacing: "5%",
         textAlign: "center",
-        // marginTop: "20px", lowers the bottom margin of the card but allows the text to fit properly.
       }}
     >
       <Truncate

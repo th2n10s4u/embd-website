@@ -2,41 +2,31 @@
 import React from "react";
 import {
   Card,
-  Divider,
   CardActions,
   CardContent,
   CardMedia,
   Button,
   Typography,
-  Paper,
   Grid,
-  List,
-  ListItem,
 } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
-import { grey } from "@mui/material/colors";
 
 export default function TemplateCard(props) {
-  //   console.log(props);
   return (
     <Grid
       container
       rowSpacing={5}
       ClassName="TemplatePaper"
       sx={{
-        // minWidth: "50%", //"1200px", // Play with sizing (100% is too wide)
         minHeight: "447px",
         border: "0",
         display: "flex",
-        // justifyContent: "space-between",
-        // marginTop: "20px",
         marginBottom: "20px",
       }}
       alignItems="center"
-      direction={props.reverse ? "row-reverse" : "row"} //conditional operator
+      direction={props.reverse ? "row-reverse" : "row"}
       justifyContent="center"
     >
-      {/* <Divider /> */}
       <Grid item>
         <Card
           elevation={0}
@@ -109,8 +99,7 @@ export default function TemplateCard(props) {
               flexBasis: "50%",
               alignSelf: "center",
               marginBottom: "25px",
-              //(MAKE ALL OF THE BELOW STYLING CONDITIONAL WITH PROPS.BACKGROUND) you can use the same property for multiple styles.
-              background: props.background ? "#eceff1" : null, // Searching for similar colors in mui:"#DEE2E9"
+              background: props.background ? "#eceff1" : null,
               boxShadow: props.background ? "9px 9px 6px grey" : null,
               borderRadius: props.background ? "12px" : null,
             }}
@@ -155,9 +144,8 @@ export default function TemplateCard(props) {
                   letterSpacing: "0",
                   fontSize: "24px",
                   marginBottom: "20px",
-                  textAlign: props.centerBodyOne ? "center" : "left", //conditional
+                  textAlign: props.centerBodyOne ? "center" : "left",
                 }}
-                // align="left"
               >
                 {props.CardContentBodySentenceOne}
               </Typography>
@@ -184,7 +172,7 @@ export default function TemplateCard(props) {
                   letterSpacing: "0",
                   fontSize: "24px",
                   marginBottom: "20px",
-                  textAlign: props.centerBodyThree ? "center" : "left", //conditional
+                  textAlign: props.centerBodyThree ? "center" : "left",
                 }}
                 align="left"
               >

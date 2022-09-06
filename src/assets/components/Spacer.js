@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Card, Box } from "@mui/material";
+import { Paper } from "@mui/material";
 
 export default function Spacer() {
   return (

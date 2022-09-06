@@ -6,30 +6,18 @@ import {
   Typography,
   ButtonBase,
   Button,
-  Menu,
   MenuItem,
   Paper,
   MenuList,
   Fab,
   Popper,
-  Collapse,
   ClickAwayListener,
 } from "@mui/material";
-import NavigationIcon from "@mui/icons-material/Menu";
 import embdLogo from "../../images/embd-logo-black.png";
-import { Rowing } from "@mui/icons-material";
-import TeacherProfiles from "../AboutPages/TeacherProfiles";
 import { Link as RouterLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-// const pages = ["Home", "About", "Services", "The Buzz", "Contact Us"];
-// variable navMap that holds an array of objects
-// onClick on each button. Sets the ref that the button is tied to
-
 const navMap = [
-  // {
-  //   name: "Home",
-  // },
   {
     name: "About",
     menuItems: [
@@ -54,10 +42,6 @@ const navMap = [
     name: "The Buzz",
     menuItems: [{ name: "Testimonials", to: "/Testimonials#testimonials" }],
   },
-  // {
-  //   name: "Contact Us",
-  //   menuItems: [{ name: "Contact Us", to: "/Contact" }],
-  // },
 ];
 
 const ResponsiveAppBar = () => {

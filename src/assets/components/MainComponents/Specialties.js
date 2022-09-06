@@ -1,8 +1,7 @@
 import React from "react";
-import { Paper, Box, Typography, ListItem } from "@mui/material";
+import { Box, Typography, ListItem } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import LatinFeet from "../../images/Latin-feet-image.png";
-import { WrapText } from "@mui/icons-material";
 
 export default function Specialties() {
   return (

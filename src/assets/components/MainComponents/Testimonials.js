@@ -1,13 +1,11 @@
 import * as React from "react";
 import { useState } from "react";
-import { Paper, Card, CardContent, Typography, Box } from "@mui/material";
+import { Paper, Card, CardContent, Typography } from "@mui/material";
 import ReadMore from "../TemplateComponents/ReadMore";
-import Truncate from "react-truncate";
 
 export default function Testimonials(props) {
   const [expanded, setExpanded] = useState(false);
   const [trunk, setTrunk] = useState(false);
-  // const longText = ["array of text 1","array of text 1","array of text 1"];
   const toggleLines = (e) => {
     e.preventDefault();
     setExpanded((prev) => !prev);
