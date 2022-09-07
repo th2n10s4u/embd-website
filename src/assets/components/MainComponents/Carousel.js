@@ -4,16 +4,9 @@ import Carousel from "react-material-ui-carousel";
 ///////
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  EffectFade,
-  Autoplay,
-  EffectCube,
-  EffectFlip,
-  EffectCreative,
-  EffectCards,
-} from "swiper";
-import "swiper/css/bundle";
+import { Navigation, EffectFade, Autoplay } from "swiper";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 import BeachPhoto from "../../images/Carousel-Beach-Image.png";
 import ForestPhoto from "../../images/Carousel-Forest-Couple-Image.png";
 import GroupDance from "../../images/Carousel-Group-Dance.png";
@@ -30,7 +23,7 @@ export default function MainCarousel() {
       navigation
       autoplay
       effect={"fade"}
-      speed={600}
+      speed={400}
       Pagination
       slidesPerView={1}
       loop
