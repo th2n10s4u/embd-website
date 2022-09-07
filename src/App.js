@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
-import { createTheme, colors, ThemeProvider } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
+import { ThemeProvider } from "@mui/material";
 import Navbar from "./assets/components/MainComponents/Navbar";
-import Main from "./assets/components/MainComponents/Main.js";
 import Footer from "./assets/components/MainComponents/Footer.js";
 import MainCarousel from "./assets/components/MainComponents/Carousel";
-import TemplateCard from "./assets/components/TemplateComponents/TemplateCard";
 import "./App.css";
-import FormCard from "./assets/components/MainComponents/FormCard";
 import Testimonials from "./assets/components/MainComponents/Testimonials";
-import Specialties from "./assets/components/MainComponents/Specialties";
-import Spacer from "./assets/components/Spacer";
 import SocialDance from "./assets/components/ServicePages/SocialDance.js";
 import PrivateLessons from "./assets/components/ServicePages/PrivateLessons";
 import WeddingDance from "./assets/components/ServicePages/WeddingDance";
@@ -22,9 +16,6 @@ import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
 import Home from "./assets/components/pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import Carousel from "react-material-ui-carousel";
-import ContactForm from "./assets/components/TemplateComponents/ContactForm";
 
 function App() {
   useEffect(() => {
