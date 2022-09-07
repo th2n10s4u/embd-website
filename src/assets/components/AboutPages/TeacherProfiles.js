@@ -3,7 +3,6 @@ import { Typography, Paper, Box } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import EvHeadshot from "../../images/Evelyn-headshot.png";
 import TimHeadshot from "../../images/Tim-headshot.png";
-import { HashLink } from "react-router-hash-link";
 
 export default function TeacherProfiles() {
   return (
