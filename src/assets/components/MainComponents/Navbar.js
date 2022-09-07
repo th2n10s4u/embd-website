@@ -107,8 +107,7 @@ const ResponsiveAppBar = () => {
             </Button>
             <Popper
               sx={{
-                boxShadow: "9px 9px 6px grey",
-                borderRadius: 12,
+                boxShadow: "9px 9px 15px grey",
               }}
               disableScrollLock={true}
               anchorOrigin={{
