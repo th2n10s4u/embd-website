@@ -4,7 +4,7 @@ import TemplateCard from "../TemplateComponents/TemplateCard";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 import UnderArmTurn from "../../images/Couple-dance-image.png";
 
-export default function SocialDance() {
+export default function SocialDancing() {
   return (
     <React.Fragment>
       <Box
