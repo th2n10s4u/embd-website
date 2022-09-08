@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { ThemeProvider } from "@mui/material";
 import Navbar from "./assets/components/MainComponents/Navbar";
-import Footer from "./assets/components/MainComponents/Footer.js";
+import Footer from "./assets/components/MainComponents/Footer";
 import MainCarousel from "./assets/components/MainComponents/Carousel";
 import "./App.css";
 import Testimonials from "./assets/components/MainComponents/Testimonials";
-import SocialDance from "./assets/components/ServicePages/SocialDance.js";
+import SocialDance from "./assets/components/ServicePages/SocialDance";
 import PrivateLessons from "./assets/components/ServicePages/PrivateLessons";
 import WeddingDance from "./assets/components/ServicePages/WeddingDance";
 import TeacherProfiles from "./assets/components/AboutPages/TeacherProfiles";
