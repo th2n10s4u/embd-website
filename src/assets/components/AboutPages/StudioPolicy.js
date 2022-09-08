@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Card, Paper, CardMedia } from "@mui/material";
+import { Card, Paper, CardMedia } from "@mui/material";
 import RobotDance from "../../images/Robot-dance-image.png";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 

@@ -15,7 +15,7 @@ import StudioPolicy from "./assets/components/AboutPages/StudioPolicy";
 import Contact from "./assets/components/MainComponents/Contact";
 import theme from "./styles/Styles";
 import Home from "./assets/components/pages/Home";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   useEffect(() => {

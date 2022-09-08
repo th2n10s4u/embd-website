@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  Box,
-  CardContent,
-  Container,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Card, Box, CardContent, Paper, Typography } from "@mui/material";
 import ContactForm from "../TemplateComponents/ContactForm";
 
 export default function Contact() {
@@ -24,16 +17,6 @@ export default function Contact() {
           alignContent: "space-evenly",
         }}
       >
-        {/* <Container
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            // justifyContent: "flex-end",
-            // alignContent: "center",
-            width: "650px",
-            Height: "550px",
-          }}
-        > */}
         <Card
           elevation={0}
           sx={{

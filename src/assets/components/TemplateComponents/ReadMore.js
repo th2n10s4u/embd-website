@@ -5,7 +5,6 @@ import { Typography } from "@mui/material";
 export default function ReadMore(props) {
   const [expanded, setExpanded] = useState(false);
   const [trunk, setTrunk] = useState(false);
-  // const longText = ["array of text 1","array of text 1","array of text 1"];
   const toggleLines = (e) => {
     e.preventDefault();
     setExpanded((prev) => !prev);

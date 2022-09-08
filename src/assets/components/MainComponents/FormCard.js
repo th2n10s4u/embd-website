@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Card,
-  Divider,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Box,
-  Button,
-  Typography,
-  Paper,
-} from "@mui/material";
-// import Main from "./Main";
+import { Box, Typography } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import WoodsDance from "../../images/Couple-woods-image.png";
 import ContactForm from "../TemplateComponents/ContactForm";
@@ -32,7 +21,6 @@ export default function FormCard() {
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  // minWidth: "522px",
                   maxWidth: "313px",
                   marginLeft: "30px",
                   textAlign: "center",
@@ -62,10 +50,7 @@ export default function FormCard() {
           }
           reverse={true}
         />
-        {/* </Card> */}
       </Box>
     </div>
   );
 }
-
-// TODO: Align the Header and the Form centered with the above column. Maybe adjust the sizing on the Template card?

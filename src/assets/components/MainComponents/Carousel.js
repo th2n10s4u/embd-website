@@ -1,7 +1,4 @@
 import React from "react";
-import { Pagination, Paper } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
-///////
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Autoplay } from "swiper";
@@ -11,9 +8,6 @@ import BeachPhoto from "../../images/Carousel-Beach-Image.png";
 import ForestPhoto from "../../images/Carousel-Forest-Couple-Image.png";
 import GroupDance from "../../images/Carousel-Group-Dance.png";
 import WeddingDance from "../../images/Carousel-Weeding-Image.png";
-import { useRef } from "react";
-//Remove initial render animation sizing issue
-//Possibly add a prop to animateOnRender: boolean ?
 
 export default function MainCarousel() {
   return (

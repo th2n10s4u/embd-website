@@ -41,24 +41,10 @@ export default function Footer() {
               <img src={embdLogo} alt="dance logo" height="100px" />
             </ButtonBase>
           </Paper>
-          <Box></Box>
-          {/* <Paper
-            sx={{
-              flexGrow: 1,
-              background: "grey",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            <Typography>Book Today With Form and button underneath</Typography>
-            <Typography>About Services Contact us Phone number</Typography>
-            <Typography>Social Media Yelp Facebook Meetup</Typography>
-          </Paper> */}
         </React.Fragment>
       </Box>
       <Paper
         sx={{
-          background: "grey",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-around",

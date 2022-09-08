@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, Box, Typography, ListItem } from "@mui/material";
+import { Box } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 import Fruit from "../../images/Fruit-dance-image.png";

@@ -162,8 +162,3 @@ export default function Testimonials(props) {
     </React.Fragment>
   );
 }
-
-//TODO
-// Done - Center the header above the cards.
-// Layout cards evenly with enough room for all text
-// For some reason dev tools align-Items: center works but nothing is working within <CardContent styling> or <Card styling>

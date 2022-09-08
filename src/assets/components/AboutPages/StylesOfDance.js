@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Paper, Typography } from "@mui/material";
+import { Box, Container, Paper } from "@mui/material";
 import LatinDip from "../../images/latin-dip-image.png";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
