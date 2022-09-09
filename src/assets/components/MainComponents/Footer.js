@@ -47,187 +47,214 @@ export default function Footer() {
         sx={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           alignItems: "center",
           height: "500px",
           background: "#B5BECB",
         }}
       >
-        <Typography
+        <Grid
+          container
+          rowSpacing={1}
+          ClassName="TemplatePaper"
           sx={{
+            minHeight: "447px",
+            border: "0",
             display: "flex",
-            flexDirection: "column",
-            fontFamily: "Poppins",
-            fontWeight: "400",
-            fontSize: "50px",
-            lineHeight: "20px",
-            marginTop: "20px",
+            alignContent: "center",
+            justifyContent: "space-around",
             marginBottom: "20px",
-            textAlign: "center",
-            alignItems: "center",
-          }}
-          // textAlign="center"
-        >
-          Book Now!
-          {<ContactForm />}
-        </Typography>
-
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
           }}
         >
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            About
-          </Typography>
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            Services
-          </Typography>
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            Contact Us
-          </Typography>
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            Call Us Today!
-          </Typography>
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-          >
-            123-456-7890
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Typography
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              fontFamily: "Poppins",
-              fontWeight: "400",
-              fontSize: "50px",
-              lineHeight: "20px",
-              marginTop: "20px",
-              marginBottom: "20px",
-              textAlign: "center",
-              alignItems: "center",
-            }}
-            textAlign="center"
-          >
-            Social Media
-          </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-            margin="10px"
-          >
-            <Link
-              href="https://www.yelp.com/biz/evelyn-meinz-ballroom-dance-pasadena?osq=evelyn+meinz+ballroom+dance"
-              target="_blank"
-              rel="noopener"
+          <Grid Item>
+            <Typography
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                fontFamily: "Poppins",
+                fontWeight: "400",
+                fontSize: "50px",
+                lineHeight: "20px",
+                marginTop: "20px",
+                marginBottom: "20px",
+                textAlign: "center",
+                alignItems: "center",
+              }}
             >
-              <img src={YelpLogo} alt="yelp icon" height="100px" />
-            </Link>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-            }}
-            margin="10px"
-          >
-            <Link
-              href="https://www.facebook.com/EvelynMeinzBallroomDance"
-              target="_blank"
-              rel="noopener"
+              Book Now!
+              {<ContactForm />}
+            </Typography>
+          </Grid>
+          <Grid Item xs="auto">
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "nowrap",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
             >
-              <img src={FacebookLogo} alt="facebook icon" height="50px" />
-            </Link>
-          </Box>
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                About
+              </Typography>
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                Services
+              </Typography>
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                Contact Us
+              </Typography>
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  flexWrap: "nowrap",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                Call Us Today!
+              </Typography>
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  flexWrap: "nowrap",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                123-456-7890
+              </Typography>
+            </Box>
+          </Grid>
           <Box
             sx={{
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
+              flexWrap: "nowrap",
+              flexDirection: "column",
             }}
-            margin="10px"
           >
-            <Link href="https://www.meetup.com" target="_blank" rel="noopener">
-              <img src={MeetupLogo} alt="meetup icon" height="70px" />
-            </Link>
+            <Grid Item xs="auto">
+              <Typography
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  whiteSpace: "nowrap",
+                  fontFamily: "Poppins",
+                  fontWeight: "400",
+                  fontSize: "50px",
+                  lineHeight: "20px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+                textAlign="center"
+              >
+                Social Media
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+                margin="10px"
+              >
+                <Link
+                  href="https://www.yelp.com/biz/evelyn-meinz-ballroom-dance-pasadena?osq=evelyn+meinz+ballroom+dance"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src={YelpLogo} alt="yelp icon" height="100px" />
+                </Link>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+                margin="10px"
+              >
+                <Link
+                  href="https://www.facebook.com/EvelynMeinzBallroomDance"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src={FacebookLogo} alt="facebook icon" height="50px" />
+                </Link>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+                margin="10px"
+              >
+                <Link
+                  href="https://www.meetup.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src={MeetupLogo} alt="meetup icon" height="70px" />
+                </Link>
+              </Box>
+            </Grid>
           </Box>
-        </Box>
+        </Grid>
       </Paper>
       <Paper
         elevation={4}
