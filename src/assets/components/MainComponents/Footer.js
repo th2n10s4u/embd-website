@@ -36,9 +36,9 @@ export default function Footer() {
             <ButtonBase
               component={HashLink}
               to="/home#home"
-              sx={{ display: "flex", alignItems: "stretch", minWidth: "420px" }}
+              sx={{ display: "flex", alignItems: "stretch" }}
             >
-              <img src={embdLogo} alt="dance logo" height="100px" />
+              <img src={embdLogo} alt="dance logo" />
             </ButtonBase>
           </Paper>
         </React.Fragment>
