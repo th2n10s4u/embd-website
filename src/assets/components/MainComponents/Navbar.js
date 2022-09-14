@@ -56,12 +56,24 @@ const ResponsiveAppBar = () => {
   return (
     <Box id="home">
       <AppBar position="static">
-        <Toolbar sx={{ display: "flex", alignItems: "stretch" }} disableGutters>
-          {/* <RouterLink to="/"> */}
+        <Toolbar
+          sx={{
+            display: { xs: "flex", sm: "flex", lg: "flex", xl: "flex" },
+            alignItems: "stretch",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+          disableGutters
+        >
           <ButtonBase
             component={HashLink}
             to="/"
-            sx={{ display: "flex", alignItems: "stretch", minWidth: "420px" }}
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "stretch",
+              minWidth: "420px",
+            }}
           >
             <img src={embdLogo} alt="dance logo" />
           </ButtonBase>
@@ -69,9 +81,16 @@ const ResponsiveAppBar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              flexDirection: "row",
+              flexDirection: {
+                xs: "column",
+                sm: "row",
+                md: "row",
+                lg: "row",
+                xl: "row",
+              },
+              mr: 3,
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "space-around",
             }}
           >
             <Button component={RouterLink} to="/">
@@ -161,8 +180,7 @@ const ResponsiveAppBar = () => {
               component={HashLink}
               to="/Contact#contact"
               sx={{
-                display: "flex",
-                // alignContent: "center",
+                display: { xs: "none", md: "none", lg: "flex" },
                 whiteSpace: "nowrap",
               }}
               variant="extended"
@@ -176,7 +194,11 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </AppBar>
       <AppBar
-        sx={{ height: "68.5px", justifyContent: "center" }}
+        sx={{
+          height: "68.5px",
+          justifyContent: "center",
+          display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+        }}
         color="transparent"
         position="static"
       >
