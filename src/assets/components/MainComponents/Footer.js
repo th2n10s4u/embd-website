@@ -13,8 +13,8 @@ export default function Footer() {
       <Box
         elevation={0}
         sx={{
-          width: "100%",
-          height: "100px",
+          // width: "100%",
+          // height: "100px",
           background: "#B5BECB",
           display: "flex",
           flexDirection: "row",
@@ -36,7 +36,11 @@ export default function Footer() {
             <ButtonBase
               component={HashLink}
               to="/home#home"
-              sx={{ display: "flex", alignItems: "stretch" }}
+              sx={{
+                display: { xs: "flex", sm: "flex", lg: "flex", xl: "flex" },
+                flexWrap: "wrap",
+                alignItems: "stretch",
+              }}
             >
               <img src={embdLogo} alt="dance logo" />
             </ButtonBase>
@@ -45,7 +49,7 @@ export default function Footer() {
       </Box>
       <Paper
         sx={{
-          display: "flex",
+          display: { xs: "none", md: "none", lg: "flex" },
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
@@ -58,7 +62,7 @@ export default function Footer() {
           rowSpacing={1}
           ClassName="TemplatePaper"
           sx={{
-            minHeight: "447px",
+            // minHeight: "447px",
             border: "0",
             display: "flex",
             alignContent: "center",
@@ -69,7 +73,7 @@ export default function Footer() {
           <Grid Item>
             <Typography
               sx={{
-                display: "flex",
+                display: { xs: "none", md: "none", lg: "flex" },
                 flexDirection: "column",
                 fontFamily: "Poppins",
                 fontWeight: "400",
@@ -88,7 +92,7 @@ export default function Footer() {
           <Grid Item xs="auto">
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", md: "none", lg: "flex" },
                 flexWrap: "nowrap",
                 flexDirection: "column",
                 alignItems: "center",
@@ -185,7 +189,7 @@ export default function Footer() {
               flexDirection: "column",
             }}
           >
-            <Grid Item xs="auto">
+            <Grid Item xs="none">
               <Typography
                 sx={{
                   display: "flex",
