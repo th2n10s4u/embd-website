@@ -46,8 +46,10 @@ export default function TemplateCard(props) {
             sx={{
               component: "img",
               border: "0",
-              height: "350px",
-              width: "350px",
+              height: { xs: "225px", sm: "350px", lg: "350px", xl: "350px" },
+              // height: "350px",
+              width: { xs: "225px", sm: "350px", lg: "350px", xl: "350px" },
+              // width: "350px",
               margin: "12px",
               marginTop: "0px",
               marginBottom: "16px",
@@ -68,9 +70,9 @@ export default function TemplateCard(props) {
               <Button
                 component={HashLink}
                 to="/Contact"
-                style={{
-                  minWidth: "313px",
-                  minHeight: "40px",
+                sx={{
+                  width: { xs: "200px", sm: "313px", md: "313px" },
+                  height: { xs: "30px", sm: "40px" },
                   marginBottom: "40px",
                   boxShadow: "5px 5px 5px grey",
                 }}
