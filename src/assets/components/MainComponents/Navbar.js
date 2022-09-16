@@ -171,7 +171,7 @@ const ResponsiveAppBar = () => {
           <Box
             sx={{
               width: "340px",
-              display: "flex",
+              display: { xs: "none", md: "none", lg: "flex" },
               alignItems: "center",
               justifyContent: "flex-end",
             }}
@@ -180,7 +180,7 @@ const ResponsiveAppBar = () => {
               component={HashLink}
               to="/Contact#contact"
               sx={{
-                display: { xs: "none", md: "none", lg: "flex" },
+                // display: { xs: "none", md: "none", lg: "flex" },
                 whiteSpace: "nowrap",
               }}
               variant="extended"
