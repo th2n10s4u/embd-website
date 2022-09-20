@@ -32,9 +32,11 @@ export default function TemplateCard(props) {
           elevation={0}
           sx={{
             alignItems: "center",
-            minWidth: "522px",
-            maxWidth: 400,
-            maxHeight: 600,
+            minWidth: "320px",
+            // maxWidth: 400,
+            maxWidth: { xs: "320px", sm: "320px", md: "400px" },
+            maxHeight: { xs: "100%", md: "80%", lg: 600 },
+            // maxHeight: 600,
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
@@ -95,8 +97,10 @@ export default function TemplateCard(props) {
           <Card
             elevation={0}
             sx={{
-              maxWidth: 650,
-              maxHeight: 550,
+              maxWidth: { xs: "320px", sm: "320px", md: "400px" },
+              maxHeight: { xs: "100%", md: "80%", lg: 600 },
+              // maxWidth: 650,
+              // maxHeight: 550,
 
               flexBasis: "50%",
               alignSelf: "center",

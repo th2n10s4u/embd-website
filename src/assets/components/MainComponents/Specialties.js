@@ -15,6 +15,7 @@ export default function Specialties() {
           }}
         >
           <TemplateCard
+            sx={{ minWidth: "300px" }}
             img={LatinFeet}
             CardContentHeaderFirstLine="Our Specialties:"
             CardContentBodySentenceOne="At Evelyn Meinz Ballroom Dance we teach anything you can do with
