@@ -88,7 +88,7 @@ const ResponsiveAppBar = () => {
                 lg: "row",
                 xl: "row",
               },
-              mr: 3,
+              // mr: 3,
               display: "flex",
               justifyContent: "space-around",
             }}
