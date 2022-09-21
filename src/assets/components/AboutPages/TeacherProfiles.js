@@ -12,7 +12,7 @@ export default function TeacherProfiles() {
           elevation={0}
           sx={{
             minWidth: "100%", //"1200px", // Play with sizing (100% is too wide)
-            minHeight: "447px",
+            // minHeight: "447px",
             border: "0",
             display: "flex",
             justifyContent: "center",
@@ -26,13 +26,12 @@ export default function TeacherProfiles() {
             sx={{
               maxWidth: 800,
               fontFamily: "Poppins",
-              fontWeight: "400",
+              fontWeight: "500",
               lineHeight: "100%",
-
               letterSpacing: "2px",
-              fontSize: "34px",
+              fontSize: "26px",
               marginTop: "10px",
-              marginBottom: "50px",
+              // marginBottom: "50px",
             }}
             align="center"
           >
@@ -64,6 +63,8 @@ export default function TeacherProfiles() {
             centerBodyOne
             centerBodyTwo
             background
+            direction
+            wrap
             shadow
             radius
           />
@@ -88,6 +89,7 @@ export default function TeacherProfiles() {
           background
           shadow
           radius
+          wrap
         />
       </Box>
     </React.Fragment>
