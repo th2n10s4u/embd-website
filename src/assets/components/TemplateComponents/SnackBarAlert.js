@@ -24,11 +24,19 @@ export default function SnackBarAlert() {
   };
 
   return (
-    <Stack spacing={10} sx={{ width: "100%" }}>
+    <Stack
+      spacing={10}
+      sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Button
         onClick={handleClick}
         sx={{
-          width: { xs: "200px", sm: "313px", md: "313px" },
+          width: { xs: "200px", sm: "288px", md: "288px" },
           height: { xs: "30px", sm: "40px" },
           // minWidth: "313px",
           // minHeight: "40px",
@@ -38,8 +46,7 @@ export default function SnackBarAlert() {
         color="secondary"
         variant="contained"
         borderRadius="12"
-        size="extraLarge"
-        display="flex"
+        // size="extraLarge"
         boxShadow="9px 9px 6px grey"
         background="#fffff"
         type="submit"
