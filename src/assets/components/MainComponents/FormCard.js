@@ -9,7 +9,7 @@ export default function FormCard() {
     <div>
       <Box
         sx={{
-          display: "flex",
+          display: { sm: "none", md: "none", lg: "flex" },
           justifyContent: "center",
         }}
       >
@@ -22,9 +22,8 @@ export default function FormCard() {
                   display: "flex",
                   flexDirection: "column",
                   maxWidth: "313px",
-                  marginLeft: "30px",
                   textAlign: "center",
-                  justifyContent: "spaceBetween",
+                  justifyContent: "space-around",
                   paddingTop: "40px",
                 }}
               >
@@ -48,7 +47,7 @@ export default function FormCard() {
               </Box>
             </React.Fragment>
           }
-          reverse={true}
+          reverse={false}
         />
       </Box>
     </div>
