@@ -22,6 +22,7 @@ export default function TemplateCard(props) {
         minHeight: "447px",
         border: "0",
         display: "flex",
+        flexWrap: "wrap-reverse",
         marginBottom: "20px",
       }}
       alignItems="center"
@@ -74,8 +75,8 @@ export default function TemplateCard(props) {
                 component={HashLink}
                 to="/Contact"
                 sx={{
-                  width: { xs: "200px", sm: "313px", md: "313px" },
-                  height: { xs: "30px", sm: "40px" },
+                  width: { xs: "200px", sm: "200px", md: "200px", lg: "313px" },
+                  height: { xs: "30px", sm: "30px", md: "30px", lg: "40px" },
                   marginBottom: "40px",
                   boxShadow: "5px 5px 5px grey",
                 }}
@@ -189,7 +190,6 @@ export default function TemplateCard(props) {
           </Card>
         )}
       </Grid>
-      <Grid item>{props.children}</Grid>
     </Grid>
   );
 }
