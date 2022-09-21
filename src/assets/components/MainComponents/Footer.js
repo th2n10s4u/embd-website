@@ -264,8 +264,9 @@ export default function Footer() {
         elevation={4}
         sx={{
           display: "flex",
-          flexDirection: "center",
-          justifyContent: "center",
+          flexDirection: "column",
+          // alignItems: "center",
+          // justifyContent: "center",
           width: "100%",
           height: "50px",
           background: "#000000",
@@ -273,9 +274,10 @@ export default function Footer() {
       >
         <Typography
           sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
+            // display: "flex",
+            // flexDirection: "column",
+            // flexWrap: "wrap",
+            textAlign: "center",
             fontFamily: "Poppins",
             color: "white",
           }}
