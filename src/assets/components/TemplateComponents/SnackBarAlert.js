@@ -27,9 +27,11 @@ export default function SnackBarAlert() {
     <Stack spacing={10} sx={{ width: "100%" }}>
       <Button
         onClick={handleClick}
-        style={{
-          minWidth: "313px",
-          minHeight: "40px",
+        sx={{
+          width: { xs: "200px", sm: "313px", md: "313px" },
+          height: { xs: "30px", sm: "40px" },
+          // minWidth: "313px",
+          // minHeight: "40px",
           marginTop: "20px",
           boxShadow: "5px 5px 5px grey",
         }}
