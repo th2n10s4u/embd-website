@@ -27,6 +27,12 @@ export default function Specialties() {
                 <Box
                   sx={{
                     display: "flex",
+                    flexDirection: {
+                      xs: "column",
+                      sm: "column",
+                      md: "column",
+                      lg: "row",
+                    },
                     flexWrap: "nowrap",
                   }}
                 >
