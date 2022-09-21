@@ -17,6 +17,7 @@ export default function MainCarousel() {
       navigation
       autoplay
       effect={"fade"}
+      autoHeight
       speed={400}
       Pagination
       slidesPerView={1}
