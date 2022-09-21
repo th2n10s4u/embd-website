@@ -18,6 +18,7 @@ export default function TemplateCard(props) {
       rowSpacing={5}
       ClassName="TemplatePaper"
       sx={{
+        maxWidth: "1080px",
         minHeight: "447px",
         border: "0",
         display: "flex",
@@ -25,7 +26,7 @@ export default function TemplateCard(props) {
       }}
       alignItems="center"
       direction={props.reverse ? "row-reverse" : "row"}
-      justifyContent="center"
+      justifyContent="space-around"
     >
       <Grid item>
         <Card
@@ -48,9 +49,9 @@ export default function TemplateCard(props) {
             sx={{
               component: "img",
               border: "0",
-              height: { xs: "225px", sm: "350px", lg: "350px", xl: "350px" },
+              height: { xs: "225px", sm: "225px", lg: "350px", xl: "350px" },
               // height: "350px",
-              width: { xs: "225px", sm: "350px", lg: "350px", xl: "350px" },
+              width: { xs: "225px", sm: "225px", lg: "350px", xl: "350px" },
               // width: "350px",
               margin: "12px",
               marginTop: "0px",
@@ -97,7 +98,7 @@ export default function TemplateCard(props) {
           <Card
             elevation={0}
             sx={{
-              maxWidth: { xs: "320px", sm: "320px", md: "400px" },
+              maxWidth: { xs: "320px", sm: "320px", md: "400px", lg: 650 },
               maxHeight: { xs: "100%", md: "80%", lg: 600 },
               // maxWidth: 650,
               // maxHeight: 550,
