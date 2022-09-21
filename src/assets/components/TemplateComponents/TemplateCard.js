@@ -27,7 +27,7 @@ export default function TemplateCard(props) {
       alignItems="center"
       flexWrap={props.wrap ? "wrap" : "wrap-reverse"}
       direction={props.reverse ? "row-reverse" : "row"}
-      justifyContent="space-around"
+      justifyContent="space-between"
     >
       <Grid item>
         <Card
