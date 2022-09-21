@@ -100,14 +100,12 @@ const ResponsiveAppBar = () => {
             </Button>
             {navMap.map((obj) => (
               <Button
-                size="large"
                 key={obj.name}
                 onClick={(event) => {
                   setAnchorElNav(event.currentTarget);
                   setSubMenu(obj.menuItems);
                 }}
                 sx={{
-                  my: 2,
                   whiteSpace: "noWrap",
                   color: "black",
                   display: "block",
@@ -170,7 +168,6 @@ const ResponsiveAppBar = () => {
           </Box>
           <Box
             sx={{
-              width: "340px",
               display: { xs: "none", md: "none", lg: "flex" },
               alignItems: "center",
               justifyContent: "flex-end",
