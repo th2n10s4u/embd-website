@@ -19,13 +19,13 @@ export default function TemplateCard(props) {
       ClassName="TemplatePaper"
       sx={{
         maxWidth: "1080px",
-        minHeight: "447px",
+        // minHeight: "447px",
         border: "0",
         display: "flex",
-        flexWrap: "wrap-reverse",
         marginBottom: "20px",
       }}
       alignItems="center"
+      flexWrap={props.wrap ? "wrap" : "wrap-reverse"}
       direction={props.reverse ? "row-reverse" : "row"}
       justifyContent="space-around"
     >
@@ -42,7 +42,7 @@ export default function TemplateCard(props) {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            marginTop: "40px",
+            // marginTop: "40px",
           }}
         >
           <CardMedia
