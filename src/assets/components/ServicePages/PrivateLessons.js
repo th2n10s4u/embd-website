@@ -28,7 +28,6 @@ export default function SocialDance() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          maxWidth: "1080px",
         }}
       >
         <TemplateTextCard
