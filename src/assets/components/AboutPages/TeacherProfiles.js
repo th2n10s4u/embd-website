@@ -24,11 +24,12 @@ export default function TeacherProfiles() {
           <Typography
             id="teacherprofiles"
             sx={{
-              maxWidth: 800,
+              maxWidth: 900,
               fontFamily: "Poppins",
               fontWeight: "500",
-              lineHeight: "100%",
+              // lineHeight: "100%",
               letterSpacing: "2px",
+              lineSpacing: "2px",
               fontSize: "26px",
               marginTop: "10px",
               // marginBottom: "50px",
