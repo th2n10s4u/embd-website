@@ -17,8 +17,8 @@ export default function TemplateCard(props) {
       container
       rowSpacing={5}
       ClassName="TemplatePaper"
+      maxWidth={props.width ? "1111px" : "1080px"}
       sx={{
-        maxWidth: "1080px",
         // minHeight: "447px",
         border: "0",
         display: "flex",

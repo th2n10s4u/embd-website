@@ -14,8 +14,9 @@ export default function FormCard() {
         }}
       >
         <TemplateCard
-          maxWidth="1111px"
-          sx={{ display: "flex", justyifyContent: "space-between" }}
+          sx={{
+            display: "flex",
+          }}
           img={WoodsDance}
           CardContentHeaderFirstLine={
             <React.Fragment>
@@ -50,6 +51,7 @@ export default function FormCard() {
             </React.Fragment>
           }
           reverse
+          width
         />
       </Box>
     </div>
