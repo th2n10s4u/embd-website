@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Paper } from "@mui/material";
+import { Box, Container, Paper, Grid } from "@mui/material";
 import LatinDip from "../../images/latin-dip-image.png";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
@@ -15,6 +15,7 @@ export default function StylesOfDance() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "Center",
+          marginTop: "20px",
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "space-around" }}>
@@ -29,21 +30,24 @@ export default function StylesOfDance() {
           />
         </Box>
 
-        <Container
+        <Grid
+          container
           sx={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            // maxWidth:"900px",
+            flexWrap: "wrap",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            maxWidth: "1080px",
             // minWidth:"813px",
-            width: "900px",
+            // width: "900px",
           }}
         >
-          <Box
+          <Grid
+            item
             sx={{
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
+              flexDirection: { sm: "row", md: "column", lg: "row" },
+              // justifyContent: "space-between",
               alignItems: "center",
               maxWidth: "900px",
             }}
@@ -62,27 +66,27 @@ export default function StylesOfDance() {
               ]}
               stylescard
             />
+          </Grid>
 
-            <TemplateTextCard
-              TextCardHeader="International"
-              ListText={[
-                "Foxtrot",
-                "Quickstep",
-                "Viennese Waltz",
-                "Slow Waltz",
-                "Tango",
-              ]}
-              stylescard
-            />
+          <TemplateTextCard
+            TextCardHeader="International"
+            ListText={[
+              "Foxtrot",
+              "Quickstep",
+              "Viennese Waltz",
+              "Slow Waltz",
+              "Tango",
+            ]}
+            stylescard
+          />
 
-            <TemplateTextCard
-              TextCardHeader="Latin"
-              ListText={["Rumba", "Cha Cha", "Jive", "Paso Doble", "Samba"]}
-              stylescard
-            />
-          </Box>
+          <TemplateTextCard
+            TextCardHeader="Latin"
+            ListText={["Rumba", "Cha Cha", "Jive", "Paso Doble", "Samba"]}
+            stylescard
+          />
 
-          <Box
+          {/* <Box
             sx={{
               display: "flex",
               flexDirection: "row",
@@ -90,32 +94,33 @@ export default function StylesOfDance() {
               justifyContent: "space-evenly",
               alignItems: "center",
             }}
-          >
-            <TemplateTextCard
-              TextCardHeader="Smooth"
-              ListText={[
-                "Foxtrot",
-                "Waltz",
-                "Viennese Waltz",
-                "Peabody",
-                "Tango",
-              ]}
-              stylescard
-            />
+          > */}
+          <TemplateTextCard
+            TextCardHeader="Smooth"
+            ListText={[
+              "Foxtrot",
+              "Waltz",
+              "Viennese Waltz",
+              "Peabody",
+              "Tango",
+            ]}
+            stylescard
+          />
 
-            <TemplateTextCard
-              TextCardHeader="Rythm"
-              ListText={["Rumba", "Cha Cha", "Swing", "Bolero", "Mambo"]}
-              stylescard
-            />
-          </Box>
-        </Container>
+          <TemplateTextCard
+            TextCardHeader="Rythm"
+            ListText={["Rumba", "Cha Cha", "Swing", "Bolero", "Mambo"]}
+            stylescard
+          />
+          {/* </Box> */}
+        </Grid>
         <TemplateTextCard
           ListText={[
             "Not sure what dance style is right for you?",
             "Don't worry! Just Tell us your goals and we can help you pick the right dances to learn",
           ]}
           centered
+          wrapped
         />
       </Paper>
     </React.Fragment>
