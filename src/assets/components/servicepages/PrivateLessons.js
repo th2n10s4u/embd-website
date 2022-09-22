@@ -23,23 +23,34 @@ export default function SocialDance() {
           boldHeader={true}
         />
       </Box>
-
-      <TemplateTextCard
-        TextCardHeader="Pricing & Packaging"
-        ListText={[
-          "Amount is the same for an individual or a couple",
-          "Current prices are for the Santa Rosa location.",
-          "Additional charges may apply for drive time and floor rates at other studios. ",
-        ]}
-      />
-      <TemplateTextCard
-        ListText={[
-          "Introduction Consultation: $35",
-          "45 Minute Private Lesson: $123",
-          "5 Pack of Lessons: $500",
-          "10 Pack of Lessons: $1000",
-        ]}
-      />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <TemplateTextCard
+          TextCardHeader="Pricing & Packaging"
+          ListText={[
+            "Amount is the same for an individual or a couple",
+            "Current prices are for the Santa Rosa location.",
+            "Additional charges may apply for drive time and floor rates at other studios. ",
+          ]}
+          wrapped
+          centered
+        />
+        <TemplateTextCard
+          ListText={[
+            "Introduction Consultation: $35",
+            "45 Minute Private Lesson: $123",
+            "5 Pack of Lessons: $500",
+            "10 Pack of Lessons: $1000",
+          ]}
+          wrapped
+          centered
+        />
+      </Box>
     </React.Fragment>
   );
 }
