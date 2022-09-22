@@ -22,6 +22,7 @@ export default function SocialDance() {
           CardContentBodySentenceTwo="Beyond the all-important first dance, the studio can also lay the groundwork for fathers & daughters, mothers & sons, or even entire groups (Hello, wedding flash mob!)."
           CardContentBodySentenceThree="Here’s the point: it’s your perfect day. Whatever you want? We’ll ensure it happens."
           boldHeader
+          wrapped
         />
       </Box>
       <Box
@@ -30,8 +31,9 @@ export default function SocialDance() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          // maxWidth: "1080px",
-          alignSelf: "center",
+          maxWidth: "1080px",
+          margin: "auto",
+          marginTop: "20px",
         }}
       >
         <TemplateTextCard
