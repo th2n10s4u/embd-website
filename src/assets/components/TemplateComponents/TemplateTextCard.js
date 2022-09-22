@@ -83,7 +83,7 @@ export default function TemplateTextCard(props) {
                 <ListItem
                   sx={{
                     display: "flex",
-                    whiteSpace: "nowrap",
+                    whiteSpace: props.wrapped ? "wrap" : "nowrap",
                     flexDirection: "column",
                     padding: "10px",
                     textAlign: props.centered ? "center" : "left", //conditional
