@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
 import TemplateTextCard from "../TemplateComponents/TemplateTextCard";
 import Fruit from "../../images/Fruit-dance-image.png";
@@ -10,10 +10,11 @@ import Crossbody from "../../images/Couple-crossbody-image.png";
 export default function BenefitsOfDance() {
   return (
     <React.Fragment>
-      <Box
+      <Grid
         id="benefitsofdance"
         sx={{
           display: "flex",
+          justifyContent: "space-between",
           flexDirection: "column",
           alignItems: "center",
         }}
@@ -31,48 +32,48 @@ export default function BenefitsOfDance() {
           shadow
           radius
         />
-        <Box
+        <Grid
+          item
           sx={{
             display: "flex",
-            flexDirection: "row",
-            width: "1170px", // not sure if this is the best solution but the spacing is better.
-            // justifyContent: "flex-end",
+            // flexWrap: "wrap-reverse",
+            // maxWidth: "1080px",
+            flexDirection: { xs: "column-reverse", sm: "row", md: "row" },
             alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          {/* fix template card by adding conditional to the card's for text, similarly to the && props.button */}
-          <TemplateCard img={Fruit} />
-          {/* <Box
-            sx={{ display: "flex", marginLeft: "200px", width: "0px" }}
-          ></Box> */}
+          <TemplateCard img={Fruit} imgcentered />
           <TemplateTextCard
             TextCardHeader="Benefits?"
             ListText={[
-              "Healthy Posture",
-              "Better Balance",
-              "Increased Endurance",
-              "Social Satisfaction",
-              "Reduces Stress",
-              "New Neural Pathway Creation",
-              "Diminished Depression",
-              "Boost Memory",
-              "Improved Flexibility",
-              "Enhanced Communication Skills",
-              "Cardiovascular Health",
-              "Creative Outlet",
+              "•Healthy Posture",
+              "•Better Balance",
+              "•Increased Endurance",
+              "•Social Satisfaction",
+              "•Reduces Stress",
+              "•New Neural Pathway Creation",
+              "•Diminished Depression",
+              "•Boost Memory",
+              "•Improved Flexibility",
+              "•Enhanced Communication Skills",
+              "•Cardiovascular Health",
+              "•Creative Outlet",
             ]}
             centered
+            reverse
           />
-        </Box>
-        <Box
+        </Grid>
+        <Grid
+          item
           sx={{
             display: "flex",
             flexDirection: "row",
-            width: "10px",
+            // width: "10px",
             marginLeft: "200px",
           }}
-        ></Box>
-        <Box sx={{ display: "flex", flexDirection: "row" }}>
+        ></Grid>
+        <Grid item sx={{ display: "flex", flexDirection: "row" }}>
           <TemplateCard
             img={Crossbody}
             CardContentHeaderFirstLine="Science"
@@ -86,8 +87,8 @@ export default function BenefitsOfDance() {
             centerBodyThree
             reverse
           />
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
 }
