@@ -14,20 +14,18 @@ export default function TemplateTextCard(props) {
       ClassName="TemplateText"
       elevation={0}
       sx={{
-        width: "100%",
         display: "flex",
-        flexDirection: "column",
-        // justifyContent: "center",    Not changing the styling
-        // alignItems: "center",        Not changing the styling
-        // background: "#DEE2E9",       Not changing the styling
+        flexDirection: "row",
+        flexWrap: "wrap-reverse",
       }}
     >
       <Card
         elevation={0}
         sx={{
-          maxWidth: 1000, // Had it set to 700, Made it wider for Wedding Dance package pricing.
-          maxHeight: 475,
-          flexBasis: "50%",
+          minWidth: "320px",
+          // maxWidth: 1000, // Had it set to 700, Made it wider for Wedding Dance package pricing.
+          // maxHeight: 475,
+          // flexBasis: "50%",
           alignSelf: "center",
           textAlign: "center",
           display: "flex",
@@ -85,7 +83,9 @@ export default function TemplateTextCard(props) {
                 <ListItem
                   sx={{
                     display: "flex",
+                    whiteSpace: "nowrap",
                     flexDirection: "column",
+                    padding: "10px",
                     textAlign: props.centered ? "center" : "left", //conditional
                     marginBottom: "-10px",
                   }}
