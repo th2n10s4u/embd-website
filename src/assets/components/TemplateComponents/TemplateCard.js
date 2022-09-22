@@ -118,7 +118,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Playfair Display",
                   fontWeight: props.boldHeader ? "600" : "400",
-                  fontSize: "32px",
+                  fontSize: "30px",
                   lineHeight: "20px",
                   textAlign: props.centerHeader ? "center" : "left",
                 }}
@@ -147,7 +147,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "32px",
+                  lineHeight: "30px",
                   // paragraphSpacing: "28",
                   // letterSpacing: "0",
                   fontSize: "24px",
@@ -161,7 +161,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "32px",
+                  lineHeight: "30px",
                   paragraphSpacing: "28",
                   letterSpacing: "0",
                   fontSize: "24px",
@@ -175,7 +175,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "32px",
+                  lineHeight: "30px",
                   paragraphSpacing: "28",
                   letterSpacing: "0",
                   fontSize: "24px",
