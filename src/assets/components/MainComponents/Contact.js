@@ -12,9 +12,11 @@ export default function Contact() {
           minHeight: 700,
           maxWidth: "100%",
           display: "flex",
+          flexWrap: "wrap",
           flexDirection: "row",
           justifyContent: "space-evenly",
           alignContent: "space-evenly",
+          marginTop: 3,
         }}
       >
         <Card
