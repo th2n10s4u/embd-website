@@ -32,6 +32,7 @@ export default function SocialDance() {
           "$400K",
         ]}
         centered={true}
+        wrapped
       />
 
       <TemplateTextCard
@@ -41,6 +42,7 @@ export default function SocialDance() {
           "$1125k",
         ]}
         centered={true}
+        wrapped
       />
 
       <TemplateTextCard
@@ -50,6 +52,7 @@ export default function SocialDance() {
           "Pricing Varies",
         ]}
         centered={true}
+        wrapped
       />
 
       <TemplateTextCard
@@ -59,6 +62,7 @@ export default function SocialDance() {
           "Pricing Varies",
         ]}
         centered={true}
+        wrapped
       />
     </React.Fragment>
   );
