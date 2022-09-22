@@ -48,7 +48,7 @@ export default function TemplateTextCard(props) {
                 fontFamily: "Playfair Display",
                 fontWeight: "400",
                 fontSize: "32px",
-                lineHeight: "20px",
+                lineHeight: "30px",
                 marginBottom: "-40px",
               }}
               // align="left"     Not changing the styling

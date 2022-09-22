@@ -119,7 +119,7 @@ export default function TemplateCard(props) {
                   fontFamily: "Playfair Display",
                   fontWeight: props.boldHeader ? "600" : "400",
                   fontSize: "30px",
-                  lineHeight: "20px",
+                  lineHeight: "30px",
                   textAlign: props.centerHeader ? "center" : "left",
                 }}
               >
