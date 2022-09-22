@@ -27,7 +27,7 @@ export default function TemplateCard(props) {
       alignItems="center"
       flexWrap={props.wrap ? "wrap" : "wrap-reverse"}
       direction={props.reverse ? "row-reverse" : "row"}
-      justifyContent="space-around"
+      justifyContent={props.imgcentered ? "center" : "space-around"}
     >
       <Grid item>
         <Card
@@ -147,9 +147,9 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "95.7%",
-                  paragraphSpacing: "28",
-                  letterSpacing: "0",
+                  lineHeight: "32px",
+                  // paragraphSpacing: "28",
+                  // letterSpacing: "0",
                   fontSize: "24px",
                   marginBottom: "20px",
                   textAlign: props.centerBodyOne ? "center" : "left",
@@ -161,7 +161,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "95.7%",
+                  lineHeight: "32px",
                   paragraphSpacing: "28",
                   letterSpacing: "0",
                   fontSize: "24px",
@@ -175,7 +175,7 @@ export default function TemplateCard(props) {
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
-                  lineHeight: "95.7%",
+                  lineHeight: "32px",
                   paragraphSpacing: "28",
                   letterSpacing: "0",
                   fontSize: "24px",
