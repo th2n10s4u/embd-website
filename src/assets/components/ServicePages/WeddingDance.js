@@ -24,46 +24,56 @@ export default function SocialDance() {
           boldHeader
         />
       </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          // maxWidth: "1080px",
+          alignSelf: "center",
+        }}
+      >
+        <TemplateTextCard
+          TextCardHeader="One Sweet Day"
+          ListText={[
+            "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style! ",
+            "$400K",
+          ]}
+          centered={true}
+          wrapped
+        />
 
-      <TemplateTextCard
-        TextCardHeader="One Sweet Day"
-        ListText={[
-          "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style! ",
-          "$400K",
-        ]}
-        centered={true}
-        wrapped
-      />
+        <TemplateTextCard
+          TextCardHeader="Sweet and Simple."
+          ListText={[
+            "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style!",
+            "$1125k",
+          ]}
+          centered={true}
+          wrapped
+        />
 
-      <TemplateTextCard
-        TextCardHeader="Sweet and Simple."
-        ListText={[
-          "Sweet and Simple offers a five-lesson package that will not only teach the basics of dance, but provides the time needed to give you that extra boost of confidence. You will also learn turns and a dip to give your dance your dance some extra romance and style!",
-          "$1125k",
-        ]}
-        centered={true}
-        wrapped
-      />
+        <TemplateTextCard
+          TextCardHeader="Sweet and Splendid."
+          ListText={[
+            "It’s not about dancing. It’s about blowing the crowd away. Showstopping choreography. Moves that belong on television. After 15 lessons, this isn’t a first dance between man and wife - this is a declaration to the world: when the two of you are together, absolutely nothing is impossible.",
+            "Pricing Varies",
+          ]}
+          centered={true}
+          wrapped
+        />
 
-      <TemplateTextCard
-        TextCardHeader="Sweet and Splendid."
-        ListText={[
-          "It’s not about dancing. It’s about blowing the crowd away. Showstopping choreography. Moves that belong on television. After 15 lessons, this isn’t a first dance between man and wife - this is a declaration to the world: when the two of you are together, absolutely nothing is impossible.",
-          "Pricing Varies",
-        ]}
-        centered={true}
-        wrapped
-      />
-
-      <TemplateTextCard
-        TextCardHeader="Sweet and Spectacular."
-        ListText={[
-          "Of course, sometimes everyone wants to get in on the good time. When the entire wedding party wants to get up and boogie, Sweet and Spectacular means the sky is the limit. If you have an idea, no matter how crazy, Evelyn Meinz will help you to make it a reality.",
-          "Pricing Varies",
-        ]}
-        centered={true}
-        wrapped
-      />
+        <TemplateTextCard
+          TextCardHeader="Sweet and Spectacular."
+          ListText={[
+            "Of course, sometimes everyone wants to get in on the good time. When the entire wedding party wants to get up and boogie, Sweet and Spectacular means the sky is the limit. If you have an idea, no matter how crazy, Evelyn Meinz will help you to make it a reality.",
+            "Pricing Varies",
+          ]}
+          centered={true}
+          wrapped
+        />
+      </Box>
     </React.Fragment>
   );
 }
