@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, ListItem } from "@mui/material";
 import TemplateCard from "../TemplateComponents/TemplateCard";
-import LatinFeet from "../../images/Latin-feet-image.png";
+import SalsaDark from "../../images/Salsa-Dark.png";
 
 export default function Specialties() {
   return (
@@ -16,7 +16,7 @@ export default function Specialties() {
         >
           <TemplateCard
             sx={{ minWidth: "300px" }}
-            img={LatinFeet}
+            img={SalsaDark}
             CardContentHeaderFirstLine="Our Specialties:"
             CardContentBodySentenceOne="At Evelyn Meinz Ballroom Dance we teach anything you can do with
             a partner."
