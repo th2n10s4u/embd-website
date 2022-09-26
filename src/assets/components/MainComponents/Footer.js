@@ -262,6 +262,7 @@ export default function Footer() {
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
           width: "100%",
           height: "50px",
           background: "#000000",
@@ -269,6 +270,7 @@ export default function Footer() {
       >
         <Typography
           sx={{
+            textAlign: "center",
             fontFamily: "Poppins",
             color: "white",
           }}
