@@ -19,11 +19,8 @@ export default function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // alert(
-    //   "You're information has been sent and you will be contacted within 1-2 business days."
-    // );
     console.log(inputs);
-    ///
+
     var formdata = new FormData();
     formdata.append("name", inputs.name);
     formdata.append("email", inputs.email);
@@ -35,7 +32,6 @@ export default function ContactForm() {
       redirect: "follow",
       headers: {
         "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
     };
 
@@ -96,25 +92,7 @@ export default function ContactForm() {
           variant="filled"
           autoComplete="off"
         />
-        {/* <Button
-          onClick={handleClick}
-          style={{
-            minWidth: "313px",
-            minHeight: "40px",
-            marginTop: "20px",
-            boxShadow: "5px 5px 5px grey",
-          }}
-          color="secondary"
-          variant="contained"
-          borderRadius="12"
-          size="extraLarge"
-          display="flex"
-          boxShadow="9px 9px 6px grey"
-          background="#fffff"
-          type="submit"
-        >
-          Submit
-        </Button> */}
+        {/* Button is in SnackBarAlert.js */}
         <SnackBarAlert />
       </form>
     </Box>

@@ -6,7 +6,6 @@ import SalsaDark from "../../images/Salsa-Dark.png";
 export default function Specialties() {
   return (
     <div>
-      {/* I need to add either cards or some sort of flex in order to place a photo on one side and text on the other.  */}
       <Box>
         <Box
           sx={{
@@ -84,12 +83,7 @@ export default function Specialties() {
             }
           />
         </Box>
-
-        {/* <ListItem sx={{ display: "list-item" }}></ListItem>  */}
-        {/* List items don't have a bulleted UL option available. Maybe import a bullet PNG and attach it in front of each word? */}
       </Box>
     </div>
   );
 }
-
-//TODO: Adjust alignment of the box around the listitems so that the it doesn't wrap. nowrap in the <Box> didn't work</Box> as well as in Typography

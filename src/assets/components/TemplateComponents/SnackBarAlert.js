@@ -38,15 +38,12 @@ export default function SnackBarAlert() {
         sx={{
           width: { xs: "200px", sm: "288px", md: "288px" },
           height: { xs: "30px", sm: "40px" },
-          // minWidth: "313px",
-          // minHeight: "40px",
           marginTop: "20px",
           boxShadow: "5px 5px 5px grey",
         }}
         color="secondary"
         variant="contained"
         borderRadius="12"
-        // size="extraLarge"
         boxShadow="9px 9px 6px grey"
         background="#fffff"
         type="submit"
@@ -62,7 +59,6 @@ export default function SnackBarAlert() {
           Your form has been submitted successfully!
         </Alert>
       </Snackbar>
-      {/* <Alert severity="success">This is a success message!</Alert> */}
     </Stack>
   );
 }

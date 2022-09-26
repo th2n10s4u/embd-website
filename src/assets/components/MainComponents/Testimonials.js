@@ -44,8 +44,6 @@ export default function Testimonials(props) {
       <Grid
         container
         sx={{
-          // minWidth: "1200px",
-          // minHeight: "447px",
           border: "0",
           display: "flex",
           flexWrap: "wrap",

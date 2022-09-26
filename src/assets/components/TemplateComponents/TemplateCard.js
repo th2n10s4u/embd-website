@@ -17,9 +17,8 @@ export default function TemplateCard(props) {
       container
       rowSpacing={5}
       ClassName="TemplatePaper"
-      maxWidth={props.width ? "1111px" : "1080px"}
+      maxWidth={props.width ? "1185px" : "1080px"}
       sx={{
-        // minHeight: "447px",
         border: "0",
         display: "flex",
         marginBottom: "20px",
@@ -35,14 +34,11 @@ export default function TemplateCard(props) {
           sx={{
             alignItems: "center",
             minWidth: "320px",
-            // maxWidth: 400,
             maxWidth: { xs: "320px", sm: "320px", md: "400px" },
             maxHeight: { xs: "100%", md: "80%", lg: 600 },
-            // maxHeight: 600,
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            // marginTop: "40px",
           }}
         >
           <CardMedia
@@ -51,9 +47,7 @@ export default function TemplateCard(props) {
               component: "img",
               border: "0",
               height: { xs: "225px", sm: "225px", lg: "350px", xl: "350px" },
-              // height: "350px",
               width: { xs: "225px", sm: "225px", lg: "350px", xl: "350px" },
-              // width: "350px",
               margin: "12px",
               marginTop: "0px",
               marginBottom: "16px",
@@ -101,10 +95,7 @@ export default function TemplateCard(props) {
             sx={{
               maxWidth: { xs: "320px", sm: "320px", md: "400px", lg: 700 },
               maxHeight: { xs: "100%", md: "80%", lg: 700 },
-              // maxWidth: 650,
-              // maxHeight: 550,
 
-              // flexBasis: "50%",
               alignSelf: "center",
               marginBottom: "25px",
               background: props.background ? "#eceff1" : null,
@@ -142,14 +133,11 @@ export default function TemplateCard(props) {
               >
                 {props.CardContentBody}
               </Typography>
-              {/*  */}
               <Typography
                 sx={{
                   fontFamily: "Poppins",
                   fontWeight: "400",
                   lineHeight: "30px",
-                  // paragraphSpacing: "28",
-                  // letterSpacing: "0",
                   fontSize: "24px",
                   marginBottom: "20px",
                   textAlign: props.centerBodyOne ? "center" : "left",
@@ -166,7 +154,7 @@ export default function TemplateCard(props) {
                   letterSpacing: "0",
                   fontSize: "24px",
                   marginBottom: "20px",
-                  textAlign: props.centerBodyTwo ? "center" : "left", //conditional
+                  textAlign: props.centerBodyTwo ? "center" : "left",
                 }}
               >
                 {props.CardContentBodySentenceTwo}

@@ -39,36 +39,39 @@ export default function MainCarousel() {
   );
 }
 
-// export default function MainCarousel(props) {
-//   var items = [
-//     {
-//       imgUrl: BeachPhoto,
-//     },
-//     {
-//       imgUrl: ForestPhoto,
-//     },
-//     {
-//       imgUrl: GroupDance,
-//     },
-//     {
-//       imgUrl: WeddingDance,
-//     },
-//   ];
+/* 
+**Mui-Carousel**
+export default function MainCarousel(props) {
+  var items = [
+    {
+      imgUrl: BeachPhoto,
+    },
+    {
+      imgUrl: ForestPhoto,
+    },
+    {
+      imgUrl: GroupDance,
+    },
+    {
+      imgUrl: WeddingDance,
+    },
+  ];
 
-//   return (
-//     <Carousel>
-//       {items.map((item, i) => (
-//         <Item key={i} item={item} />
-//       ))}
-//     </Carousel>
-//   );
-// }
-// {
-// }
-// function Item({ item }) {
-//   return (
-//     <Paper elevation={0} sx={{ height: "800px" }}>
-//       <img src={item.imgUrl} alt="CarouselImages" width="100%"></img>
-//     </Paper>
-//   );
-// }
+  return (
+    <Carousel>
+      {items.map((item, i) => (
+        <Item key={i} item={item} />
+      ))}
+    </Carousel>
+  );
+}
+{
+}
+function Item({ item }) {
+  return (
+    <Paper elevation={0} sx={{ height: "800px" }}>
+      <img src={item.imgUrl} alt="CarouselImages" width="100%"></img>
+    </Paper>
+  );
+}
+*/

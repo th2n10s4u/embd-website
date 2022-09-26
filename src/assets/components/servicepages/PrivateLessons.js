@@ -15,7 +15,7 @@ export default function SocialDance() {
         }}
       >
         <TemplateCard
-          img={LatinCorte} // Fix the latin-corte-image.png file There is white on the right side.
+          img={LatinCorte}
           buttonText="Learn More"
           CardContentHeaderFirstLine="Private Lessons"
           CardContentBodySentenceOne="The most effective way to achieve your dancing goals is through taking private lessons. Although group classes are great for learning patterns and trying out new dances, private lesson focus on footwork, foot placement, timing, body movement, musicality, posture, styling, lead/follow technique and floor craft.  Whether you are preparing for a special event or you want stand out on the dance floor taking private lessons will give you the essential techniques and confidence to reach your dancing goals."

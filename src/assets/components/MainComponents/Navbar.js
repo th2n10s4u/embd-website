@@ -77,7 +77,6 @@ const ResponsiveAppBar = () => {
           >
             <img src={embdLogo} alt="dance logo" />
           </ButtonBase>
-          {/* </RouterLink> */}
           <Box
             sx={{
               flexGrow: 1,
@@ -88,7 +87,6 @@ const ResponsiveAppBar = () => {
                 lg: "row",
                 xl: "row",
               },
-              // mr: 3,
               display: "flex",
               justifyContent: "space-around",
             }}
@@ -136,7 +134,6 @@ const ResponsiveAppBar = () => {
               anchorEl={anchorElNav}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              // TransitionComponent={Collapse}
             >
               <Paper>
                 <ClickAwayListener onClickAway={handleCloseNavMenu}>
@@ -177,7 +174,6 @@ const ResponsiveAppBar = () => {
               component={HashLink}
               to="/Contact#contact"
               sx={{
-                // display: { xs: "none", md: "none", lg: "flex" },
                 whiteSpace: "nowrap",
               }}
               variant="extended"
@@ -217,6 +213,3 @@ const ResponsiveAppBar = () => {
   );
 };
 export default ResponsiveAppBar;
-// TODO: Text black, background transparent, button grey/blue, link the nav buttons
-
-// Dropdown TODO: enable scroll if onClick is enabled

@@ -134,5 +134,3 @@ export default function StudioPolicy() {
     </React.Fragment>
   );
 }
-
-//Props should require ={false} for templatetext?

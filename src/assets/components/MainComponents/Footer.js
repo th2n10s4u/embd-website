@@ -13,8 +13,6 @@ export default function Footer() {
       <Box
         elevation={0}
         sx={{
-          // width: "100%",
-          // height: "100px",
           background: "#B5BECB",
           display: "flex",
           flexDirection: "row",
@@ -62,7 +60,6 @@ export default function Footer() {
           rowSpacing={1}
           ClassName="TemplatePaper"
           sx={{
-            // minHeight: "447px",
             border: "0",
             display: "flex",
             alignContent: "center",
@@ -265,8 +262,6 @@ export default function Footer() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          // alignItems: "center",
-          // justifyContent: "center",
           width: "100%",
           height: "50px",
           background: "#000000",
@@ -274,10 +269,6 @@ export default function Footer() {
       >
         <Typography
           sx={{
-            // display: "flex",
-            // flexDirection: "column",
-            // flexWrap: "wrap",
-            textAlign: "center",
             fontFamily: "Poppins",
             color: "white",
           }}
@@ -288,13 +279,3 @@ export default function Footer() {
     </Grid>
   );
 }
-
-//TODO:
-// Get the logo centered on on the top of the paper
-// Add the Book today header and form
-// About Services Contact info
-// Social links
-
-// Look into grids to see if it is a layout option for the footer
-
-// Add a footer appbar with legal trademark copyright info.

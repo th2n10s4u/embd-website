@@ -38,8 +38,6 @@ export default function StylesOfDance() {
             flexDirection: "row",
             justifyContent: "space-around",
             maxWidth: "1080px",
-            // minWidth:"813px",
-            // width: "900px",
           }}
         >
           <Grid
@@ -47,7 +45,6 @@ export default function StylesOfDance() {
             sx={{
               display: "flex",
               flexDirection: { sm: "row", md: "column", lg: "row" },
-              // justifyContent: "space-between",
               alignItems: "center",
               maxWidth: "900px",
             }}
@@ -86,15 +83,6 @@ export default function StylesOfDance() {
             stylescard
           />
 
-          {/* <Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              maxWidth: "900px",
-              justifyContent: "space-evenly",
-              alignItems: "center",
-            }}
-          > */}
           <TemplateTextCard
             TextCardHeader="Smooth"
             ListText={[
@@ -126,7 +114,3 @@ export default function StylesOfDance() {
     </React.Fragment>
   );
 }
-
-//TODO: Display: flex causes the card to shrink for some reason.
-// add a fixed height/width to each box?
-// maybe look into grids for better spacing between cards.

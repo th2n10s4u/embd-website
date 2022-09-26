@@ -68,17 +68,6 @@ export default function Contact() {
             <ContactForm />
           </CardContent>
         </Card>
-        {/* </Container> */}
-        {/* <Container
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "flex-start",
-            alignContent: "center",
-            width: "650px",
-            Height: "550px",
-          }}
-        > */}
         <Card
           elevation={0}
           sx={{
@@ -123,7 +112,6 @@ export default function Contact() {
             ></Box>
           </CardContent>
         </Card>
-        {/* </Container> */}
       </Paper>
     </React.Fragment>
   );

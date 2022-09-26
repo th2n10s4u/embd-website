@@ -11,14 +11,13 @@ export default function TeacherProfiles() {
         <Paper
           elevation={0}
           sx={{
-            minWidth: "100%", //"1200px", // Play with sizing (100% is too wide)
-            // minHeight: "447px",
+            minWidth: "100%",
             border: "0",
             display: "flex",
             justifyContent: "center",
             marginTop: "20px",
             marginBottom: "20px",
-            flexDirection: "row", //conditional operator
+            flexDirection: "row",
           }}
         >
           <Typography
@@ -27,12 +26,10 @@ export default function TeacherProfiles() {
               maxWidth: 900,
               fontFamily: "Poppins",
               fontWeight: "500",
-              // lineHeight: "100%",
               letterSpacing: "2px",
               lineSpacing: "2px",
               fontSize: "26px",
               marginTop: "10px",
-              // marginBottom: "50px",
             }}
             align="center"
           >

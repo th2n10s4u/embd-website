@@ -36,8 +36,6 @@ export default function BenefitsOfDance() {
           item
           sx={{
             display: "flex",
-            // flexWrap: "wrap-reverse",
-            // maxWidth: "1080px",
             flexDirection: { xs: "column-reverse", sm: "row", md: "row" },
             alignItems: "center",
             justifyContent: "center",
@@ -69,7 +67,6 @@ export default function BenefitsOfDance() {
           sx={{
             display: "flex",
             flexDirection: "row",
-            // width: "10px",
             marginLeft: "200px",
           }}
         ></Grid>
@@ -92,4 +89,3 @@ export default function BenefitsOfDance() {
     </React.Fragment>
   );
 }
-// TODO: Come up with a different solution for TemplateCard Img paired with TextCard header/list. The alignment is off and any styling adjustments causes other components alignments to be off.
